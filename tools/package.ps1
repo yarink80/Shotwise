@@ -10,7 +10,7 @@
       4. vpk pack (package id Shotwise.App, per-user install to %LOCALAPPDATA%\Shotwise.App, no admin)
       5. dist\<version>\: Shotwise-Setup.exe, Shotwise-Portable.zip, *.nupkg + RELEASES/releases.<channel>.json, SHA256SUMS.txt
 
-    Velopack's own shortcuts are disabled (--shortcuts ""): the app's install hook writes exactly one Start menu shortcut with
+    Velopack's own shortcuts are disabled (--shortcuts None): the app's install hook writes exactly one Start menu shortcut with
     AUMID Shotwise.App, plus a Desktop shortcut on first install (src\Shotwise.App\Hosting\InstallHooks.cs).
 
     Unsigned by default. Code signing is one parameter:
@@ -199,7 +199,8 @@ $vpkArgs = @(
     '--icon', $icon, '--splashImage', $splash, '--releaseNotes', $notes,
     '--channel', $Channel, '--runtime', 'win-x64', '--outputDir', $vpkOut,
     '--aumid', 'Shotwise.App',
-    '--shortcuts', '""'               # no Velopack shortcuts: the install hook owns Start menu + Desktop (one entry, AUMID set)
+    '--shortcuts', 'None'             # no Velopack shortcuts: the install hook owns Start menu + Desktop (one entry, AUMID set).
+                                      # ('""' only worked on Windows PowerShell 5.1, which drops empty native args; pwsh 7 passes it literally.)
 )
 if ($NoPortable) { $vpkArgs += '--noPortable' }
 if ($SignParams) { $vpkArgs += @('--signParams', $SignParams) }
