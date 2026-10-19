@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Moved from src/Shotwise.Platform/Tests (CONTRACT A14). Native shell-extension tests load
+       native/Shotwise.ShellExt/bin/x64/{Debug|Release}/Shotwise.ShellExt.dll (build with tools/build.ps1 -Native). -->
+  <PropertyGroup>
+    <TargetFramework>$(ShotwiseTfm)</TargetFramework>
+    <SupportedOSPlatformVersion>$(ShotwiseSupportedOSPlatformVersion)</SupportedOSPlatformVersion>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Shotwise.Core\Shotwise.Core.csproj" />
+    <ProjectReference Include="..\..\src\Shotwise.Platform\Shotwise.Platform.csproj" />
+  </ItemGroup>
+
+</Project>

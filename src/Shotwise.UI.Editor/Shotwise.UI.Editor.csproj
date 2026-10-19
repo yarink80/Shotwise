@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Editor main window, canvas view (SKElement), toolbars, panels, tray strip, library/video views, IEditorHost. Owner: WP-UI-EDITOR. -->
+  <PropertyGroup>
+    <TargetFramework>$(ShotwiseTfm)</TargetFramework>
+    <SupportedOSPlatformVersion>$(ShotwiseSupportedOSPlatformVersion)</SupportedOSPlatformVersion>
+    <RootNamespace>Shotwise.UI.Editor</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" />
+    <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="SkiaSharp.Views.WPF" />
+    <PackageReference Include="Microsoft.Windows.CsWin32" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shotwise.Core\Shotwise.Core.csproj" />
+    <ProjectReference Include="..\Shotwise.Editor\Shotwise.Editor.csproj" />
+    <ProjectReference Include="..\Shotwise.UI.Common\Shotwise.UI.Common.csproj" />
+  </ItemGroup>
+
+</Project>

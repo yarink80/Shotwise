@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Capture window -->
+  <data name="CaptureWindow_Title" xml:space="preserve"><value>Capture</value></data>
+  <data name="Mode_AllInOne" xml:space="preserve"><value>All-in-One</value></data>
+  <data name="Mode_Image" xml:space="preserve"><value>Image</value></data>
+  <data name="Mode_Video" xml:space="preserve"><value>Video</value></data>
+  <data name="Selection_Header" xml:space="preserve"><value>SELECTION</value></data>
+  <data name="Selection_AllInOneNote" xml:space="preserve"><value>Choose an area or a window, then pick image, video, scrolling, panoramic or Grab Text from the toolbar next to your selection.</value></data>
+  <data name="Options_Header" xml:space="preserve"><value>OPTIONS</value></data>
+  <data name="Sel_Region" xml:space="preserve"><value>Region</value></data>
+  <data name="Sel_Window" xml:space="preserve"><value>Window</value></data>
+  <data name="Sel_Fullscreen" xml:space="preserve"><value>Fullscreen</value></data>
+  <data name="Sel_FixedRegion" xml:space="preserve"><value>Fixed region</value></data>
+  <data name="Sel_Freehand" xml:space="preserve"><value>Freehand</value></data>
+  <data name="Sel_Object" xml:space="preserve"><value>Object (UI element)</value></data>
+  <data name="Sel_MultipleArea" xml:space="preserve"><value>Multiple areas</value></data>
+  <data name="Sel_Menu" xml:space="preserve"><value>Menu</value></data>
+  <data name="Sel_ScrollingWindow" xml:space="preserve"><value>Scrolling window (automatic)</value></data>
+  <data name="Sel_Panoramic" xml:space="preserve"><value>Panoramic (manual scrolling)</value></data>
+  <data name="Sel_GrabText" xml:space="preserve"><value>Grab Text</value></data>
+  <data name="Sel_StepCapture" xml:space="preserve"><value>Step capture</value></data>
+  <data name="Sel_Clipboard" xml:space="preserve"><value>From clipboard</value></data>
+  <data name="Sel_ListenToClipboard" xml:space="preserve"><value>Listen to clipboard</value></data>
+  <data name="Sel_File" xml:space="preserve"><value>From file</value></data>
+  <data name="Opt_Aspect" xml:space="preserve"><value>Aspect ratio lock</value></data>
+  <data name="Aspect_None" xml:space="preserve"><value>None</value></data>
+  <data name="Opt_Size" xml:space="preserve"><value>Size (width x height)</value></data>
+  <data name="Opt_FixedPosition" xml:space="preserve"><value>Capture at a fixed position</value></data>
+  <data name="Opt_Position" xml:space="preserve"><value>Position (X, Y)</value></data>
+  <data name="Opt_ActiveWindow" xml:space="preserve"><value>Capture the active window immediately</value></data>
+  <data name="Opt_ClientOnly" xml:space="preserve"><value>Client area only (no title bar and borders)</value></data>
+  <data name="Opt_AllMonitors" xml:space="preserve"><value>All monitors</value></data>
+  <data name="Opt_Monitor" xml:space="preserve"><value>Monitor</value></data>
+  <data name="Opt_MonitorUnderCursor" xml:space="preserve"><value>Monitor under the cursor</value></data>
+  <data name="Opt_MonitorN" xml:space="preserve"><value>Monitor {0}</value></data>
+  <data name="Opt_Primary" xml:space="preserve"><value>primary</value></data>
+  <data name="Opt_MenuBar" xml:space="preserve"><value>Include the menu bar</value></data>
+  <data name="Opt_MenuCascaded" xml:space="preserve"><value>Capture cascaded menus</value></data>
+  <data name="Opt_ScrollDirection" xml:space="preserve"><value>Scroll direction</value></data>
+  <data name="Opt_ScrollTopLeft" xml:space="preserve"><value>Start at the top / left</value></data>
+  <data name="Opt_ScrollDelay" xml:space="preserve"><value>Delay between scroll steps</value></data>
+  <data name="Opt_StepArea" xml:space="preserve"><value>Capture area for each click</value></data>
+  <data name="Opt_StepCursor" xml:space="preserve"><value>Include the cursor</value></data>
+  <data name="Opt_StepHighlight" xml:space="preserve"><value>Highlight the click</value></data>
+  <data name="Opt_StepMax" xml:space="preserve"><value>Maximum number of steps</value></data>
+  <data name="Step_Window" xml:space="preserve"><value>Window</value></data>
+  <data name="Step_Region" xml:space="preserve"><value>Region around the click</value></data>
+  <data name="Step_Monitor" xml:space="preserve"><value>Monitor</value></data>
+  <data name="Scroll_Vertical" xml:space="preserve"><value>Vertical</value></data>
+  <data name="Scroll_Horizontal" xml:space="preserve"><value>Horizontal</value></data>
+  <data name="Scroll_Both" xml:space="preserve"><value>Vertical and horizontal</value></data>
+  <data name="Chip_Delay" xml:space="preserve"><value>Timing</value></data>
+  <data name="Chip_DelayN" xml:space="preserve"><value>Delay {0} s</value></data>
+  <data name="Chip_Interval" xml:space="preserve"><value>Every {0} s</value></data>
+  <data name="Chip_ScheduleAt" xml:space="preserve"><value>At {0}</value></data>
+  <data name="Chip_Cursor" xml:space="preserve"><value>Cursor</value></data>
+  <data name="Chip_Clipboard" xml:space="preserve"><value>Copy to clipboard</value></data>
+  <data name="Chip_PreviewEditor" xml:space="preserve"><value>Preview in editor</value></data>
+  <data name="Chip_OpenIn" xml:space="preserve"><value>Open in</value></data>
+  <data name="Chip_OpenInN" xml:space="preserve"><value>Open in {0}</value></data>
+  <data name="Chip_ShareTo" xml:space="preserve"><value>Share to</value></data>
+  <data name="Chip_ShareToN" xml:space="preserve"><value>Share to ({0})</value></data>
+  <data name="Chip_Effects" xml:space="preserve"><value>Effects</value></data>
+  <data name="Chip_EffectsN" xml:space="preserve"><value>Effects ({0})</value></data>
+  <data name="Chip_Microphone" xml:space="preserve"><value>Microphone</value></data>
+  <data name="Chip_SystemAudio" xml:space="preserve"><value>System audio</value></data>
+  <data name="Chip_Webcam" xml:space="preserve"><value>Webcam</value></data>
+  <data name="Chip_VideoOptions" xml:space="preserve"><value>Video options</value></data>
+  <data name="Chip_More" xml:space="preserve"><value>More</value></data>
+  <data name="Chip_Less" xml:space="preserve"><value>Less</value></data>
+  <data name="OpenIn_Choose" xml:space="preserve"><value>Choose program...</value></data>
+  <data name="OpenIn_Clear" xml:space="preserve"><value>Do not open in a program</value></data>
+  <data name="OpenIn_Filter" xml:space="preserve"><value>Programs (*.exe)|*.exe|All files (*.*)|*.*</value></data>
+  <data name="Capture_Button" xml:space="preserve"><value>Capture</value></data>
+  <data name="Capture_Record" xml:space="preserve"><value>Record</value></data>
+  <data name="Capture_HotkeyHint" xml:space="preserve"><value>Or press {0}</value></data>
+  <data name="Capture_Done" xml:space="preserve"><value>Capture complete</value></data>
+  <data name="Capture_DoneSize" xml:space="preserve"><value>Captured {0} x {1} pixels.</value></data>
+  <data name="Capture_DoneNoEditor" xml:space="preserve"><value>The capture was added to your library (the editor is not available).</value></data>
+  <data name="Error_CaptureTitle" xml:space="preserve"><value>Capture failed</value></data>
+  <data name="Output_FailedTitle" xml:space="preserve"><value>Output failed</value></data>
+  <data name="Output_FailedTo" xml:space="preserve"><value>Sharing to {0} failed</value></data>
+  <data name="Output_SharedTo" xml:space="preserve"><value>Shared to {0}</value></data>
+  <data name="Output_Open" xml:space="preserve"><value>Open</value></data>
+
+  <!-- Timing popup -->
+  <data name="Timing_Title" xml:space="preserve"><value>Timing</value></data>
+  <data name="Timing_Delay" xml:space="preserve"><value>Delay before capture</value></data>
+  <data name="Timing_Seconds" xml:space="preserve"><value>seconds</value></data>
+  <data name="Timing_Off" xml:space="preserve"><value>Off</value></data>
+  <data name="Timing_Countdown" xml:space="preserve"><value>Show a countdown</value></data>
+  <data name="Timing_Interval" xml:space="preserve"><value>Repeat the capture at an interval</value></data>
+  <data name="Timing_Every" xml:space="preserve"><value>Every</value></data>
+  <data name="Timing_Schedule" xml:space="preserve"><value>Capture at a scheduled date and time</value></data>
+  <data name="Unit_Seconds" xml:space="preserve"><value>seconds</value></data>
+  <data name="Unit_Minutes" xml:space="preserve"><value>minutes</value></data>
+  <data name="Unit_Hours" xml:space="preserve"><value>hours</value></data>
+  <data name="Schedule_Waiting" xml:space="preserve"><value>Capture scheduled for {0}</value></data>
+  <data name="Schedule_Remaining" xml:space="preserve"><value>Starts in {0}</value></data>
+  <data name="Interval_Title" xml:space="preserve"><value>Interval capture ({0} taken)</value></data>
+  <data name="Interval_Next" xml:space="preserve"><value>Next capture in {0} s</value></data>
+  <data name="Interval_Stop" xml:space="preserve"><value>Stop</value></data>
+
+  <!-- Video options popup -->
+  <data name="VideoOptions_Title" xml:space="preserve"><value>Video options</value></data>
+  <data name="VideoOptions_CursorFx" xml:space="preserve"><value>CURSOR AND START</value></data>
+  <data name="Webcam_PreviewButton" xml:space="preserve"><value>Preview camera</value></data>
+  <data name="Shape_Circle" xml:space="preserve"><value>Circle</value></data>
+  <data name="Shape_RoundedSquare" xml:space="preserve"><value>Rounded square</value></data>
+  <data name="Shape_RoundedRectangle" xml:space="preserve"><value>Rounded rectangle</value></data>
+  <data name="Corner_TopLeft" xml:space="preserve"><value>Top left</value></data>
+  <data name="Corner_TopRight" xml:space="preserve"><value>Top right</value></data>
+  <data name="Corner_BottomLeft" xml:space="preserve"><value>Bottom left</value></data>
+  <data name="Corner_BottomRight" xml:space="preserve"><value>Bottom right</value></data>
+
+  <!-- Share / effects popups -->
+  <data name="Share_Title" xml:space="preserve"><value>Share after capture</value></data>
+  <data name="Share_Unavailable" xml:space="preserve"><value>Sharing is not available.</value></data>
+  <data name="Share_None" xml:space="preserve"><value>No enabled destination accepts this kind of capture.</value></data>
+  <data name="Share_NeedsAccount" xml:space="preserve"><value>(sign in required)</value></data>
+  <data name="Effects_Title" xml:space="preserve"><value>Effects applied to every capture</value></data>
+  <data name="Effects_None" xml:space="preserve"><value>No effects. Add one to process captures automatically.</value></data>
+  <data name="Effects_Add" xml:space="preserve"><value>Add effect</value></data>
+  <data name="Effects_Edit" xml:space="preserve"><value>Edit</value></data>
+  <data name="Effects_Remove" xml:space="preserve"><value>Remove</value></data>
+  <data name="Effects_Up" xml:space="preserve"><value>Move up</value></data>
+  <data name="Effects_Down" xml:space="preserve"><value>Move down</value></data>
+  <data name="Effects_Enabled" xml:space="preserve"><value>Enabled</value></data>
+  <data name="Effect_Border" xml:space="preserve"><value>Border</value></data>
+  <data name="Effect_Edge" xml:space="preserve"><value>Edge</value></data>
+  <data name="Effect_Shadow" xml:space="preserve"><value>Shadow</value></data>
+  <data name="Effect_Perspective" xml:space="preserve"><value>Perspective</value></data>
+  <data name="Effect_PageCurl" xml:space="preserve"><value>Page curl</value></data>
+  <data name="Effect_ColorAdjust" xml:space="preserve"><value>Color adjustments</value></data>
+  <data name="Effect_ColorReplace" xml:space="preserve"><value>Replace colors</value></data>
+  <data name="Effect_Filter" xml:space="preserve"><value>Filter</value></data>
+  <data name="Effect_Watermark" xml:space="preserve"><value>Watermark</value></data>
+  <data name="Effect_Caption" xml:space="preserve"><value>Caption</value></data>
+  <data name="Effect_Resize" xml:space="preserve"><value>Resize</value></data>
+  <data name="Effect_Rotate" xml:space="preserve"><value>Rotate</value></data>
+  <data name="Effect_Trim" xml:space="preserve"><value>Trim</value></data>
+  <data name="Effect_Spotlight" xml:space="preserve"><value>Spotlight and magnify</value></data>
+  <data name="Effect_Transparency" xml:space="preserve"><value>Transparent color</value></data>
+  <data name="Caption_PromptTitle" xml:space="preserve"><value>Caption</value></data>
+  <data name="Caption_PromptLabel" xml:space="preserve"><value>Text to add to this capture</value></data>
+
+  <!-- Presets -->
+  <data name="Presets_Header" xml:space="preserve"><value>Presets</value></data>
+  <data name="Presets_More" xml:space="preserve"><value>More preset actions</value></data>
+  <data name="Presets_Import" xml:space="preserve"><value>Import presets...</value></data>
+  <data name="Presets_ExportAll" xml:space="preserve"><value>Export all presets...</value></data>
+  <data name="Presets_ResetDefaults" xml:space="preserve"><value>Restore built-in presets</value></data>
+  <data name="Presets_ResetDefaultsBody" xml:space="preserve"><value>Built-in presets are reset to their original settings and deleted ones are added back. Your own presets are kept.</value></data>
+  <data name="Presets_FileFilter" xml:space="preserve"><value>Shotwise presets (*.shotpresets)|*.shotpresets|All files (*.*)|*.*</value></data>
+  <data name="Preset_SaveAs" xml:space="preserve"><value>Save current settings as preset...</value></data>
+  <data name="Preset_Save" xml:space="preserve"><value>Save</value></data>
+  <data name="Preset_ResetCurrent" xml:space="preserve"><value>Reset current settings</value></data>
+  <data name="Preset_Modified" xml:space="preserve"><value>Settings changed since this preset was saved</value></data>
+  <data name="Preset_ModifiedShort" xml:space="preserve"><value>Modified</value></data>
+  <data name="Preset_SaveTooltip" xml:space="preserve"><value>Save these settings to the current preset</value></data>
+  <data name="Preset_NoGroup" xml:space="preserve"><value>(no group)</value></data>
+  <data name="PresetMenu_Run" xml:space="preserve"><value>Capture now</value></data>
+  <data name="PresetMenu_Edit" xml:space="preserve"><value>Edit...</value></data>
+  <data name="PresetMenu_Rename" xml:space="preserve"><value>Rename...</value></data>
+  <data name="PresetMenu_Duplicate" xml:space="preserve"><value>Duplicate</value></data>
+  <data name="PresetMenu_SetHotkey" xml:space="preserve"><value>Set hotkey...</value></data>
+  <data name="PresetMenu_MoveToGroup" xml:space="preserve"><value>Move to group</value></data>
+  <data name="PresetMenu_Export" xml:space="preserve"><value>Export...</value></data>
+  <data name="PresetMenu_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="PresetMenu_DeleteBody" xml:space="preserve"><value>Delete the preset "{0}"?</value></data>
+  <data name="Group_New" xml:space="preserve"><value>New group...</value></data>
+  <data name="Group_Rename" xml:space="preserve"><value>Rename group...</value></data>
+  <data name="Group_Export" xml:space="preserve"><value>Export group...</value></data>
+  <data name="Group_Delete" xml:space="preserve"><value>Delete group</value></data>
+  <data name="Group_DeleteBody" xml:space="preserve"><value>Delete the group "{0}"? Its presets move out of the group.</value></data>
+  <data name="Group_DeleteWithPresets" xml:space="preserve"><value>Delete group and its presets</value></data>
+  <data name="Group_DeleteWithPresetsBody" xml:space="preserve"><value>Delete the group "{0}" and all presets in it?</value></data>
+  <data name="Group_NameLabel" xml:space="preserve"><value>Group name</value></data>
+  <data name="PresetEdit_Title" xml:space="preserve"><value>Edit preset</value></data>
+  <data name="PresetEdit_Name" xml:space="preserve"><value>Name</value></data>
+  <data name="PresetEdit_Group" xml:space="preserve"><value>Group</value></data>
+  <data name="PresetEdit_Hotkey" xml:space="preserve"><value>Global hotkey</value></data>
+  <data name="PresetEdit_NameRequired" xml:space="preserve"><value>Enter a name for the preset.</value></data>
+  <data name="PresetEdit_HotkeyUsed" xml:space="preserve"><value>This key combination is already used by "{0}".</value></data>
+  <data name="Dialog_Ok" xml:space="preserve"><value>OK</value></data>
+
+  <!-- Hotkeys -->
+  <data name="Hotkey_Capture" xml:space="preserve"><value>Capture</value></data>
+  <data name="Hotkey_Repeat" xml:space="preserve"><value>Repeat last capture</value></data>
+  <data name="Hotkey_ShowHide" xml:space="preserve"><value>Show / hide Shotwise</value></data>
+  <data name="Hotkey_VideoPause" xml:space="preserve"><value>Video start / pause / resume</value></data>
+  <data name="Hotkey_VideoStop" xml:space="preserve"><value>Video stop</value></data>
+  <data name="Hotkey_Draw" xml:space="preserve"><value>Video enter / exit Draw mode</value></data>
+  <data name="Hotkey_Webcam" xml:space="preserve"><value>Webcam fullscreen / picture-in-picture</value></data>
+  <data name="Hotkey_Clear" xml:space="preserve"><value>Clear the hotkey</value></data>
+  <data name="Hotkey_None" xml:space="preserve"><value>None</value></data>
+  <data name="Hotkey_Press" xml:space="preserve"><value>Press a key combination...</value></data>
+  <data name="Hotkey_Duplicate" xml:space="preserve"><value>already assigned</value></data>
+  <data name="Hotkey_InUse" xml:space="preserve"><value>in use by Windows or another application</value></data>
+  <data name="Hotkey_Unsupported" xml:space="preserve"><value>This combination cannot be used as a global hotkey. Add Ctrl, Alt or Shift, or use a function key.</value></data>
+  <data name="Hotkey_ProblemTitle" xml:space="preserve"><value>Some hotkeys could not be registered</value></data>
+  <data name="Hotkey_FallbackTitle" xml:space="preserve"><value>Capture hotkey: {0} is taken</value></data>
+  <data name="Hotkey_FallbackBody" xml:space="preserve"><value>{0} is used by another app — Shotwise is using {1}. Change in Preferences → Hotkeys.</value></data>
+  <data name="Hotkey_CaptureFallback" xml:space="preserve"><value>Capture fallback</value></data>
+  <data name="Hotkey_CaptureFallbackHint" xml:space="preserve"><value>Used when the capture key is held by Windows or another app</value></data>
+  <data name="Hotkey_GlobalHint" xml:space="preserve"><value>Runs the selected preset</value></data>
+  <data name="Hotkey_RecordingHint" xml:space="preserve"><value>Only while recording</value></data>
+  <data name="Hotkey_PresetHint" xml:space="preserve"><value>Preset</value></data>
+  <data name="Hotkey_State_Active" xml:space="preserve"><value>Active</value></data>
+  <data name="Hotkey_State_Fallback" xml:space="preserve"><value>Using fallback</value></data>
+  <data name="Hotkey_State_InUse" xml:space="preserve"><value>In use by another app</value></data>
+  <data name="Hotkey_State_Duplicate" xml:space="preserve"><value>Duplicate</value></data>
+  <data name="Hotkey_State_Unsupported" xml:space="preserve"><value>Not supported</value></data>
+  <data name="Hotkey_State_Off" xml:space="preserve"><value>Off</value></data>
+  <data name="Hotkey_State_RecordingOnly" xml:space="preserve"><value>While recording</value></data>
+  <data name="Hotkey_State_Pending" xml:space="preserve"><value>Applies on OK</value></data>
+  <data name="Hotkey_State_Standby" xml:space="preserve"><value>Standby</value></data>
+  <data name="Hotkey_Record" xml:space="preserve"><value>Record</value></data>
+  <data name="Hotkey_RecordTip" xml:space="preserve"><value>Record a new key combination (Esc cancels)</value></data>
+  <data name="Hotkey_Recording" xml:space="preserve"><value>Press keys…</value></data>
+  <data name="Hotkey_ClearShort" xml:space="preserve"><value>Clear</value></data>
+  <data name="Hotkey_FallbackActive" xml:space="preserve"><value>{0} is held by another app, so Shotwise uses {1}.</value></data>
+  <data name="Hotkey_InUseDetail" xml:space="preserve"><value>{0} is held by Windows or another app. Choose another combination.</value></data>
+  <data name="Hotkey_DuplicateDetail" xml:space="preserve"><value>{0} is already used by another Shotwise hotkey.</value></data>
+  <data name="Prefs_HotkeysGlobal" xml:space="preserve"><value>Global hotkeys</value></data>
+  <data name="Prefs_HotkeysPresets" xml:space="preserve"><value>Preset hotkeys</value></data>
+  <data name="Prefs_HotkeysIntro" xml:space="preserve"><value>Global hotkeys work in every app. Click Record and press the new combination; Esc cancels. Changes apply when you press OK.</value></data>
+  <data name="Prefs_RestoreDefaultsTip" xml:space="preserve"><value>PrintScreen (fallback Shift+PrintScreen) to capture, Ctrl+Shift+PrintScreen for Image Region, Alt+Shift+PrintScreen for Video, Ctrl+Alt+PrintScreen for Grab Text</value></data>
+  <data name="PrintScreen_Title" xml:space="preserve"><value>Print Screen is used by Windows</value></data>
+  <data name="PrintScreen_Body" xml:space="preserve"><value>Windows opens its own screen snipping tool when you press Print Screen. To capture with this key in Shotwise, turn off "Use the Print screen key to open screen capture" in the Windows keyboard settings.</value></data>
+  <data name="PrintScreen_Open" xml:space="preserve"><value>Open Windows settings</value></data>
+  <data name="PrintScreen_Keep" xml:space="preserve"><value>Keep as is</value></data>
+
+  <!-- Selection overlay -->
+  <data name="Selection_TooSmall" xml:space="preserve"><value>The selection is too small. The minimum is {0} x {0} pixels.</value></data>
+  <data name="Selection_HelpHint" xml:space="preserve"><value>F1 for help - Esc to cancel</value></data>
+  <data name="Selection_Done" xml:space="preserve"><value>Done</value></data>
+  <data name="Selection_AreasCount" xml:space="preserve"><value>{0} area(s) selected</value></data>
+  <data name="Toolbar_CaptureImage" xml:space="preserve"><value>Capture image</value></data>
+  <data name="Toolbar_RecordVideo" xml:space="preserve"><value>Record video</value></data>
+  <data name="Toolbar_ScrollVertical" xml:space="preserve"><value>Scroll down (vertical)</value></data>
+  <data name="Toolbar_ScrollHorizontal" xml:space="preserve"><value>Scroll right (horizontal)</value></data>
+  <data name="Toolbar_ScrollBoth" xml:space="preserve"><value>Scroll both ways</value></data>
+  <data name="Toolbar_Panoramic" xml:space="preserve"><value>Panoramic (manual scrolling)</value></data>
+  <data name="Toolbar_GrabText" xml:space="preserve"><value>Grab text</value></data>
+  <data name="Toolbar_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Help_Title" xml:space="preserve"><value>Selection shortcuts</value></data>
+  <data name="Help_Cancel" xml:space="preserve"><value>Cancel the capture</value></data>
+  <data name="Help_ToggleHelp" xml:space="preserve"><value>Show or hide this help</value></data>
+  <data name="Help_Arrows" xml:space="preserve"><value>Move the crosshair or selection by 1 pixel</value></data>
+  <data name="Help_ArrowsFast" xml:space="preserve"><value>Move by 10 pixels</value></data>
+  <data name="Help_ArrowsResize" xml:space="preserve"><value>Resize the selection (Ctrl: right/bottom, Alt: left/top)</value></data>
+  <data name="Help_Confirm" xml:space="preserve"><value>Confirm the selection or the highlighted window</value></data>
+  <data name="Help_MoveWhileDrag" xml:space="preserve"><value>Hold while dragging to move the selection</value></data>
+  <data name="Help_Fullscreen" xml:space="preserve"><value>Capture this monitor / all monitors</value></data>
+  <data name="Help_AspectLocks" xml:space="preserve"><value>Lock aspect ratio 1:1 / 4:3 / 16:9</value></data>
+  <data name="Help_AspectOff" xml:space="preserve"><value>Remove the aspect ratio lock</value></data>
+  <data name="Help_Magnifier" xml:space="preserve"><value>Show or hide the magnifier</value></data>
+  <data name="Help_Guides" xml:space="preserve"><value>Show or hide size guides</value></data>
+  <data name="Help_RemoveArea" xml:space="preserve"><value>Remove the last area (multiple areas)</value></data>
+  <data name="Help_RightClickKey" xml:space="preserve"><value>Right click</value></data>
+  <data name="Help_RightClick" xml:space="preserve"><value>Clear the selection, or cancel</value></data>
+
+  <!-- Countdown, scrolling, panoramic, steps, menu, grab text, listen -->
+  <data name="Countdown_Hint" xml:space="preserve"><value>Click or Esc to cancel</value></data>
+  <data name="Scrolling_Start" xml:space="preserve"><value>Start scrolling capture</value></data>
+  <data name="Scrolling_PressStart" xml:space="preserve"><value>Ready. Press Start to begin scrolling the selected area.</value></data>
+  <data name="Scrolling_Working" xml:space="preserve"><value>Capturing... do not touch the window.</value></data>
+  <data name="Scrolling_Frames" xml:space="preserve"><value>Captured {0} frame(s)...</value></data>
+  <data name="Scrolling_Stitching" xml:space="preserve"><value>Stitching the image...</value></data>
+  <data name="Scroll_FailedTitle" xml:space="preserve"><value>Scrolling capture failed</value></data>
+  <data name="Scroll_NotScrollable" xml:space="preserve"><value>The selected area cannot be scrolled. Select a window or region that has a scroll bar, or use Panoramic capture and scroll manually.</value></data>
+  <data name="Scroll_FailedTips" xml:space="preserve"><value>Try a larger delay between scroll steps, make sure the window stays in front, avoid moving the mouse during capture, or use Panoramic capture and scroll yourself.</value></data>
+  <data name="Panoramic_Title" xml:space="preserve"><value>Panoramic capture</value></data>
+  <data name="Panoramic_Ready" xml:space="preserve"><value>Press Start, then scroll or pan slowly inside the selected area.</value></data>
+  <data name="Panoramic_Start" xml:space="preserve"><value>Start</value></data>
+  <data name="Panoramic_Stop" xml:space="preserve"><value>Stop</value></data>
+  <data name="Panoramic_Capturing" xml:space="preserve"><value>Capturing. Scroll slowly, then press Stop.</value></data>
+  <data name="Panoramic_Size" xml:space="preserve"><value>Stitched so far: {0} x {1} pixels</value></data>
+  <data name="Panoramic_Stitching" xml:space="preserve"><value>Finishing the image...</value></data>
+  <data name="Steps_Title" xml:space="preserve"><value>Steps</value></data>
+  <data name="Steps_Hint" xml:space="preserve"><value>Click through your task. Each click is captured.</value></data>
+  <data name="Steps_PausedHint" xml:space="preserve"><value>Paused. Clicks are not captured.</value></data>
+  <data name="Steps_Finish" xml:space="preserve"><value>Finish</value></data>
+  <data name="Steps_Resume" xml:space="preserve"><value>Resume</value></data>
+  <data name="Steps_None" xml:space="preserve"><value>No steps were captured.</value></data>
+  <data name="Steps_GuideTitle" xml:space="preserve"><value>Step-by-step guide</value></data>
+  <data name="Steps_Click" xml:space="preserve"><value>Click</value></data>
+  <data name="Steps_Desc" xml:space="preserve"><value>{0}: {1}</value></data>
+  <data name="Steps_DescNoElement" xml:space="preserve"><value>{0}</value></data>
+  <data name="Menu_OpenNow" xml:space="preserve"><value>Open the menu you want to capture</value></data>
+  <data name="Menu_Remaining" xml:space="preserve"><value>Capturing in {0} s</value></data>
+  <data name="Menu_NothingCaptured" xml:space="preserve"><value>No menu was open during the capture.</value></data>
+  <data name="GrabText_Title" xml:space="preserve"><value>Grab Text</value></data>
+  <data name="GrabText_NoText" xml:space="preserve"><value>No text was found in the selected area.</value></data>
+  <data name="GrabText_Copied" xml:space="preserve"><value>The recognized text was copied to the clipboard.</value></data>
+  <data name="Listen_Title" xml:space="preserve"><value>Clipboard</value></data>
+  <data name="Listen_Started" xml:space="preserve"><value>Images you copy are now added to Shotwise automatically. Run this preset again to stop.</value></data>
+  <data name="Listen_Stopped" xml:space="preserve"><value>No longer listening to the clipboard.</value></data>
+  <data name="Remote_Title" xml:space="preserve"><value>Remote session detected</value></data>
+  <data name="Remote_Body" xml:space="preserve"><value>Captures made in a remote desktop session can come out black or masked by the remote display driver. Capture on the local computer if that happens.</value></data>
+  <data name="Input_Clipboard" xml:space="preserve"><value>Clipboard</value></data>
+  <data name="Input_Printer" xml:space="preserve"><value>Printer capture</value></data>
+  <data name="Input_Mobile" xml:space="preserve"><value>Mobile device {0}</value></data>
+  <data name="File_OpenTitle" xml:space="preserve"><value>Open an image</value></data>
+  <data name="File_Filter" xml:space="preserve"><value>Images|*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.tif;*.tiff;*.webp;*.ico|All files (*.*)|*.*</value></data>
+
+  <!-- Recording -->
+  <data name="Ready_Title" xml:space="preserve"><value>Ready to record</value></data>
+  <data name="Ready_Region" xml:space="preserve"><value>Region {0} x {1}</value></data>
+  <data name="Ready_Microphone" xml:space="preserve"><value>Record microphone</value></data>
+  <data name="Ready_Default" xml:space="preserve"><value>(default)</value></data>
+  <data name="Ready_SystemDefault" xml:space="preserve"><value>System default</value></data>
+  <data name="Ready_NoMicrophones" xml:space="preserve"><value>No microphone was found.</value></data>
+  <data name="Ready_NoWebcams" xml:space="preserve"><value>No camera was found.</value></data>
+  <data name="Ready_MicMuted" xml:space="preserve"><value>Your microphone is muted in Windows. Unmute it to record your voice.</value></data>
+  <data name="Ready_MicMutedTitle" xml:space="preserve"><value>Microphone is muted</value></data>
+  <data name="Ready_RecordAnyway" xml:space="preserve"><value>Record anyway</value></data>
+  <data name="Ready_RemoveNoise" xml:space="preserve"><value>Remove background noise</value></data>
+  <data name="Ready_RemoveNoiseTip" xml:space="preserve"><value>Reduces keyboard, fan and room noise in the microphone track.</value></data>
+  <data name="Ready_RemoveNoiseUnavailable" xml:space="preserve"><value>Noise removal needs a model that is not installed.</value></data>
+  <data name="Ready_SystemAudio" xml:space="preserve"><value>Record computer sound</value></data>
+  <data name="Ready_Webcam" xml:space="preserve"><value>Record camera</value></data>
+  <data name="Ready_Fps" xml:space="preserve"><value>Frame rate</value></data>
+  <data name="Ready_Cursor" xml:space="preserve"><value>Include the cursor</value></data>
+  <data name="Ready_CursorHighlight" xml:space="preserve"><value>Highlight the cursor</value></data>
+  <data name="Ready_ClickAnimation" xml:space="preserve"><value>Animate mouse clicks</value></data>
+  <data name="Ready_ShowReady" xml:space="preserve"><value>Show this window before recording</value></data>
+  <data name="Ready_CountdownOpt" xml:space="preserve"><value>Count down before recording</value></data>
+  <data name="Ready_AutoStart" xml:space="preserve"><value>Start recording immediately after selecting</value></data>
+  <data name="Ready_Record" xml:space="preserve"><value>Record</value></data>
+  <data name="Ready_Redo" xml:space="preserve"><value>Redo selection</value></data>
+  <data name="Hud_Recording" xml:space="preserve"><value>Recording</value></data>
+  <data name="Hud_Paused" xml:space="preserve"><value>Paused</value></data>
+  <data name="Hud_Stopping" xml:space="preserve"><value>Saving...</value></data>
+  <data name="Hud_Faulted" xml:space="preserve"><value>Recording problem</value></data>
+  <data name="Hud_Pause" xml:space="preserve"><value>Pause</value></data>
+  <data name="Hud_Resume" xml:space="preserve"><value>Resume</value></data>
+  <data name="Hud_Stop" xml:space="preserve"><value>Stop and save</value></data>
+  <data name="Hud_Restart" xml:space="preserve"><value>Start over</value></data>
+  <data name="Hud_Cancel" xml:space="preserve"><value>Cancel recording</value></data>
+  <data name="Hud_CancelTitle" xml:space="preserve"><value>Cancel recording?</value></data>
+  <data name="Hud_CancelBody" xml:space="preserve"><value>The recording so far will be discarded.</value></data>
+  <data name="Hud_Discard" xml:space="preserve"><value>Discard</value></data>
+  <data name="Hud_KeepRecording" xml:space="preserve"><value>Keep recording</value></data>
+  <data name="Hud_MuteMic" xml:space="preserve"><value>Mute microphone</value></data>
+  <data name="Hud_UnmuteMic" xml:space="preserve"><value>Unmute microphone</value></data>
+  <data name="Hud_MuteSystem" xml:space="preserve"><value>Mute computer sound</value></data>
+  <data name="Hud_UnmuteSystem" xml:space="preserve"><value>Unmute computer sound</value></data>
+  <data name="Hud_WebcamFullscreen" xml:space="preserve"><value>Switch camera between picture-in-picture and fullscreen</value></data>
+  <data name="Hud_ScreenDraw" xml:space="preserve"><value>Draw on screen</value></data>
+  <data name="Recording_MicToggleDisabledTip" xml:space="preserve"><value>The microphone was not enabled for this recording. Inputs cannot be added while recording.</value></data>
+  <data name="Recording_SysAudioToggleDisabledTip" xml:space="preserve"><value>Computer sound was not enabled for this recording. Inputs cannot be added while recording.</value></data>
+  <data name="Recording_CamToggleDisabledTip" xml:space="preserve"><value>The camera was not enabled for this recording. It cannot be turned on while recording.</value></data>
+  <data name="Recording_DoneTitle" xml:space="preserve"><value>Recording saved</value></data>
+  <data name="Recording_DoneBody" xml:space="preserve"><value>Recorded {0}.</value></data>
+
+  <!-- ScreenDraw -->
+  <data name="Draw_Arrow" xml:space="preserve"><value>Arrow (A)</value></data>
+  <data name="Draw_Square" xml:space="preserve"><value>Square (S)</value></data>
+  <data name="Draw_Step" xml:space="preserve"><value>Numbered step (1)</value></data>
+  <data name="Draw_MoreColors" xml:space="preserve"><value>More colors...</value></data>
+  <data name="Draw_FadeAfter" xml:space="preserve"><value>Fade after</value></data>
+  <data name="Draw_FadeNever" xml:space="preserve"><value>Never</value></data>
+  <data name="Draw_Undo" xml:space="preserve"><value>Undo (Ctrl+Z)</value></data>
+  <data name="Draw_Clear" xml:space="preserve"><value>Clear all (Delete)</value></data>
+  <data name="Draw_Exit" xml:space="preserve"><value>Exit draw mode (Esc)</value></data>
+
+  <!-- Widget -->
+  <data name="Widget_Title" xml:space="preserve"><value>Capture widget</value></data>
+  <data name="Widget_Drag" xml:space="preserve"><value>Drag to move</value></data>
+  <data name="Widget_Image" xml:space="preserve"><value>Capture image</value></data>
+  <data name="Widget_Video" xml:space="preserve"><value>Record video</value></data>
+  <data name="Widget_Preset" xml:space="preserve"><value>Preset: {0}</value></data>
+  <data name="Widget_OpenWindow" xml:space="preserve"><value>Open the Capture window</value></data>
+  <data name="Widget_Hide" xml:space="preserve"><value>Hide the widget</value></data>
+
+  <!-- Preferences pages -->
+  <data name="Prefs_General" xml:space="preserve"><value>General</value></data>
+  <data name="Prefs_StartupPage" xml:space="preserve"><value>Startup &amp; Updates</value></data>
+  <data name="Prefs_Capture" xml:space="preserve"><value>Capture</value></data>
+  <data name="Prefs_Hotkeys" xml:space="preserve"><value>Hotkeys</value></data>
+  <data name="Prefs_RunAtStartup" xml:space="preserve"><value>Run Shotwise when Windows starts</value></data>
+  <data name="Prefs_ShowCaptureWindow" xml:space="preserve"><value>Show the Capture window at startup</value></data>
+  <data name="Prefs_ShowWidget" xml:space="preserve"><value>Show the Capture widget</value></data>
+  <data name="Prefs_Theme" xml:space="preserve"><value>Color theme</value></data>
+  <data name="Theme_System" xml:space="preserve"><value>System</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Light</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Dark</value></data>
+  <data name="Prefs_Updates" xml:space="preserve"><value>Updates</value></data>
+  <data name="Prefs_AutoUpdate" xml:space="preserve"><value>Automatically check for updates</value></data>
+  <data name="Prefs_PromptUpdate" xml:space="preserve"><value>Ask before checking for updates</value></data>
+  <data name="Prefs_UpdateDays" xml:space="preserve"><value>Days between checks</value></data>
+  <data name="Prefs_UpdateDownload" xml:space="preserve"><value>Download updates in the background (not on metered connections)</value></data>
+  <data name="Prefs_UpdateChannel" xml:space="preserve"><value>Update channel</value></data>
+  <data name="Update_ChannelStable" xml:space="preserve"><value>Stable</value></data>
+  <data name="Update_ChannelBeta" xml:space="preserve"><value>Beta (pre-releases)</value></data>
+  <data name="Update_Version" xml:space="preserve"><value>Shotwise {0} · {1} channel</value></data>
+  <data name="Update_LastCheck" xml:space="preserve"><value>Last checked: {0}</value></data>
+  <data name="Update_Never" xml:space="preserve"><value>never</value></data>
+  <data name="Update_Source" xml:space="preserve"><value>Updates come from {0}.</value></data>
+  <data name="Update_Check" xml:space="preserve"><value>Check for updates</value></data>
+  <data name="Update_Download" xml:space="preserve"><value>Download</value></data>
+  <data name="Update_RestartNow" xml:space="preserve"><value>Restart now</value></data>
+  <data name="Update_Later" xml:space="preserve"><value>Later</value></data>
+  <data name="Update_CheckNow" xml:space="preserve"><value>Check now</value></data>
+  <data name="Update_StateIdle" xml:space="preserve"><value>Not checked yet in this session.</value></data>
+  <data name="Update_StateChecking" xml:space="preserve"><value>Checking for updates…</value></data>
+  <data name="Update_StateUpToDate" xml:space="preserve"><value>Shotwise is up to date.</value></data>
+  <data name="Update_StateAvailable" xml:space="preserve"><value>Shotwise {0} is available.</value></data>
+  <data name="Update_StateDownloading" xml:space="preserve"><value>Downloading Shotwise {0}… {1}%</value></data>
+  <data name="Update_StateReady" xml:space="preserve"><value>Shotwise {0} is ready. Restart to finish updating, or it installs the next time you exit Shotwise.</value></data>
+  <data name="Update_StateFailed" xml:space="preserve"><value>The last check did not complete: {0}</value></data>
+  <data name="Update_StateOffline" xml:space="preserve"><value>You are offline. Shotwise will check again later.</value></data>
+  <data name="Update_StateConsent" xml:space="preserve"><value>A scheduled update check is waiting for your OK.</value></data>
+  <data name="Update_StateDisabled" xml:space="preserve"><value>Updates are turned off by your organization.</value></data>
+  <data name="Update_StateUnsupported" xml:space="preserve"><value>{0}</value></data>
+  <data name="Update_ReadyTitle" xml:space="preserve"><value>Shotwise {0} is ready</value></data>
+  <data name="Update_ReadyBody" xml:space="preserve"><value>Restart Shotwise to finish updating. Your work is saved first. If you choose Later, the update installs the next time you exit Shotwise.</value></data>
+  <data name="Update_AvailableTitle" xml:space="preserve"><value>Shotwise {0} is available</value></data>
+  <data name="Update_AvailableBody" xml:space="preserve"><value>You are on a metered connection, so it was not downloaded automatically.</value></data>
+  <data name="Update_ConsentTitle" xml:space="preserve"><value>Check for Shotwise updates?</value></data>
+  <data name="Update_ConsentBody" xml:space="preserve"><value>It's time for the scheduled update check. Shotwise contacts GitHub to look for a newer version.</value></data>
+  <data name="Update_BlockedTitle" xml:space="preserve"><value>Update waits for your recording</value></data>
+  <data name="Update_BlockedBody" xml:space="preserve"><value>Shotwise restarts to update after the capture or recording has finished. Use Restart now again, or just exit Shotwise later.</value></data>
+  <data name="Update_UpdatedTitle" xml:space="preserve"><value>Shotwise was updated</value></data>
+  <data name="Update_UpdatedBody" xml:space="preserve"><value>You are now using Shotwise {0}.</value></data>
+  <data name="Update_TrayRestart" xml:space="preserve"><value>Restart to update to {0}</value></data>
+  <data name="Update_Notes" xml:space="preserve"><value>What's new: {0}</value></data>
+  <data name="Prefs_PrivacyNote" xml:space="preserve"><value>Data and privacy options are in the Editor preferences.</value></data>
+  <data name="Prefs_Selection" xml:space="preserve"><value>Selection and capture</value></data>
+  <data name="Prefs_HideApp" xml:space="preserve"><value>Hide Shotwise during capture and remove its controls from completed captures</value></data>
+  <data name="Prefs_SystemTools" xml:space="preserve"><value>Open screenshots copied from system tools (for example Win+Shift+S)</value></data>
+  <data name="Prefs_Magnifier" xml:space="preserve"><value>Show the magnifier</value></data>
+  <data name="Prefs_SimpleCrosshair" xml:space="preserve"><value>Use simplified crosshairs</value></data>
+  <data name="Prefs_Guides" xml:space="preserve"><value>Show size guides while selecting</value></data>
+  <data name="Prefs_HelpHint" xml:space="preserve"><value>Show the F1 help hint on the selection overlay</value></data>
+  <data name="Prefs_ScrollStart" xml:space="preserve"><value>Require the Start button for scrolling capture</value></data>
+  <data name="Prefs_Hdr" xml:space="preserve"><value>Support HDR color settings</value></data>
+  <data name="Prefs_Video" xml:space="preserve"><value>Video recording</value></data>
+  <data name="Prefs_AutoStart" xml:space="preserve"><value>Start video recording automatically</value></data>
+  <data name="Prefs_Countdown" xml:space="preserve"><value>Show the video countdown</value></data>
+  <data name="Prefs_CountdownSeconds" xml:space="preserve"><value>Countdown length</value></data>
+  <data name="Prefs_ReadyWindow" xml:space="preserve"><value>Show the Ready to Record window</value></data>
+  <data name="Prefs_MinimizeControls" xml:space="preserve"><value>Minimize the controls when recording fullscreen on a single monitor</value></data>
+  <data name="Prefs_Scale1080" xml:space="preserve"><value>Scale recordings down to 1920 x 1080 (recommended)</value></data>
+  <data name="Prefs_Camera" xml:space="preserve"><value>Enable the camera</value></data>
+  <data name="Prefs_NoHwAccel" xml:space="preserve"><value>Disable hardware accelerated recording</value></data>
+  <data name="Prefs_MicAlert" xml:space="preserve"><value>Alert me when the microphone is muted</value></data>
+  <data name="Prefs_Fps" xml:space="preserve"><value>Default frame rate</value></data>
+  <data name="Prefs_Quality" xml:space="preserve"><value>Video quality</value></data>
+  <data name="Prefs_LowDiskWarn" xml:space="preserve"><value>Warn when free disk space is below</value></data>
+  <data name="Prefs_LowDiskStop" xml:space="preserve"><value>Stop recording when free disk space is below</value></data>
+  <data name="Prefs_DrawFade" xml:space="preserve"><value>ScreenDraw: fade drawings after (0 = never)</value></data>
+  <data name="Prefs_FpsNote" xml:space="preserve"><value>Frame rate and quality apply to presets that keep the default values; a preset with its own values overrides them.</value></data>
+  <data name="Prefs_Printer" xml:space="preserve"><value>Printer capture</value></data>
+  <data name="Prefs_PrinterNote" xml:space="preserve"><value>Install a virtual printer. Printing from any application sends the pages to Shotwise as images.</value></data>
+  <data name="Prefs_PrinterFolder" xml:space="preserve"><value>Temporary folder</value></data>
+  <data name="Prefs_PrinterName" xml:space="preserve"><value>Printer name</value></data>
+  <data name="Prefs_PrinterClose" xml:space="preserve"><value>Close Shotwise after printing if it was not already running</value></data>
+  <data name="Prefs_PrinterInstall" xml:space="preserve"><value>Add printer</value></data>
+  <data name="Prefs_PrinterReinstall" xml:space="preserve"><value>Reinstall printer</value></data>
+  <data name="Prefs_PrinterUninstall" xml:space="preserve"><value>Remove printer</value></data>
+  <data name="Prefs_PrinterInstalled" xml:space="preserve"><value>The printer is installed.</value></data>
+  <data name="Prefs_PrinterNotInstalled" xml:space="preserve"><value>The printer is not installed.</value></data>
+  <data name="Prefs_PrinterWorking" xml:space="preserve"><value>Working... confirm the Windows administrator prompt.</value></data>
+  <data name="Prefs_PrinterUnavailable" xml:space="preserve"><value>Printer capture is not available.</value></data>
+  <data name="Prefs_Browse" xml:space="preserve"><value>Browse...</value></data>
+  <data name="Prefs_HotkeysNote" xml:space="preserve"><value>Click a box and press the key combination. Backspace clears it.</value></data>
+  <data name="Prefs_AllowOverride" xml:space="preserve"><value>Allow Shotwise to override other hotkey assignments</value></data>
+  <data name="Prefs_RestoreDefaults" xml:space="preserve"><value>Restore defaults</value></data>
+  <data name="Prefs_PresetHotkeysNote" xml:space="preserve"><value>Hotkeys for individual presets are set in the Capture window (preset menu, Set hotkey).</value></data>
+  <data name="Prefs_HotkeyProblems" xml:space="preserve"><value>These hotkeys could not be registered:</value></data>
+  <data name="Review_Title" xml:space="preserve"><value>Imported preset</value></data>
+  <data name="Review_Body" xml:space="preserve"><value>The preset "{0}" was imported from a file. After this capture it would:
+
+{1}
+
+Allow these actions for this preset? If you skip them, the capture is kept but not sent anywhere.</value></data>
+  <data name="Review_OpenIn" xml:space="preserve"><value>• Open the capture in: {0}</value></data>
+  <data name="Review_ShareTo" xml:space="preserve"><value>• Share the capture to: {0}</value></data>
+  <data name="Review_WithOptions" xml:space="preserve"><value>(with destination options from the file)</value></data>
+  <data name="Review_Allow" xml:space="preserve"><value>Allow</value></data>
+  <data name="Review_Skip" xml:space="preserve"><value>Skip</value></data>
+  <data name="Review_Skipped" xml:space="preserve"><value>The imported preset's outputs were skipped for this capture. You will be asked again the next time it is used.</value></data>
+  <data name="Output_ProgramRefused" xml:space="preserve"><value>"{0}" was not started: only programs (.exe) on a local drive can be used with "Open in".</value></data>
+  <data name="Chip_RecordAsGif" xml:space="preserve"><value>Save as GIF</value></data>
+  <data name="Gif_Creating" xml:space="preserve"><value>Creating GIF…</value></data>
+  <data name="Gif_DoneBody" xml:space="preserve"><value>The recording was saved as an animated GIF.</value></data>
+  <data name="Gif_Failed" xml:space="preserve"><value>The GIF could not be created. The MP4 recording was kept.</value></data>
+  <data name="CW_OpenEditor" xml:space="preserve"><value>Open Editor</value></data>
+  <data name="CW_MoreOptions" xml:space="preserve"><value>More options</value></data>
+  <data name="CW_FewerOptions" xml:space="preserve"><value>Fewer options</value></data>
+  <data name="CW_Delay" xml:space="preserve"><value>Delay</value></data>
+  <data name="CW_VideoSection" xml:space="preserve"><value>Video</value></data>
+  <data name="CW_OutputSection" xml:space="preserve"><value>After capture</value></data>
+  <data name="CW_NoPresets" xml:space="preserve"><value>No presets yet</value></data>
+  <data name="TB_Image" xml:space="preserve"><value>Image</value></data>
+  <data name="TB_Video" xml:space="preserve"><value>Video</value></data>
+  <data name="TB_Scroll" xml:space="preserve"><value>Scroll</value></data>
+  <data name="TB_ScrollH" xml:space="preserve"><value>Scroll H</value></data>
+  <data name="TB_ScrollAll" xml:space="preserve"><value>Scroll all</value></data>
+  <data name="TB_Panoramic" xml:space="preserve"><value>Panorama</value></data>
+  <data name="TB_GrabText" xml:space="preserve"><value>Grab Text</value></data>
+  <data name="TB_Cancel" xml:space="preserve"><value>Cancel</value></data>
+</root>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Selection overlay, capture window, widget, recording HUD, ScreenDraw, capture prefs pages, ICaptureCoordinator. Owner: WP-UI-CAPTURE. -->
+  <PropertyGroup>
+    <TargetFramework>$(ShotwiseTfm)</TargetFramework>
+    <SupportedOSPlatformVersion>$(ShotwiseSupportedOSPlatformVersion)</SupportedOSPlatformVersion>
+    <RootNamespace>Shotwise.UI.Capture</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" />
+    <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="Microsoft.Windows.CsWin32" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shotwise.Core\Shotwise.Core.csproj" />
+    <ProjectReference Include="..\Shotwise.UI.Common\Shotwise.UI.Common.csproj" />
+  </ItemGroup>
+
+</Project>

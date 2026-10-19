@@ -1,0 +1,107 @@
+<!-- Shotwise design tokens - DARK theme (docs/DESIGN-SYSTEM.md section 2). Same keys as Tokens.Light.xaml. -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+
+    <sys:String x:Key="Shotwise.ThemeName">Dark</sys:String>
+
+    <!-- Brand / accent -->
+    <Color x:Key="Shotwise.Color.Accent">#7C70FF</Color>
+    <Color x:Key="Shotwise.Color.AccentHover">#8F85FF</Color>
+    <Color x:Key="Shotwise.Color.AccentPressed">#6A5DF0</Color>
+    <Color x:Key="Shotwise.Color.AccentText">#ABA4FF</Color>
+    <Color x:Key="Shotwise.Color.AccentSubtle">#2E7C70FF</Color>
+    <Color x:Key="Shotwise.Color.AccentSubtleHover">#407C70FF</Color>
+    <Color x:Key="Shotwise.Color.OnAccent">#FFFFFF</Color>
+
+    <!-- Capture / record (coral) -->
+    <Color x:Key="Shotwise.Color.Capture">#FF4D5E</Color>
+    <Color x:Key="Shotwise.Color.CaptureEnd">#FF7A45</Color>
+    <Color x:Key="Shotwise.Color.CaptureGlow">#80FF5A52</Color>
+
+    <!-- Status (lifted for dark surfaces) -->
+    <Color x:Key="Shotwise.Color.Success">#22C55E</Color>
+    <Color x:Key="Shotwise.Color.Warning">#FBBF24</Color>
+    <Color x:Key="Shotwise.Color.Danger">#FB4D6D</Color>
+    <Color x:Key="Shotwise.Color.Info">#7C70FF</Color>
+
+    <!-- Surfaces -->
+    <Color x:Key="Shotwise.Color.Surface0">#16171C</Color>
+    <Color x:Key="Shotwise.Color.Surface1">#1F2027</Color>
+    <Color x:Key="Shotwise.Color.Surface2">#2A2B34</Color>
+    <Color x:Key="Shotwise.Color.Surface3">#34363F</Color>
+    <Color x:Key="Shotwise.Color.Canvas">#101116</Color>
+    <Color x:Key="Shotwise.Color.BorderSubtle">#2F313B</Color>
+    <Color x:Key="Shotwise.Color.BorderStrong">#424552</Color>
+    <Color x:Key="Shotwise.Color.TextPrimary">#F3F4F8</Color>
+    <Color x:Key="Shotwise.Color.TextSecondary">#B4B8C8</Color>
+    <Color x:Key="Shotwise.Color.TextTertiary">#7E8396</Color>
+    <Color x:Key="Shotwise.Color.TextDisabled">#565A69</Color>
+    <Color x:Key="Shotwise.Color.Shadow">#000000</Color>
+
+    <!-- Brushes: accent -->
+    <SolidColorBrush x:Key="Shotwise.AccentBrush" Color="#7C70FF" />
+    <SolidColorBrush x:Key="Shotwise.AccentHoverBrush" Color="#8F85FF" />
+    <SolidColorBrush x:Key="Shotwise.AccentPressedBrush" Color="#6A5DF0" />
+    <SolidColorBrush x:Key="Shotwise.AccentTextBrush" Color="#ABA4FF" />
+    <SolidColorBrush x:Key="Shotwise.AccentSubtleBrush" Color="#2E7C70FF" />
+    <SolidColorBrush x:Key="Shotwise.AccentSubtleHoverBrush" Color="#407C70FF" />
+    <SolidColorBrush x:Key="Shotwise.OnAccentBrush" Color="#FFFFFF" />
+    <LinearGradientBrush x:Key="Shotwise.AccentGradientBrush" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Offset="0" Color="#988EFF" />
+        <GradientStop Offset="1" Color="#6A5DF0" />
+    </LinearGradientBrush>
+
+    <!-- Brushes: capture -->
+    <SolidColorBrush x:Key="Shotwise.CaptureSolidBrush" Color="#FF4D5E" />
+    <LinearGradientBrush x:Key="Shotwise.CaptureBrush" StartPoint="0.1,0" EndPoint="0.9,1">
+        <GradientStop Offset="0" Color="#FF7A45" />
+        <GradientStop Offset="1" Color="#FF4D5E" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Shotwise.CaptureHoverBrush" StartPoint="0.1,0" EndPoint="0.9,1">
+        <GradientStop Offset="0" Color="#FF8A57" />
+        <GradientStop Offset="1" Color="#FF5A69" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Shotwise.CapturePressedBrush" StartPoint="0.1,0" EndPoint="0.9,1">
+        <GradientStop Offset="0" Color="#F06A38" />
+        <GradientStop Offset="1" Color="#E83E50" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="Shotwise.CaptureRingBrush" Color="#33FF5A52" />
+
+    <!-- Brushes: status -->
+    <SolidColorBrush x:Key="Shotwise.SuccessBrush" Color="#22C55E" />
+    <SolidColorBrush x:Key="Shotwise.SuccessSubtleBrush" Color="#16291E" />
+    <SolidColorBrush x:Key="Shotwise.SuccessTextBrush" Color="#5EDB8A" />
+    <SolidColorBrush x:Key="Shotwise.WarningBrush" Color="#FBBF24" />
+    <SolidColorBrush x:Key="Shotwise.WarningSubtleBrush" Color="#2E2614" />
+    <SolidColorBrush x:Key="Shotwise.WarningTextBrush" Color="#FCD066" />
+    <SolidColorBrush x:Key="Shotwise.DangerBrush" Color="#FB4D6D" />
+    <SolidColorBrush x:Key="Shotwise.DangerHoverBrush" Color="#FF6681" />
+    <SolidColorBrush x:Key="Shotwise.DangerSubtleBrush" Color="#33191F" />
+    <SolidColorBrush x:Key="Shotwise.DangerTextBrush" Color="#FF8DA2" />
+    <SolidColorBrush x:Key="Shotwise.InfoSubtleBrush" Color="#25234A" />
+
+    <!-- Brushes: surfaces / borders / text -->
+    <SolidColorBrush x:Key="Shotwise.Surface0Brush" Color="#16171C" />
+    <SolidColorBrush x:Key="Shotwise.Surface1Brush" Color="#1F2027" />
+    <SolidColorBrush x:Key="Shotwise.Surface2Brush" Color="#2A2B34" />
+    <SolidColorBrush x:Key="Shotwise.Surface3Brush" Color="#34363F" />
+    <SolidColorBrush x:Key="Shotwise.CanvasBrush" Color="#101116" />
+    <SolidColorBrush x:Key="Shotwise.BorderSubtleBrush" Color="#2F313B" />
+    <SolidColorBrush x:Key="Shotwise.BorderStrongBrush" Color="#424552" />
+    <SolidColorBrush x:Key="Shotwise.TextPrimaryBrush" Color="#F3F4F8" />
+    <SolidColorBrush x:Key="Shotwise.TextSecondaryBrush" Color="#B4B8C8" />
+    <SolidColorBrush x:Key="Shotwise.TextTertiaryBrush" Color="#7E8396" />
+    <SolidColorBrush x:Key="Shotwise.TextDisabledBrush" Color="#565A69" />
+    <SolidColorBrush x:Key="Shotwise.ScrimBrush" Color="#99000000" />
+    <SolidColorBrush x:Key="Shotwise.HudBrush" Color="#E60E0F13" />
+    <SolidColorBrush x:Key="Shotwise.HudTextBrush" Color="#F3F4F8" />
+    <SolidColorBrush x:Key="Shotwise.SwitchOffTrackBrush" Color="#4A4D5A" />
+    <SolidColorBrush x:Key="Shotwise.SwitchKnobBrush" Color="#FFFFFF" />
+
+    <!-- Elevation -->
+    <DropShadowEffect x:Key="Shotwise.Elevation.Card" Color="#000000" BlurRadius="16" ShadowDepth="3" Direction="270" Opacity="0.35" RenderingBias="Performance" />
+    <DropShadowEffect x:Key="Shotwise.Elevation.Raised" Color="#000000" BlurRadius="6" ShadowDepth="1" Direction="270" Opacity="0.4" RenderingBias="Performance" />
+    <DropShadowEffect x:Key="Shotwise.Elevation.Flyout" Color="#000000" BlurRadius="30" ShadowDepth="8" Direction="270" Opacity="0.5" RenderingBias="Performance" />
+    <DropShadowEffect x:Key="Shotwise.Elevation.CaptureGlow" Color="#FF5A52" BlurRadius="28" ShadowDepth="4" Direction="270" Opacity="0.5" RenderingBias="Performance" />
+</ResourceDictionary>

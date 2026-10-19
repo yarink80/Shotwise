@@ -1,0 +1,1490 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="A3" xml:space="preserve">
+    <value>A3</value>
+  </data>
+  <data name="A4" xml:space="preserve">
+    <value>A4</value>
+  </data>
+  <data name="A5" xml:space="preserve">
+    <value>A5</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Accounts" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="ActiveThemeId" xml:space="preserve">
+    <value>Active Theme Id</value>
+  </data>
+  <data name="ActualSize" xml:space="preserve">
+    <value>Actual Size</value>
+  </data>
+  <data name="AddColor" xml:space="preserve">
+    <value>Add Color</value>
+  </data>
+  <data name="AddColorPair" xml:space="preserve">
+    <value>Add Color Pair</value>
+  </data>
+  <data name="AddEffect" xml:space="preserve">
+    <value>Add Effect</value>
+  </data>
+  <data name="AddEntry" xml:space="preserve">
+    <value>Add Entry</value>
+  </data>
+  <data name="AddHtmlToClipboard" xml:space="preserve">
+    <value>Add Html To Clipboard</value>
+  </data>
+  <data name="AddTag" xml:space="preserve">
+    <value>Add Tag</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="Affects" xml:space="preserve">
+    <value>Affects</value>
+  </data>
+  <data name="AgreedToTerms" xml:space="preserve">
+    <value>Agreed To Terms</value>
+  </data>
+  <data name="AgreementRequired" xml:space="preserve">
+    <value>Accept the experimental feature terms before enabling experiments.</value>
+  </data>
+  <data name="AlertWhenMicrophoneMuted" xml:space="preserve">
+    <value>Alert When Microphone Muted</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AllSides" xml:space="preserve">
+    <value>All Sides</value>
+  </data>
+  <data name="AllTags" xml:space="preserve">
+    <value>All Tags</value>
+  </data>
+  <data name="AllowOverrideOtherAssignments" xml:space="preserve">
+    <value>Allow Override Other Assignments</value>
+  </data>
+  <data name="AllowSharing" xml:space="preserve">
+    <value>Allow Sharing</value>
+  </data>
+  <data name="Anchor" xml:space="preserve">
+    <value>Anchor</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonymous</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>App Name</value>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>App Version</value>
+  </data>
+  <data name="ApplyRgb" xml:space="preserve">
+    <value>Apply Rgb</value>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="AutoExpandCanvas" xml:space="preserve">
+    <value>Auto Expand Canvas</value>
+  </data>
+  <data name="AutoFlattenPastedImages" xml:space="preserve">
+    <value>Auto Flatten Pasted Images</value>
+  </data>
+  <data name="AutoStartVideoRecording" xml:space="preserve">
+    <value>Auto Start Video Recording</value>
+  </data>
+  <data name="Automatic" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="AutomaticNaming" xml:space="preserve">
+    <value>Automatic Naming</value>
+  </data>
+  <data name="AutomaticallyCheck" xml:space="preserve">
+    <value>Automatically Check</value>
+  </data>
+  <data name="AutosaveImages" xml:space="preserve">
+    <value>Autosave Images</value>
+  </data>
+  <data name="AutosaveVideos" xml:space="preserve">
+    <value>Autosave Videos</value>
+  </data>
+  <data name="BackColor" xml:space="preserve">
+    <value>Back Color</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="BackgroundOcr" xml:space="preserve">
+    <value>Background Ocr</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="BatchExport" xml:space="preserve">
+    <value>Batch Export</value>
+  </data>
+  <data name="Bevel" xml:space="preserve">
+    <value>Bevel</value>
+  </data>
+  <data name="BitDepth" xml:space="preserve">
+    <value>Bit Depth</value>
+  </data>
+  <data name="Black" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="Blur" xml:space="preserve">
+    <value>Blur</value>
+  </data>
+  <data name="Bmp" xml:space="preserve">
+    <value>Bmp</value>
+  </data>
+  <data name="Border" xml:space="preserve">
+    <value>Border</value>
+  </data>
+  <data name="Bottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="BottomLeft" xml:space="preserve">
+    <value>Bottom Left</value>
+  </data>
+  <data name="BottomRight" xml:space="preserve">
+    <value>Bottom Right</value>
+  </data>
+  <data name="Brightness" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="CanRead" xml:space="preserve">
+    <value>Can Read</value>
+  </data>
+  <data name="CanWrite" xml:space="preserve">
+    <value>Can Write</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="CanvasSnapping" xml:space="preserve">
+    <value>Canvas Snapping</value>
+  </data>
+  <data name="Caption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="Capture" xml:space="preserve">
+    <value>Capture</value>
+  </data>
+  <data name="CapturePrinterRefused" xml:space="preserve">
+    <value>Choose a different printer. Printing to the capture printer would create a capture loop.</value>
+  </data>
+  <data name="ChangedSections" xml:space="preserve">
+    <value>Changed Sections</value>
+  </data>
+  <data name="ChooseDestination" xml:space="preserve">
+    <value>Choose Destination</value>
+  </data>
+  <data name="ChooseDifferentFolder" xml:space="preserve">
+    <value>Choose Different Folder</value>
+  </data>
+  <data name="ChooseFolder" xml:space="preserve">
+    <value>Choose Folder</value>
+  </data>
+  <data name="ChoosePreset" xml:space="preserve">
+    <value>Choose Preset</value>
+  </data>
+  <data name="ChooseTemplate" xml:space="preserve">
+    <value>Choose Template</value>
+  </data>
+  <data name="CleanTempOnStartup" xml:space="preserve">
+    <value>Clean Temp On Startup</value>
+  </data>
+  <data name="ClientId" xml:space="preserve">
+    <value>Client Id</value>
+  </data>
+  <data name="ClientIds" xml:space="preserve">
+    <value>Client Ids</value>
+  </data>
+  <data name="ClientSecret" xml:space="preserve">
+    <value>Client Secret</value>
+  </data>
+  <data name="CloseAfterCaptureIfNotRunning" xml:space="preserve">
+    <value>Close After Capture If Not Running</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="CombineImages" xml:space="preserve">
+    <value>Combine Images</value>
+  </data>
+  <data name="CombineVideos" xml:space="preserve">
+    <value>Combine Videos</value>
+  </data>
+  <data name="ConnectionName" xml:space="preserve">
+    <value>Connection Name</value>
+  </data>
+  <data name="Contrast" xml:space="preserve">
+    <value>Contrast</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CopyAll" xml:space="preserve">
+    <value>Copy All</value>
+  </data>
+  <data name="CopyAsTable" xml:space="preserve">
+    <value>Copy As Table</value>
+  </data>
+  <data name="CopyLinkToClipboard" xml:space="preserve">
+    <value>Copy Link To Clipboard</value>
+  </data>
+  <data name="Corner" xml:space="preserve">
+    <value>Corner</value>
+  </data>
+  <data name="CountdownSeconds" xml:space="preserve">
+    <value>Countdown Seconds</value>
+  </data>
+  <data name="CounterDigits" xml:space="preserve">
+    <value>Counter Digits</value>
+  </data>
+  <data name="CounterStart" xml:space="preserve">
+    <value>Counter Start</value>
+  </data>
+  <data name="CreateGif" xml:space="preserve">
+    <value>Create Gif</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="CustomHeightPoints" xml:space="preserve">
+    <value>Custom Height Points</value>
+  </data>
+  <data name="CustomScale" xml:space="preserve">
+    <value>Custom Scale</value>
+  </data>
+  <data name="CustomText" xml:space="preserve">
+    <value>Custom Text</value>
+  </data>
+  <data name="CustomWidthPoints" xml:space="preserve">
+    <value>Custom Width Points</value>
+  </data>
+  <data name="CustomWorkspaceColor" xml:space="preserve">
+    <value>Custom Workspace Color</value>
+  </data>
+  <data name="Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="DarkGray" xml:space="preserve">
+    <value>Dark Gray</value>
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>Date Format</value>
+  </data>
+  <data name="DaysBetweenChecks" xml:space="preserve">
+    <value>Days Between Checks</value>
+  </data>
+  <data name="DefaultExtension" xml:space="preserve">
+    <value>Default Extension</value>
+  </data>
+  <data name="DefaultFormat" xml:space="preserve">
+    <value>Default Format</value>
+  </data>
+  <data name="DefaultPort" xml:space="preserve">
+    <value>Default Port</value>
+  </data>
+  <data name="DefaultPrinterName" xml:space="preserve">
+    <value>Default Printer Name</value>
+  </data>
+  <data name="Degrees" xml:space="preserve">
+    <value>Degrees</value>
+  </data>
+  <data name="DeleteColor" xml:space="preserve">
+    <value>Delete Color</value>
+  </data>
+  <data name="DeleteCroppedContent" xml:space="preserve">
+    <value>Delete Cropped Content</value>
+  </data>
+  <data name="Destination" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DimOpacity" xml:space="preserve">
+    <value>Dim Opacity</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="DisableHardwareAcceleratedRecording" xml:space="preserve">
+    <value>Disable Hardware Accelerated Recording</value>
+  </data>
+  <data name="DisabledDestinations" xml:space="preserve">
+    <value>Disabled Destinations</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="Dither" xml:space="preserve">
+    <value>Dither</value>
+  </data>
+  <data name="DitherMode" xml:space="preserve">
+    <value>Dithering</value>
+  </data>
+  <data name="LoopbackPort" xml:space="preserve">
+    <value>Redirect port</value>
+  </data>
+  <data name="LoopbackPortHint" xml:space="preserve">
+    <value>This provider only accepts registered redirect URIs: register http://127.0.0.1:{0}/ in its developer console.</value>
+  </data>
+  <data name="DoNotIncludeCaptureSourceInNames" xml:space="preserve">
+    <value>Do Not Include Capture Source In Names</value>
+  </data>
+  <data name="DontAskAgain" xml:space="preserve">
+    <value>Dont Ask Again</value>
+  </data>
+  <data name="Dpi" xml:space="preserve">
+    <value>DPI</value>
+  </data>
+  <data name="DragAndDropFileType" xml:space="preserve">
+    <value>Drag And Drop File Type</value>
+  </data>
+  <data name="DropShadow" xml:space="preserve">
+    <value>Drop Shadow</value>
+  </data>
+  <data name="Editor" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="Effect" xml:space="preserve">
+    <value>Effect</value>
+  </data>
+  <data name="EffectEditor" xml:space="preserve">
+    <value>Effect Editor</value>
+  </data>
+  <data name="Effects" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="EmbedEmailImages" xml:space="preserve">
+    <value>Embed Email Images</value>
+  </data>
+  <data name="Emboss" xml:space="preserve">
+    <value>Emboss</value>
+  </data>
+  <data name="EmbossAngle" xml:space="preserve">
+    <value>Emboss Angle</value>
+  </data>
+  <data name="EmbossDepth" xml:space="preserve">
+    <value>Emboss Depth</value>
+  </data>
+  <data name="EnableCamera" xml:space="preserve">
+    <value>Enable Camera</value>
+  </data>
+  <data name="EnableSpellCheck" xml:space="preserve">
+    <value>Enable Spell Check</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="EnabledExperiments" xml:space="preserve">
+    <value>Enabled Experiments</value>
+  </data>
+  <data name="EscapeClosesEditor" xml:space="preserve">
+    <value>Escape Closes Editor</value>
+  </data>
+  <data name="Experiments" xml:space="preserve">
+    <value>Experiments</value>
+  </data>
+  <data name="Extension" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="Extra" xml:space="preserve">
+    <value>Extra</value>
+  </data>
+  <data name="Eyedropper" xml:space="preserve">
+    <value>Eyedropper</value>
+  </data>
+  <data name="Fade" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="FadeToBlack" xml:space="preserve">
+    <value>Fade To Black</value>
+  </data>
+  <data name="Fields" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="FileAssociations" xml:space="preserve">
+    <value>File Associations</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="FilesMissing" xml:space="preserve">
+    <value>Choose existing input files.</value>
+  </data>
+  <data name="FillPage" xml:space="preserve">
+    <value>Fill Page</value>
+  </data>
+  <data name="FitToImage" xml:space="preserve">
+    <value>Fit To Image</value>
+  </data>
+  <data name="FitToPage" xml:space="preserve">
+    <value>Fit To Page</value>
+  </data>
+  <data name="FitWidth" xml:space="preserve">
+    <value>Fit Width</value>
+  </data>
+  <data name="Fixed" xml:space="preserve">
+    <value>Fixed</value>
+  </data>
+  <data name="FixedFolder" xml:space="preserve">
+    <value>Fixed Folder</value>
+  </data>
+  <data name="FlipH" xml:space="preserve">
+    <value>Flip H</value>
+  </data>
+  <data name="FlipV" xml:space="preserve">
+    <value>Flip V</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="FolderLoaderMissing" xml:space="preserve">
+    <value>This destination has no remote folder provider.</value>
+  </data>
+  <data name="FolderMissing" xml:space="preserve">
+    <value>The output folder does not exist.</value>
+  </data>
+  <data name="FolderMode" xml:space="preserve">
+    <value>Folder Mode</value>
+  </data>
+  <data name="Folders" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>Font Family</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Font Size</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="FormattedText" xml:space="preserve">
+    <value>Formatted Text</value>
+  </data>
+  <data name="Fps" xml:space="preserve">
+    <value>Frames per second</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="FromColor" xml:space="preserve">
+    <value>From Color</value>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="Gamma" xml:space="preserve">
+    <value>Gamma</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Gif" xml:space="preserve">
+    <value>Gif</value>
+  </data>
+  <data name="GlobalCapture" xml:space="preserve">
+    <value>Global Capture</value>
+  </data>
+  <data name="Gray" xml:space="preserve">
+    <value>Gray</value>
+  </data>
+  <data name="Grayscale" xml:space="preserve">
+    <value>Grayscale</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="HardwareAcceleratedRendering" xml:space="preserve">
+    <value>Hardware Accelerated Rendering</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="HelpNotifications" xml:space="preserve">
+    <value>Help Notifications</value>
+  </data>
+  <data name="HelpOnly" xml:space="preserve">
+    <value>Help Only</value>
+  </data>
+  <data name="HexColor" xml:space="preserve">
+    <value>HEX (#RRGGBB or #AARRGGBB)</value>
+  </data>
+  <data name="HideAppDuringCapture" xml:space="preserve">
+    <value>Hide App During Capture</value>
+  </data>
+  <data name="Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="Hotkeys" xml:space="preserve">
+    <value>Hotkeys</value>
+  </data>
+  <data name="Hue" xml:space="preserve">
+    <value>Hue</value>
+  </data>
+  <data name="Ico" xml:space="preserve">
+    <value>Ico</value>
+  </data>
+  <data name="IcoSizes" xml:space="preserve">
+    <value>Ico Sizes</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ImagePath" xml:space="preserve">
+    <value>Image Path</value>
+  </data>
+  <data name="ImageTooLarge" xml:space="preserve">
+    <value>Choose positive dimensions below 512 megapixels.</value>
+  </data>
+  <data name="Intensity" xml:space="preserve">
+    <value>Intensity</value>
+  </data>
+  <data name="InvalidCounter" xml:space="preserve">
+    <value>Counter digits must be 1–12 and the start must be nonnegative.</value>
+  </data>
+  <data name="InvalidEncoding" xml:space="preserve">
+    <value>Quality must be 1–100; choose a supported bit depth.</value>
+  </data>
+  <data name="InvalidHotkey" xml:space="preserve">
+    <value>Invalid Hotkey</value>
+  </data>
+  <data name="InvalidPageSetup" xml:space="preserve">
+    <value>Choose valid margins, copies, spacing, scale, and grid dimensions.</value>
+  </data>
+  <data name="InvalidTrayCount" xml:space="preserve">
+    <value>The tray must contain 1–200 items.</value>
+  </data>
+  <data name="Invert" xml:space="preserve">
+    <value>Invert</value>
+  </data>
+  <data name="Jpeg" xml:space="preserve">
+    <value>Jpeg</value>
+  </data>
+  <data name="JpegQuality" xml:space="preserve">
+    <value>Jpeg Quality</value>
+  </data>
+  <data name="KeepAspect" xml:space="preserve">
+    <value>Keep Aspect</value>
+  </data>
+  <data name="KeepEditorRunningInBackground" xml:space="preserve">
+    <value>Keep Editor Running In Background</value>
+  </data>
+  <data name="KeepOriginalImageDimensions" xml:space="preserve">
+    <value>Keep Original Image Dimensions</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="Kind" xml:space="preserve">
+    <value>Kind</value>
+  </data>
+  <data name="Landscape" xml:space="preserve">
+    <value>Landscape</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Large" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="LastCheck" xml:space="preserve">
+    <value>Last Check</value>
+  </data>
+  <data name="LastFolder" xml:space="preserve">
+    <value>Last Folder</value>
+  </data>
+  <data name="LastOpenFolder" xml:space="preserve">
+    <value>Last Open Folder</value>
+  </data>
+  <data name="LastUsed" xml:space="preserve">
+    <value>Last Used</value>
+  </data>
+  <data name="Layout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="Legal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
+  <data name="Letter" xml:space="preserve">
+    <value>Letter</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="LibraryLocation" xml:space="preserve">
+    <value>Library Location</value>
+  </data>
+  <data name="LibraryRoot" xml:space="preserve">
+    <value>Library Root</value>
+  </data>
+  <data name="Licenses" xml:space="preserve">
+    <value>Licenses</value>
+  </data>
+  <data name="LicensesMissing" xml:space="preserve">
+    <value>Third-party licence notices were not included in this installation.</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="LightGray" xml:space="preserve">
+    <value>Light Gray</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="LogLevel" xml:space="preserve">
+    <value>Log Level</value>
+  </data>
+  <data name="LongGifWarning" xml:space="preserve">
+    <value>This GIF exceeds 30 seconds and may create a large file.</value>
+  </data>
+  <data name="Loop" xml:space="preserve">
+    <value>Loop</value>
+  </data>
+  <data name="LoopCount" xml:space="preserve">
+    <value>Loop Count</value>
+  </data>
+  <data name="LowDiskStopMb" xml:space="preserve">
+    <value>Low Disk Stop Mb</value>
+  </data>
+  <data name="LowDiskWarningMb" xml:space="preserve">
+    <value>Low Disk Warning Mb</value>
+  </data>
+  <data name="Magnify" xml:space="preserve">
+    <value>Magnify</value>
+  </data>
+  <data name="MarginsPoints" xml:space="preserve">
+    <value>Margins Points</value>
+  </data>
+  <data name="MarginsTooLarge" xml:space="preserve">
+    <value>The margins and spacing leave no room for an image.</value>
+  </data>
+  <data name="MatteColor" xml:space="preserve">
+    <value>Matte Color</value>
+  </data>
+  <data name="MaxLogFiles" xml:space="preserve">
+    <value>Max Log Files</value>
+  </data>
+  <data name="MaxTrayItems" xml:space="preserve">
+    <value>Max Tray Items</value>
+  </data>
+  <data name="MaxTrayItemsLimit" xml:space="preserve">
+    <value>Max Tray Items Limit</value>
+  </data>
+  <data name="MaxUploadBytes" xml:space="preserve">
+    <value>Max Upload Bytes</value>
+  </data>
+  <data name="MediaType" xml:space="preserve">
+    <value>Media Type</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="MinimizeControlsWhenFullscreenOneMonitor" xml:space="preserve">
+    <value>Minimize Controls When Fullscreen One Monitor</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="MobileConnect" xml:space="preserve">
+    <value>Mobile Connect</value>
+  </data>
+  <data name="Monochrome" xml:space="preserve">
+    <value>Monochrome</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="MyColors" xml:space="preserve">
+    <value>My Colors</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameMode" xml:space="preserve">
+    <value>Name Mode</value>
+  </data>
+  <data name="NamedColors" xml:space="preserve">
+    <value>Named Colors</value>
+  </data>
+  <data name="Naming" xml:space="preserve">
+    <value>Naming</value>
+  </data>
+  <data name="NewImage" xml:space="preserve">
+    <value>New Image</value>
+  </data>
+  <data name="NextCounter" xml:space="preserve">
+    <value>Next Counter</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OcrEngine" xml:space="preserve">
+    <value>Ocr Engine</value>
+  </data>
+  <data name="OcrResult" xml:space="preserve">
+    <value>Ocr Result</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Opacity" xml:space="preserve">
+    <value>Opacity</value>
+  </data>
+  <data name="OpenScreenshotsFromSystemTools" xml:space="preserve">
+    <value>Open Screenshots From System Tools</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Orientation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="OsVersion" xml:space="preserve">
+    <value>Os Version</value>
+  </data>
+  <data name="OutputFolder" xml:space="preserve">
+    <value>Output Folder</value>
+  </data>
+  <data name="OutputPath" xml:space="preserve">
+    <value>Output Path</value>
+  </data>
+  <data name="Outside" xml:space="preserve">
+    <value>Outside</value>
+  </data>
+  <data name="Overwrite" xml:space="preserve">
+    <value>Overwrite</value>
+  </data>
+  <data name="PairingValidityMinutes" xml:space="preserve">
+    <value>Pairing Validity Minutes</value>
+  </data>
+  <data name="Paper" xml:space="preserve">
+    <value>Paper</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="PathRequired" xml:space="preserve">
+    <value>Choose an output file.</value>
+  </data>
+  <data name="Pattern" xml:space="preserve">
+    <value>Pattern</value>
+  </data>
+  <data name="Pdf" xml:space="preserve">
+    <value>Pdf</value>
+  </data>
+  <data name="PdfSearchableText" xml:space="preserve">
+    <value>Pdf Searchable Text</value>
+  </data>
+  <data name="Percent" xml:space="preserve">
+    <value>Percent</value>
+  </data>
+  <data name="PinnedItems" xml:space="preserve">
+    <value>Pinned Items</value>
+  </data>
+  <data name="Png" xml:space="preserve">
+    <value>Png</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="Portrait" xml:space="preserve">
+    <value>Portrait</value>
+  </data>
+  <data name="Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="Preset" xml:space="preserve">
+    <value>Preset</value>
+  </data>
+  <data name="PresetTransfer" xml:space="preserve">
+    <value>Preset Transfer</value>
+  </data>
+  <data name="Presets" xml:space="preserve">
+    <value>Presets</value>
+  </data>
+  <data name="PreventClipboardTransparency" xml:space="preserve">
+    <value>Prevent Clipboard Transparency</value>
+  </data>
+  <data name="PreviewRecentCaptures" xml:space="preserve">
+    <value>Preview Recent Captures</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PrintPreview" xml:space="preserve">
+    <value>Print Preview</value>
+  </data>
+  <data name="PrintScreenConflictPrompted" xml:space="preserve">
+    <value>Print Screen Conflict Prompted</value>
+  </data>
+  <data name="Printer" xml:space="preserve">
+    <value>Printer</value>
+  </data>
+  <data name="PrinterName" xml:space="preserve">
+    <value>Printer Name</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="PromptAtCapture" xml:space="preserve">
+    <value>Prompt At Capture</value>
+  </data>
+  <data name="PromptBeforeCheck" xml:space="preserve">
+    <value>Prompt Before Check</value>
+  </data>
+  <data name="PromptBeforeDelete" xml:space="preserve">
+    <value>Prompt Before Delete</value>
+  </data>
+  <data name="PromptBeforeOverwrite" xml:space="preserve">
+    <value>Prompt Before Overwrite</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="RecentThumbnailSize" xml:space="preserve">
+    <value>Recent Thumbnail Size</value>
+  </data>
+  <data name="RecordingTempFolder" xml:space="preserve">
+    <value>Recording Temp Folder</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="RememberLastFormat" xml:space="preserve">
+    <value>Remember Last Format</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="RemoveEffect" xml:space="preserve">
+    <value>Remove Effect</value>
+  </data>
+  <data name="RemoveUnpinnedFromTrayOnClose" xml:space="preserve">
+    <value>Remove Unpinned From Tray On Close</value>
+  </data>
+  <data name="RepeatLastCapture" xml:space="preserve">
+    <value>Repeat Last Capture</value>
+  </data>
+  <data name="RequireStartButtonForScrolling" xml:space="preserve">
+    <value>Require Start Button For Scrolling</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="ResetSettings" xml:space="preserve">
+    <value>Reset Settings</value>
+  </data>
+  <data name="ResetSettingsWarning" xml:space="preserve">
+    <value>Reset all preferences to the Shotwise defaults?</value>
+  </data>
+  <data name="ResetStyles" xml:space="preserve">
+    <value>Reset Styles</value>
+  </data>
+  <data name="ResetStylesWarning" xml:space="preserve">
+    <value>Restore the built-in styles?</value>
+  </data>
+  <data name="ResizeCanvas" xml:space="preserve">
+    <value>Resize Canvas</value>
+  </data>
+  <data name="ResizeImage" xml:space="preserve">
+    <value>Resize Image</value>
+  </data>
+  <data name="RestoreBackup" xml:space="preserve">
+    <value>Restore Backup</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="RichText" xml:space="preserve">
+    <value>Rich Text</value>
+  </data>
+  <data name="Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="RunAtWindowsStartup" xml:space="preserve">
+    <value>Run At Windows Startup</value>
+  </data>
+  <data name="S420" xml:space="preserve">
+    <value>S420</value>
+  </data>
+  <data name="S422" xml:space="preserve">
+    <value>S422</value>
+  </data>
+  <data name="S444" xml:space="preserve">
+    <value>S444</value>
+  </data>
+  <data name="Saturation" xml:space="preserve">
+    <value>Saturation</value>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="SaveText" xml:space="preserve">
+    <value>Save Text</value>
+  </data>
+  <data name="Saw" xml:space="preserve">
+    <value>Saw</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="ScalePercent" xml:space="preserve">
+    <value>Scale Percent</value>
+  </data>
+  <data name="ScaleTo1080p" xml:space="preserve">
+    <value>Scale To1080p</value>
+  </data>
+  <data name="SchemaVersion" xml:space="preserve">
+    <value>Schema Version</value>
+  </data>
+  <data name="ScreenDrawColor" xml:space="preserve">
+    <value>Screen Draw Color</value>
+  </data>
+  <data name="ScreenDrawFadeSeconds" xml:space="preserve">
+    <value>Screen Draw Fade Seconds</value>
+  </data>
+  <data name="ScreenDrawToggle" xml:space="preserve">
+    <value>Screen Draw Toggle</value>
+  </data>
+  <data name="SectionNames" xml:space="preserve">
+    <value>Section Names</value>
+  </data>
+  <data name="Sepia" xml:space="preserve">
+    <value>Sepia</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Shadow" xml:space="preserve">
+    <value>Shadow</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="ShareAccounts" xml:space="preserve">
+    <value>Share Accounts</value>
+  </data>
+  <data name="Sharktooth" xml:space="preserve">
+    <value>Sharktooth</value>
+  </data>
+  <data name="Sharpen" xml:space="preserve">
+    <value>Sharpen</value>
+  </data>
+  <data name="Shear" xml:space="preserve">
+    <value>Shear</value>
+  </data>
+  <data name="ShowCaptureWidget" xml:space="preserve">
+    <value>Show Capture Widget</value>
+  </data>
+  <data name="ShowCaptureWindowOnStartup" xml:space="preserve">
+    <value>Show Capture Window On Startup</value>
+  </data>
+  <data name="ShowCursorQuickStylePopup" xml:space="preserve">
+    <value>Show Cursor Quick Style Popup</value>
+  </data>
+  <data name="ShowHideApp" xml:space="preserve">
+    <value>Show Hide App</value>
+  </data>
+  <data name="ShowImportPastCapturesPrompt" xml:space="preserve">
+    <value>Show Import Past Captures Prompt</value>
+  </data>
+  <data name="ShowMagnifier" xml:space="preserve">
+    <value>Show Magnifier</value>
+  </data>
+  <data name="ShowOnboarding" xml:space="preserve">
+    <value>Show Onboarding</value>
+  </data>
+  <data name="ShowPixelGrid" xml:space="preserve">
+    <value>Show Pixel Grid</value>
+  </data>
+  <data name="ShowReadyToRecordWindow" xml:space="preserve">
+    <value>Show Ready To Record Window</value>
+  </data>
+  <data name="ShowSelectionGuides" xml:space="preserve">
+    <value>Show Selection Guides</value>
+  </data>
+  <data name="ShowSelectionHelpHint" xml:space="preserve">
+    <value>Show Selection Help Hint</value>
+  </data>
+  <data name="ShowToasts" xml:space="preserve">
+    <value>Show Toasts</value>
+  </data>
+  <data name="ShowToolbarLabels" xml:space="preserve">
+    <value>Show Toolbar Labels</value>
+  </data>
+  <data name="ShowVideoCountdown" xml:space="preserve">
+    <value>Show Video Countdown</value>
+  </data>
+  <data name="Sides" xml:space="preserve">
+    <value>Sides</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="SimplifiedCrosshairs" xml:space="preserve">
+    <value>Simplified Crosshairs</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SkippedVersion" xml:space="preserve">
+    <value>Skipped Version</value>
+  </data>
+  <data name="Small" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="Smooth" xml:space="preserve">
+    <value>Smooth</value>
+  </data>
+  <data name="Soften" xml:space="preserve">
+    <value>Soften</value>
+  </data>
+  <data name="SpellCheckLanguage" xml:space="preserve">
+    <value>Spell Check Language</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="StayInTray" xml:space="preserve">
+    <value>Stay In Tray</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Stopped" xml:space="preserve">
+    <value>Stopped</value>
+  </data>
+  <data name="StripMetadataOnShare" xml:space="preserve">
+    <value>Strip Metadata On Share</value>
+  </data>
+  <data name="Style" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Subsampling" xml:space="preserve">
+    <value>Subsampling</value>
+  </data>
+  <data name="SupportHdr" xml:space="preserve">
+    <value>Support Hdr</value>
+  </data>
+  <data name="SupportedFormats" xml:space="preserve">
+    <value>Supported Formats</value>
+  </data>
+  <data name="SupportsMultiplePages" xml:space="preserve">
+    <value>Supports Multiple Pages</value>
+  </data>
+  <data name="SupportsTransparency" xml:space="preserve">
+    <value>Supports Transparency</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Tabloid" xml:space="preserve">
+    <value>Tabloid</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="TempDirectory" xml:space="preserve">
+    <value>Temp Directory</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="TemplatePicker" xml:space="preserve">
+    <value>Template Picker</value>
+  </data>
+  <data name="Tesseract" xml:space="preserve">
+    <value>Tesseract</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="TextAndAnimation" xml:space="preserve">
+    <value>Text And Animation</value>
+  </data>
+  <data name="TextColor" xml:space="preserve">
+    <value>Text Color</value>
+  </data>
+  <data name="TextOnly" xml:space="preserve">
+    <value>Text Only</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="Tiff" xml:space="preserve">
+    <value>Tiff</value>
+  </data>
+  <data name="TiffCompression" xml:space="preserve">
+    <value>Tiff Compression</value>
+  </data>
+  <data name="TimeFormat" xml:space="preserve">
+    <value>Time Format</value>
+  </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="ToColor" xml:space="preserve">
+    <value>To Color</value>
+  </data>
+  <data name="Tolerance" xml:space="preserve">
+    <value>Tolerance</value>
+  </data>
+  <data name="ToolbarTools" xml:space="preserve">
+    <value>Toolbar Tools</value>
+  </data>
+  <data name="Tooltips" xml:space="preserve">
+    <value>Tooltips</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="TopLeft" xml:space="preserve">
+    <value>Top Left</value>
+  </data>
+  <data name="TopRight" xml:space="preserve">
+    <value>Top Right</value>
+  </data>
+  <data name="Torn" xml:space="preserve">
+    <value>Torn</value>
+  </data>
+  <data name="Transparency" xml:space="preserve">
+    <value>Transparency</value>
+  </data>
+  <data name="TryFromExtension" xml:space="preserve">
+    <value>Try From Extension</value>
+  </data>
+  <data name="TwoImagesRequired" xml:space="preserve">
+    <value>Choose at least two images.</value>
+  </data>
+  <data name="TwoVideosRequired" xml:space="preserve">
+    <value>Choose at least two videos.</value>
+  </data>
+  <data name="TypeName" xml:space="preserve">
+    <value>Type Name</value>
+  </data>
+  <data name="Underlay" xml:space="preserve">
+    <value>Underlay</value>
+  </data>
+  <data name="Units" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="Updates" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="UsageData" xml:space="preserve">
+    <value>Usage Data</value>
+  </data>
+  <data name="UseAutomaticNaming" xml:space="preserve">
+    <value>Use Automatic Naming</value>
+  </data>
+  <data name="UseSelection" xml:space="preserve">
+    <value>Use Selection</value>
+  </data>
+  <data name="Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="VideoFps" xml:space="preserve">
+    <value>Video Fps</value>
+  </data>
+  <data name="VideoQuality" xml:space="preserve">
+    <value>Video Quality</value>
+  </data>
+  <data name="VideoStartPauseResume" xml:space="preserve">
+    <value>Video Start Pause Resume</value>
+  </data>
+  <data name="VideoStop" xml:space="preserve">
+    <value>Video Stop</value>
+  </data>
+  <data name="Wave" xml:space="preserve">
+    <value>Wave</value>
+  </data>
+  <data name="WebP" xml:space="preserve">
+    <value>Web P</value>
+  </data>
+  <data name="WebPLossless" xml:space="preserve">
+    <value>Web PLossless</value>
+  </data>
+  <data name="WebPQuality" xml:space="preserve">
+    <value>Web PQuality</value>
+  </data>
+  <data name="WebcamFullscreenToggle" xml:space="preserve">
+    <value>Webcam Fullscreen Toggle</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="WholeNumberRequired" xml:space="preserve">
+    <value>Enter a whole number.</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Window Title</value>
+  </data>
+  <data name="Windows" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="WithBorder" xml:space="preserve">
+    <value>With Border</value>
+  </data>
+  <data name="WithShadow" xml:space="preserve">
+    <value>With Shadow</value>
+  </data>
+  <data name="WorkspaceColor" xml:space="preserve">
+    <value>Workspace Color</value>
+  </data>
+  <data name="WriteCrashDumps" xml:space="preserve">
+    <value>Write Crash Dumps</value>
+  </data>
+  <data name="ShowInStartMenu" xml:space="preserve">
+    <value>Show Shotwise in the Start menu</value>
+  </data>
+  <data name="ShowOnDesktop" xml:space="preserve">
+    <value>Show a Shotwise shortcut on the desktop</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="ZoomToFitOnOpen" xml:space="preserve">
+    <value>Zoom To Fit On Open</value>
+  </data>
+  <data name="P_Fingerprint" xml:space="preserve"><value>Server certificate fingerprint (SHA-256):</value></data>
+  <data name="P_FingerprintNote" xml:space="preserve"><value>The phone shows the same fingerprint. If your browser warns about the certificate, compare it with the certificate details there before continuing. This helps you spot a different server, but it is not enforced by the browser.</value></data>
+  <data name="Models" xml:space="preserve"><value>Models</value></data>
+  <data name="PrintFileNames" xml:space="preserve"><value>Print file names</value></data>
+  <data name="X" xml:space="preserve"><value>X</value></data>
+  <data name="Y" xml:space="preserve"><value>Y</value></data>
+  <data name="P_AccountOAuth" xml:space="preserve"><value>{0} signs in through your browser. Create an application in the {0} developer console, then paste its client id (and secret, if it has one) here.</value></data>
+  <data name="P_AccountOptions" xml:space="preserve"><value>{0} uses a server or key form instead of a browser sign-in. Open its settings to enter the connection details and credentials.</value></data>
+  <data name="P_AccountToken" xml:space="preserve"><value>{0} connects with an access token. Choose Sign In to paste a token; it is stored in Windows Credential Manager.</value></data>
+  <data name="P_AccountUnavailable" xml:space="preserve"><value>{0} is listed but cannot be used: the service offers no sign-in for desktop apps.</value></data>
+  <data name="P_AudioBitrate" xml:space="preserve"><value>Audio bitrate</value></data>
+  <data name="P_BackupSection" xml:space="preserve"><value>Backup and restore</value></data>
+  <data name="P_Behaviour" xml:space="preserve"><value>Behavior</value></data>
+  <data name="P_Bottom" xml:space="preserve"><value>Bottom</value></data>
+  <data name="P_ClientSecretHint" xml:space="preserve"><value>Optional. Leave the secret blank to keep the one already stored in Windows Credential Manager.</value></data>
+  <data name="P_Clipboard" xml:space="preserve"><value>Clipboard and email</value></data>
+  <data name="P_ColorPairs" xml:space="preserve"><value>Colors to replace</value></data>
+  <data name="P_Columns" xml:space="preserve"><value>Columns</value></data>
+  <data name="P_ConfigureDestination" xml:space="preserve"><value>Configure…</value></data>
+  <data name="P_ConnectMobile" xml:space="preserve"><value>Connect a device…</value></data>
+  <data name="P_Copies" xml:space="preserve"><value>Copies</value></data>
+  <data name="P_Degrees" xml:space="preserve"><value>degrees</value></data>
+  <data name="P_Destinations" xml:space="preserve"><value>Destinations</value></data>
+  <data name="P_DestinationsNote" xml:space="preserve"><value>Turn destinations on or off. Options opens each destination's own settings.</value></data>
+  <data name="P_Diagnostics" xml:space="preserve"><value>Diagnostics</value></data>
+  <data name="P_Download" xml:space="preserve"><value>Download</value></data>
+  <data name="P_DownloadModel" xml:space="preserve"><value>Download {0}</value></data>
+  <data name="P_Editing" xml:space="preserve"><value>Editing</value></data>
+  <data name="P_EffectColorAdjust" xml:space="preserve"><value>Color Adjustment</value></data>
+  <data name="P_EffectColorReplace" xml:space="preserve"><value>Color Replacement</value></data>
+  <data name="P_EffectEdge" xml:space="preserve"><value>Edge</value></data>
+  <data name="P_EffectFilter" xml:space="preserve"><value>Filter</value></data>
+  <data name="P_EffectNotEditable" xml:space="preserve"><value>This effect comes from a newer version and cannot be edited here.</value></data>
+  <data name="P_EffectPageCurl" xml:space="preserve"><value>Page Curl</value></data>
+  <data name="P_EffectPerspective" xml:space="preserve"><value>Perspective</value></data>
+  <data name="P_EffectResize" xml:space="preserve"><value>Resize</value></data>
+  <data name="P_EffectRotate" xml:space="preserve"><value>Rotate and Flip</value></data>
+  <data name="P_EffectSpotlight" xml:space="preserve"><value>Spotlight and Magnify</value></data>
+  <data name="P_EffectTrim" xml:space="preserve"><value>Trim</value></data>
+  <data name="P_EffectWatermark" xml:space="preserve"><value>Watermark</value></data>
+  <data name="P_ExperimentsAgree" xml:space="preserve"><value>I understand that experimental features are unfinished and may change or be removed</value></data>
+  <data name="P_ExperimentsEnable" xml:space="preserve"><value>Turn on experimental features</value></data>
+  <data name="P_ExperimentsNote" xml:space="preserve"><value>Experiments are early versions of features. They stay off unless you agree and turn them on here. Nothing is sent anywhere.</value></data>
+  <data name="P_EyedropperHint" xml:space="preserve"><value>Click a pixel to pick its color. Esc or right-click cancels.</value></data>
+  <data name="P_FormatOptions" xml:space="preserve"><value>Format options</value></data>
+  <data name="P_FormatShotx" xml:space="preserve"><value>Shotwise project</value></data>
+  <data name="P_HardwareEncoding" xml:space="preserve"><value>Use hardware encoding</value></data>
+  <data name="P_Inches" xml:space="preserve"><value>in</value></data>
+  <data name="P_IncludeAudio" xml:space="preserve"><value>Include audio</value></data>
+  <data name="P_Kbps" xml:space="preserve"><value>kbps</value></data>
+  <data name="P_Interface" xml:space="preserve"><value>Interface</value></data>
+  <data name="P_Language" xml:space="preserve"><value>Language</value></data>
+  <data name="P_LanguageRestart" xml:space="preserve"><value>Restart Shotwise to apply the new language everywhere.</value></data>
+  <data name="P_LibraryFolder" xml:space="preserve"><value>Library folder</value></data>
+  <data name="P_Maintenance" xml:space="preserve"><value>Maintenance</value></data>
+  <data name="P_MarginPoints" xml:space="preserve"><value>Margin</value></data>
+  <data name="P_Margins" xml:space="preserve"><value>Margins</value></data>
+  <data name="P_ModelConsent" xml:space="preserve"><value>Download {0} ({1}) from {2}?
+
+It is stored on this computer and verified against a known checksum before use. License: {3}.</value></data>
+  <data name="P_ModelInstalled" xml:space="preserve"><value>Installed</value></data>
+  <data name="P_ModelNotInstalled" xml:space="preserve"><value>Not downloaded</value></data>
+  <data name="P_ModelSizeLicense" xml:space="preserve"><value>Size {0} · License: {1}</value></data>
+  <data name="P_ModelsConsentAll" xml:space="preserve"><value>Shotwise will download these files from {0} ({1} in total) and verify them before use. Nothing is downloaded unless you choose Download.</value></data>
+  <data name="P_ModelsDownloadTitle" xml:space="preserve"><value>Download models</value></data>
+  <data name="P_ModelsNote" xml:space="preserve"><value>Some features use AI models that are not part of the installer. Each one is downloaded only when you choose to, verified, and stored on this computer.</value></data>
+  <data name="P_ModelsUnavailable" xml:space="preserve"><value>Model downloads are not available in this build.</value></data>
+  <data name="P_MyColorsNote" xml:space="preserve"><value>Colors you add appear in every color picker. Click a color to remove it.</value></data>
+  <data name="P_NamingPreview" xml:space="preserve"><value>Preview</value></data>
+  <data name="P_NamingSection" xml:space="preserve"><value>File names</value></data>
+  <data name="P_NamingTokens" xml:space="preserve"><value>Tokens: {date} {time} {app} {window} {counter} {preset} {width} {height}</value></data>
+  <data name="P_NoDestinationOptions" xml:space="preserve"><value>This destination has no options.</value></data>
+  <data name="P_Notifications" xml:space="preserve"><value>Help and notifications</value></data>
+  <data name="P_Options" xml:space="preserve"><value>Options…</value></data>
+  <data name="P_OptionsFor" xml:space="preserve"><value>Options for {0}</value></data>
+  <data name="P_PerPage" xml:space="preserve"><value>Images per page</value></data>
+  <data name="P_Percent" xml:space="preserve"><value>%</value></data>
+  <data name="P_Performance" xml:space="preserve"><value>Performance</value></data>
+  <data name="P_Pixels" xml:space="preserve"><value>px</value></data>
+  <data name="P_Points" xml:space="preserve"><value>pt</value></data>
+  <data name="P_RememberSettings" xml:space="preserve"><value>Remember these settings</value></data>
+  <data name="P_RemoveColor" xml:space="preserve"><value>Remove {0}</value></data>
+  <data name="P_ResizeHint" xml:space="preserve"><value>Set a percentage, or a width and/or a height in pixels.</value></data>
+  <data name="P_ResizeNeedsSize" xml:space="preserve"><value>Enter a percentage, a width or a height.</value></data>
+  <data name="P_Rows" xml:space="preserve"><value>Rows</value></data>
+  <data name="P_SameAsInterface" xml:space="preserve"><value>Same as interface language</value></data>
+  <data name="P_Saving" xml:space="preserve"><value>Saving</value></data>
+  <data name="P_SavingFiles" xml:space="preserve"><value>Saving files</value></data>
+  <data name="P_Spacing" xml:space="preserve"><value>Spacing</value></data>
+  <data name="P_SystemDefault" xml:space="preserve"><value>System default (Windows language)</value></data>
+  <data name="P_Text" xml:space="preserve"><value>Text and OCR</value></data>
+  <data name="P_Tiff_lzw" xml:space="preserve"><value>LZW (lossless)</value></data>
+  <data name="P_Tiff_none" xml:space="preserve"><value>None</value></data>
+  <data name="P_Tiff_zip" xml:space="preserve"><value>ZIP (lossless)</value></data>
+  <data name="P_Tray" xml:space="preserve"><value>Recent captures tray</value></data>
+  <data name="P_UsageData" xml:space="preserve"><value>Share anonymous usage data to help improve Shotwise</value></data>
+  <data name="P_UsageDataNote" xml:space="preserve"><value>Off by default. Nothing is sent unless you turn this on.</value></data>
+  <data name="P_VideoOptions" xml:space="preserve"><value>Video options</value></data>
+  <data name="P_VideoQuality" xml:space="preserve"><value>Quality</value></data>
+  <data name="P_ViewLicense" xml:space="preserve"><value>View license</value></data>
+  <data name="P_Workspace" xml:space="preserve"><value>Workspace</value></data>
+  <data name="Enum_TooltipDetail_TextOnly" xml:space="preserve"><value>Text only</value></data>
+  <data name="Enum_TooltipDetail_TextAndAnimation" xml:space="preserve"><value>Text and animation</value></data>
+  <data name="Enum_HelpNotificationMode_All" xml:space="preserve"><value>All help notifications</value></data>
+  <data name="Enum_HelpNotificationMode_HelpOnly" xml:space="preserve"><value>Help only</value></data>
+  <data name="Enum_HelpNotificationMode_None" xml:space="preserve"><value>None</value></data>
+  <data name="Enum_WorkspaceColor_White" xml:space="preserve"><value>White</value></data>
+  <data name="Enum_WorkspaceColor_LightGray" xml:space="preserve"><value>Light gray</value></data>
+  <data name="Enum_WorkspaceColor_Gray" xml:space="preserve"><value>Gray</value></data>
+  <data name="Enum_WorkspaceColor_DarkGray" xml:space="preserve"><value>Dark gray</value></data>
+  <data name="Enum_WorkspaceColor_Black" xml:space="preserve"><value>Black</value></data>
+  <data name="Enum_WorkspaceColor_Custom" xml:space="preserve"><value>Custom color</value></data>
+  <data name="Enum_SaveFolderMode_LastUsed" xml:space="preserve"><value>Last used folder</value></data>
+  <data name="Enum_SaveFolderMode_Fixed" xml:space="preserve"><value>Always the same folder</value></data>
+  <data name="Enum_SaveFolderMode_Ask" xml:space="preserve"><value>Ask every time</value></data>
+  <data name="Enum_SaveNameMode_Ask" xml:space="preserve"><value>Ask for a name</value></data>
+  <data name="Enum_SaveNameMode_Automatic" xml:space="preserve"><value>Name automatically</value></data>
+  <data name="Enum_SaveNameMode_Fixed" xml:space="preserve"><value>Fixed name</value></data>
+  <data name="Enum_GifPreset_ScreenVideo" xml:space="preserve"><value>Screen video</value></data>
+  <data name="Enum_GifPreset_HighMotion" xml:space="preserve"><value>High motion</value></data>
+  <data name="Enum_GifPreset_ReducedFileSize" xml:space="preserve"><value>Reduced file size</value></data>
+  <data name="Enum_GifPreset_Custom" xml:space="preserve"><value>Custom</value></data>
+  <data name="Enum_GifDitherMode_None" xml:space="preserve"><value>None</value></data>
+  <data name="Enum_GifDitherMode_FloydSteinberg" xml:space="preserve"><value>Floyd–Steinberg</value></data>
+  <data name="Enum_GifDitherMode_Ordered" xml:space="preserve"><value>Ordered</value></data>
+  <data name="Enum_JpegSubsampling_S444" xml:space="preserve"><value>4:4:4 (best quality)</value></data>
+  <data name="Enum_JpegSubsampling_S422" xml:space="preserve"><value>4:2:2</value></data>
+  <data name="Enum_JpegSubsampling_S420" xml:space="preserve"><value>4:2:0 (smallest file)</value></data>
+  <data name="Enum_LibraryLocationAction_Move" xml:space="preserve"><value>Move the library here</value></data>
+  <data name="Enum_LibraryLocationAction_Merge" xml:space="preserve"><value>Merge into this folder</value></data>
+  <data name="Enum_LibraryLocationAction_UseWithoutMoving" xml:space="preserve"><value>Use this folder without moving files</value></data>
+  <data name="Enum_Anchor9_TopLeft" xml:space="preserve"><value>Top left</value></data>
+  <data name="Enum_Anchor9_TopCenter" xml:space="preserve"><value>Top center</value></data>
+  <data name="Enum_Anchor9_TopRight" xml:space="preserve"><value>Top right</value></data>
+  <data name="Enum_Anchor9_MiddleLeft" xml:space="preserve"><value>Middle left</value></data>
+  <data name="Enum_Anchor9_Center" xml:space="preserve"><value>Center</value></data>
+  <data name="Enum_Anchor9_MiddleRight" xml:space="preserve"><value>Middle right</value></data>
+  <data name="Enum_Anchor9_BottomLeft" xml:space="preserve"><value>Bottom left</value></data>
+  <data name="Enum_Anchor9_BottomCenter" xml:space="preserve"><value>Bottom center</value></data>
+  <data name="Enum_Anchor9_BottomRight" xml:space="preserve"><value>Bottom right</value></data>
+  <data name="Enum_PaperSize_FitToImage" xml:space="preserve"><value>Fit to image</value></data>
+  <data name="Enum_PageOrientation_Auto" xml:space="preserve"><value>Automatic</value></data>
+  <data name="Enum_PageImageLayout_FitToPage" xml:space="preserve"><value>Fit to page</value></data>
+  <data name="Enum_PageImageLayout_FillPage" xml:space="preserve"><value>Fill page</value></data>
+  <data name="Enum_PageImageLayout_FitWidth" xml:space="preserve"><value>Fit width</value></data>
+  <data name="Enum_PageImageLayout_ActualSize" xml:space="preserve"><value>Actual size</value></data>
+  <data name="Enum_PageImageLayout_CustomScale" xml:space="preserve"><value>Custom scale</value></data>
+  <data name="Enum_EdgeStyle_DropShadow" xml:space="preserve"><value>Drop shadow</value></data>
+  <data name="Enum_EdgeStyle_Sharktooth" xml:space="preserve"><value>Shark tooth</value></data>
+  <data name="Enum_CaptionFields_AppName" xml:space="preserve"><value>App name</value></data>
+  <data name="Enum_CaptionFields_AppVersion" xml:space="preserve"><value>App version</value></data>
+  <data name="Enum_CaptionFields_OsVersion" xml:space="preserve"><value>OS version</value></data>
+  <data name="Enum_CaptionFields_WindowTitle" xml:space="preserve"><value>Window title</value></data>
+  <data name="Enum_CaptionFields_Url" xml:space="preserve"><value>URL</value></data>
+  <data name="Enum_CaptionFields_CustomText" xml:space="preserve"><value>Custom text</value></data>
+</root>

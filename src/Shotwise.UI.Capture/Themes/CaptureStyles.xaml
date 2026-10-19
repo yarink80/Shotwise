@@ -1,0 +1,232 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sw="urn:shotwise-ui">
+    <!--
+        Capture-UI local styles (D2). Everything colour-related comes from the Shotwise tokens; the few Capture.Hud* brushes are
+        white overlays on the always-dark recording pill (they are theme independent on purpose).
+    -->
+    <SolidColorBrush x:Key="Capture.HudHoverBrush" Color="#26FFFFFF" />
+    <SolidColorBrush x:Key="Capture.HudPressedBrush" Color="#40FFFFFF" />
+    <SolidColorBrush x:Key="Capture.HudBorderBrush" Color="#2EFFFFFF" />
+    <SolidColorBrush x:Key="Capture.HudSepBrush" Color="#33FFFFFF" />
+    <SolidColorBrush x:Key="Capture.HudMutedTextBrush" Color="#A6FFFFFF" />
+    <SolidColorBrush x:Key="Capture.HudMeterTrackBrush" Color="#33FFFFFF" />
+
+    <!-- Round icon button on the dark HUD pill. -->
+    <Style x:Key="Capture.HudButton" TargetType="ButtonBase">
+        <Setter Property="Width" Value="34" />
+        <Setter Property="Height" Value="34" />
+        <Setter Property="Foreground" Value="{DynamicResource Shotwise.HudTextBrush}" />
+        <Setter Property="Focusable" Value="False" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="sw:SwUi.IconSize" Value="18" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ButtonBase">
+                    <Grid Background="Transparent">
+                        <Ellipse x:Name="Bd" Fill="Transparent" />
+                        <sw:SwIcon x:Name="Ic" Source="{Binding (sw:SwUi.Icon), RelativeSource={RelativeSource TemplatedParent}}"
+                                   Size="{Binding (sw:SwUi.IconSize), RelativeSource={RelativeSource TemplatedParent}}"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Fill" Value="{StaticResource Capture.HudHoverBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Bd" Property="Fill" Value="{StaticResource Capture.HudPressedBrush}" />
+                        </Trigger>
+                        <Trigger Property="ToggleButton.IsChecked" Value="True">
+                            <Setter TargetName="Bd" Property="Fill" Value="{DynamicResource Shotwise.AccentBrush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource Shotwise.OnAccentBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.38" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Coral stop / record disc on the HUD pill. -->
+    <Style x:Key="Capture.HudStopButton" TargetType="ButtonBase">
+        <Setter Property="Width" Value="38" />
+        <Setter Property="Height" Value="38" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Focusable" Value="False" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="sw:SwUi.IconSize" Value="18" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ButtonBase">
+                    <Grid Background="Transparent">
+                        <Ellipse x:Name="Glow" Fill="{DynamicResource Shotwise.CaptureSolidBrush}" Opacity="0.35" Margin="-2" Effect="{DynamicResource Shotwise.Elevation.CaptureGlow}" />
+                        <Ellipse x:Name="Bd" Fill="{DynamicResource Shotwise.CaptureBrush}" />
+                        <sw:SwIcon Source="{Binding (sw:SwUi.Icon), RelativeSource={RelativeSource TemplatedParent}}"
+                                   Size="{Binding (sw:SwUi.IconSize), RelativeSource={RelativeSource TemplatedParent}}"
+                                   Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Fill" Value="{DynamicResource Shotwise.CaptureHoverBrush}" />
+                            <Setter TargetName="Glow" Property="Opacity" Value="0.7" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Bd" Property="Fill" Value="{DynamicResource Shotwise.CapturePressedBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.38" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Pill-shaped coral action (Record / Start). Icon via sw:SwUi.Icon. -->
+    <Style x:Key="Capture.RecordButton" TargetType="ButtonBase">
+        <Setter Property="FontFamily" Value="{DynamicResource Shotwise.FontFamily}" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Padding" Value="18,0" />
+        <Setter Property="MinHeight" Value="36" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="sw:SwUi.IconSize" Value="16" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Shotwise.FocusVisual.Round}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ButtonBase">
+                    <Border x:Name="Bd" Background="{DynamicResource Shotwise.CaptureBrush}" CornerRadius="999" Padding="{TemplateBinding Padding}" MinHeight="{TemplateBinding MinHeight}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <sw:SwIcon x:Name="Ic" Source="{Binding (sw:SwUi.Icon), RelativeSource={RelativeSource TemplatedParent}}"
+                                       Size="{Binding (sw:SwUi.IconSize), RelativeSource={RelativeSource TemplatedParent}}" Foreground="White" Margin="0,0,8,0" />
+                            <ContentPresenter VerticalAlignment="Center" RecognizesAccessKey="True" />
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.CaptureHoverBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.CapturePressedBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.45" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Small pill button used as a value chip inside rows (device name, delay value, summary). -->
+    <Style x:Key="Capture.ChipButton" TargetType="ButtonBase">
+        <Setter Property="FontFamily" Value="{DynamicResource Shotwise.FontFamily}" />
+        <Setter Property="FontSize" Value="11.5" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{DynamicResource Shotwise.TextSecondaryBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Shotwise.Surface2Brush}" />
+        <Setter Property="Padding" Value="9,3,7,3" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Shotwise.FocusVisual.Round}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ButtonBase">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}" CornerRadius="999" Padding="{TemplateBinding Padding}"
+                            BorderThickness="1" BorderBrush="{DynamicResource Shotwise.BorderSubtleBrush}">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <ContentPresenter VerticalAlignment="Center" RecognizesAccessKey="False" />
+                            <sw:SwIcon Source="{DynamicResource Icon.ChevronDown.Filled}" Size="12" Margin="4,1,0,0" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.Surface3Brush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource Shotwise.TextPrimaryBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.Surface3Brush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.45" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Row-style button (icon, title, summary chip) that opens a flyout, used in "More options". -->
+    <Style x:Key="Capture.RowButton" TargetType="ButtonBase">
+        <Setter Property="FontFamily" Value="{DynamicResource Shotwise.FontFamily}" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="Foreground" Value="{DynamicResource Shotwise.TextPrimaryBrush}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Padding" Value="10,0" />
+        <Setter Property="MinHeight" Value="40" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="sw:SwUi.IconSize" Value="20" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Shotwise.FocusVisual}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ButtonBase">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}" CornerRadius="8" Padding="{TemplateBinding Padding}" MinHeight="{TemplateBinding MinHeight}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <sw:SwIcon x:Name="Ic" Source="{Binding (sw:SwUi.Icon), RelativeSource={RelativeSource TemplatedParent}}"
+                                       Size="{Binding (sw:SwUi.IconSize), RelativeSource={RelativeSource TemplatedParent}}" Margin="0,0,10,0" VerticalAlignment="Center" />
+                            <ContentPresenter Grid.Column="1" VerticalAlignment="Center" RecognizesAccessKey="True" />
+                            <sw:SwIcon Grid.Column="2" Source="{DynamicResource Icon.ChevronDown.Regular}" Size="14" VerticalAlignment="Center"
+                                       Foreground="{DynamicResource Shotwise.TextTertiaryBrush}" />
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.Surface2Brush}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.Surface3Brush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.45" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Round colour swatch (ScreenDraw palette). Tag = swatch brush is set in code; checked ring = accent. -->
+    <Style x:Key="Capture.Swatch" TargetType="ToggleButton">
+        <Setter Property="Width" Value="26" />
+        <Setter Property="Height" Value="26" />
+        <Setter Property="Margin" Value="2,0" />
+        <Setter Property="Focusable" Value="False" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid Background="Transparent">
+                        <Ellipse x:Name="Ring" Stroke="Transparent" StrokeThickness="2" />
+                        <Ellipse Margin="4" Fill="{TemplateBinding Background}" Stroke="{DynamicResource Shotwise.BorderStrongBrush}" StrokeThickness="1" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Ring" Property="Stroke" Value="{DynamicResource Shotwise.BorderStrongBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Ring" Property="Stroke" Value="{DynamicResource Shotwise.AccentBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,2962 @@
+{
+  "format": "shottheme",
+  "id": "builtin.high-contrast",
+  "name": "High Contrast",
+  "version": 1,
+  "quickStyles": [
+    {
+      "id": "builtin.high-contrast.arrow.0",
+      "name": "Standard",
+      "tool": "arrow",
+      "prototype": {
+        "kind": "arrow",
+        "startCap": "none",
+        "endCap": "arrow",
+        "startCapScale": 1,
+        "endCapScale": 1,
+        "bezier": false,
+        "id": "aec92a05-2cb5-f91e-319a-9ea58030d935",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 7.6,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.arrow.1",
+      "name": "Thin",
+      "tool": "arrow",
+      "prototype": {
+        "kind": "arrow",
+        "startCap": "none",
+        "endCap": "openArrow",
+        "startCapScale": 1,
+        "endCapScale": 1,
+        "bezier": false,
+        "id": "b61d41dd-3a12-9672-092b-d11674312c57",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF0000FF",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.arrow.2",
+      "name": "Heavy",
+      "tool": "arrow",
+      "prototype": {
+        "kind": "arrow",
+        "startCap": "none",
+        "endCap": "triangle",
+        "startCapScale": 1,
+        "endCapScale": 1.2,
+        "bezier": false,
+        "id": "fa10a03c-34f6-79e4-3f98-509694ce6e52",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 13.3,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.arrow.3",
+      "name": "Double Ended",
+      "tool": "arrow",
+      "prototype": {
+        "kind": "arrow",
+        "startCap": "arrow",
+        "endCap": "arrow",
+        "startCapScale": 1,
+        "endCapScale": 1,
+        "bezier": false,
+        "id": "f2bb146c-f588-c1d2-4f4e-cd165d9f6bd5",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 7.6,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.arrow.4",
+      "name": "Soft Shadow",
+      "tool": "arrow",
+      "prototype": {
+        "kind": "arrow",
+        "startCap": "none",
+        "endCap": "arrow",
+        "startCapScale": 1,
+        "endCapScale": 1,
+        "bezier": false,
+        "id": "ce7740e9-b001-a213-54d8-6b2028c3a4e5",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 7.6,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "shadow": {
+          "color": "#FF000000",
+          "angleDegrees": 45,
+          "distance": 4,
+          "blur": 8,
+          "opacity": 0.45,
+          "offset": {}
+        },
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.arrow.5",
+      "name": "Dashed",
+      "tool": "arrow",
+      "prototype": {
+        "kind": "arrow",
+        "startCap": "none",
+        "endCap": "arrow",
+        "startCapScale": 1,
+        "endCapScale": 1,
+        "bezier": false,
+        "id": "e9a33bf9-ca4c-85fa-099c-c44d7122349a",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF0000FF",
+          "width": 5.7,
+          "dash": "dash",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.line.0",
+      "name": "Standard",
+      "tool": "line",
+      "prototype": {
+        "kind": "line",
+        "doubleLine": false,
+        "bezier": false,
+        "startCap": "round",
+        "endCap": "round",
+        "id": "df236740-2f27-69cf-8118-ac7f8b5c6aec",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 5.7,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.line.1",
+      "name": "Dashed",
+      "tool": "line",
+      "prototype": {
+        "kind": "line",
+        "doubleLine": false,
+        "bezier": false,
+        "startCap": "none",
+        "endCap": "none",
+        "id": "84fde1f8-11a1-c147-83f3-0351a81ef591",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 5.7,
+          "dash": "dash",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.line.2",
+      "name": "Dotted",
+      "tool": "line",
+      "prototype": {
+        "kind": "line",
+        "doubleLine": false,
+        "bezier": false,
+        "startCap": "round",
+        "endCap": "round",
+        "id": "4384d65a-63d5-0e0c-c0f4-1a7a0a5a0d5c",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF0000FF",
+          "width": 5.7,
+          "dash": "dot",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.line.3",
+      "name": "Heavy",
+      "tool": "line",
+      "prototype": {
+        "kind": "line",
+        "doubleLine": false,
+        "bezier": false,
+        "startCap": "square",
+        "endCap": "square",
+        "id": "f65ab822-1ef0-b01f-5cef-707375db4526",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 15.2,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.line.4",
+      "name": "Double",
+      "tool": "line",
+      "prototype": {
+        "kind": "line",
+        "doubleLine": true,
+        "bezier": false,
+        "startCap": "round",
+        "endCap": "round",
+        "id": "f95f96ed-bcf5-5d39-6cb0-b1d3d0b95948",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 5.7,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.shape.0",
+      "name": "Outline",
+      "tool": "shape",
+      "prototype": {
+        "kind": "shape",
+        "shape": "roundedRectangle",
+        "cornerRadius": 12,
+        "points": [],
+        "id": "466ae531-7537-f6f8-abfc-de7ae4e1cf80",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 5.7,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.shape.1",
+      "name": "Tinted Fill",
+      "tool": "shape",
+      "prototype": {
+        "kind": "shape",
+        "shape": "roundedRectangle",
+        "cornerRadius": 12,
+        "points": [],
+        "id": "3fdb9068-5b04-1c1e-27f1-65aadd74e6e8",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 5.7,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#59000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.shape.2",
+      "name": "Solid",
+      "tool": "shape",
+      "prototype": {
+        "kind": "shape",
+        "shape": "rectangle",
+        "cornerRadius": 12,
+        "points": [],
+        "id": "6a759984-e31c-78d3-b300-e953875e20ba",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.shape.3",
+      "name": "Ellipse Outline",
+      "tool": "shape",
+      "prototype": {
+        "kind": "shape",
+        "shape": "ellipse",
+        "cornerRadius": 12,
+        "points": [],
+        "id": "90944f42-ec5e-b1ec-9e2a-2ca257561ad6",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF0000FF",
+          "width": 5.7,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.shape.4",
+      "name": "Card",
+      "tool": "shape",
+      "prototype": {
+        "kind": "shape",
+        "shape": "roundedRectangle",
+        "cornerRadius": 16,
+        "points": [],
+        "id": "b446ae67-fce7-3c2d-b60a-e90fee766293",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FFFFFF00",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "shadow": {
+          "color": "#FF000000",
+          "angleDegrees": 45,
+          "distance": 4,
+          "blur": 8,
+          "opacity": 0.45,
+          "offset": {}
+        },
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.shape.5",
+      "name": "Gradient",
+      "tool": "shape",
+      "prototype": {
+        "kind": "shape",
+        "shape": "roundedRectangle",
+        "cornerRadius": 12,
+        "points": [],
+        "id": "49f3cb2d-4e2d-c38f-66a0-377771adc4a3",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "gradient",
+          "color": "#FF000000",
+          "gradient": {
+            "kind": "linear",
+            "angleDegrees": 90,
+            "stops": [
+              {
+                "offset": 0,
+                "color": "#FF000000"
+              },
+              {
+                "offset": 1,
+                "color": "#FF0000FF"
+              }
+            ]
+          },
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.callout.0",
+      "name": "Rounded Box",
+      "tool": "callout",
+      "prototype": {
+        "kind": "callout",
+        "shapePresetId": "rounded-rectangle",
+        "tails": [],
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 18,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "center",
+          "vAlign": "middle",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "id": "0be95fbe-3b04-d7b7-aed4-614802fb6c0d",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FFFFFF00",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.callout.1",
+      "name": "Speech Bubble",
+      "tool": "callout",
+      "prototype": {
+        "kind": "callout",
+        "shapePresetId": "speech-bubble",
+        "tails": [],
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 18,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "center",
+          "vAlign": "middle",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "id": "44627978-9ef6-3fdf-94ea-a8cbbc14099f",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FFFFFF00",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.callout.2",
+      "name": "Cloud",
+      "tool": "callout",
+      "prototype": {
+        "kind": "callout",
+        "shapePresetId": "cloud",
+        "tails": [],
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 18,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "center",
+          "vAlign": "middle",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "id": "cc74e556-060e-ed60-99d2-d659782a0649",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FFFFFF00",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.callout.3",
+      "name": "Burst",
+      "tool": "callout",
+      "prototype": {
+        "kind": "callout",
+        "shapePresetId": "burst",
+        "tails": [],
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 18,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FFFFFFFF"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "center",
+          "vAlign": "middle",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "id": "67d8a839-48e9-0f92-d556-4ce5b2be8fb7",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.callout.4",
+      "name": "Banner",
+      "tool": "callout",
+      "prototype": {
+        "kind": "callout",
+        "shapePresetId": "banner",
+        "tails": [],
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 18,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "center",
+          "vAlign": "middle",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "id": "c01a5595-8a68-3017-8c2b-c51fac4f2834",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FFFFFF00",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.callout.5",
+      "name": "Plain Box",
+      "tool": "callout",
+      "prototype": {
+        "kind": "callout",
+        "shapePresetId": "rectangle",
+        "tails": [],
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 18,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "center",
+          "vAlign": "middle",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "id": "d362ab7b-f25f-c3d3-982f-2409216775bc",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FFFFFF00",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.text.0",
+      "name": "Plain",
+      "tool": "text",
+      "prototype": {
+        "kind": "text",
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 18,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "left",
+          "vAlign": "top",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "deselectBehavior": "deleteIfEmpty",
+        "id": "e619812d-79df-5415-d950-ecd1de3bb308",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.text.1",
+      "name": "Heading",
+      "tool": "text",
+      "prototype": {
+        "kind": "text",
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 32,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "left",
+          "vAlign": "top",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "deselectBehavior": "deleteIfEmpty",
+        "id": "a8420fc6-070d-46eb-6423-318531d2c775",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.text.2",
+      "name": "Caption",
+      "tool": "text",
+      "prototype": {
+        "kind": "text",
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 13,
+              "bold": true,
+              "italic": true,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "left",
+          "vAlign": "top",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "deselectBehavior": "deleteIfEmpty",
+        "id": "a5bb6791-e74b-4347-be39-b54bd2a218e5",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.text.3",
+      "name": "Label",
+      "tool": "text",
+      "prototype": {
+        "kind": "text",
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 16,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FFFFFFFF"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "left",
+          "vAlign": "top",
+          "padding": {
+            "left": 10,
+            "top": 6,
+            "right": 10,
+            "bottom": 6
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "deselectBehavior": "deleteIfEmpty",
+        "id": "57e57483-f6a2-44aa-d642-0cef040ae085",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.text.4",
+      "name": "Outlined",
+      "tool": "text",
+      "prototype": {
+        "kind": "text",
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 28,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FFFFFFFF"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "left",
+          "vAlign": "top",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineColor": "#FF000000",
+          "outlineWidth": 3,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "deselectBehavior": "deleteIfEmpty",
+        "id": "3ab3ee03-95f4-3fd9-c163-50689f406da3",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.stamp.0",
+      "name": "Plain",
+      "tool": "stamp",
+      "prototype": {
+        "kind": "stamp",
+        "asset": "",
+        "preserveAspect": true,
+        "id": "5ce78891-ff4e-2fdc-f4f1-b7c960377030",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.stamp.1",
+      "name": "Drop Shadow",
+      "tool": "stamp",
+      "prototype": {
+        "kind": "stamp",
+        "asset": "",
+        "preserveAspect": true,
+        "id": "c31023c6-f2d9-c2dc-9bd1-a8a56a89df6c",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "shadow": {
+          "color": "#FF000000",
+          "angleDegrees": 45,
+          "distance": 4,
+          "blur": 8,
+          "opacity": 0.45,
+          "offset": {}
+        },
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.stamp.2",
+      "name": "Faded",
+      "tool": "stamp",
+      "prototype": {
+        "kind": "stamp",
+        "asset": "",
+        "preserveAspect": true,
+        "id": "ee88faed-9c4a-7fff-20cd-d243bdcb27d0",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 0.6,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.step.0",
+      "name": "Circle",
+      "tool": "step",
+      "prototype": {
+        "kind": "step",
+        "style": "circle",
+        "sequence": "number",
+        "value": 1,
+        "textColor": "#FFFFFFFF",
+        "fontFamily": "Arial",
+        "id": "043bdfe8-0be1-6d05-6ec2-29f87815c47a",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.step.1",
+      "name": "Square",
+      "tool": "step",
+      "prototype": {
+        "kind": "step",
+        "style": "square",
+        "sequence": "number",
+        "value": 1,
+        "textColor": "#FFFFFFFF",
+        "fontFamily": "Arial",
+        "id": "7b5d185a-61c8-9b0a-d7ca-7b777094b852",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF0000FF",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.step.2",
+      "name": "Pointer Circle",
+      "tool": "step",
+      "prototype": {
+        "kind": "step",
+        "style": "circlePointer",
+        "sequence": "number",
+        "value": 1,
+        "textColor": "#FFFFFFFF",
+        "fontFamily": "Arial",
+        "id": "c6dd1525-d839-2a98-c2d6-1ada150092e7",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.step.3",
+      "name": "Pointer Square",
+      "tool": "step",
+      "prototype": {
+        "kind": "step",
+        "style": "squarePointer",
+        "sequence": "number",
+        "value": 1,
+        "textColor": "#FFFFFFFF",
+        "fontFamily": "Arial",
+        "id": "65d4d35c-46a0-0b9c-115b-3434200eb82c",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF0000FF",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.step.4",
+      "name": "Letters",
+      "tool": "step",
+      "prototype": {
+        "kind": "step",
+        "style": "circle",
+        "sequence": "upper",
+        "value": 1,
+        "textColor": "#FFFFFFFF",
+        "fontFamily": "Arial",
+        "id": "edf69c2a-dd57-0459-1d83-f12d39d16538",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.pen.0",
+      "name": "Marker",
+      "tool": "pen",
+      "prototype": {
+        "kind": "pen",
+        "points": [],
+        "nib": "circle",
+        "smoothing": true,
+        "antialias": true,
+        "id": "e64a3253-e31b-456f-6704-8a87af7a10a0",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 11.4,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.pen.1",
+      "name": "Fine Liner",
+      "tool": "pen",
+      "prototype": {
+        "kind": "pen",
+        "points": [],
+        "nib": "circle",
+        "smoothing": true,
+        "antialias": true,
+        "id": "c8136c97-6da3-240d-9274-2d1096e1c164",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.pen.2",
+      "name": "Brush",
+      "tool": "pen",
+      "prototype": {
+        "kind": "pen",
+        "points": [],
+        "nib": "square",
+        "smoothing": true,
+        "antialias": true,
+        "id": "0f6ead32-a4c6-9e8b-9351-9e8ec4dd2869",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF0000FF",
+          "width": 19,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.pen.3",
+      "name": "Chisel",
+      "tool": "pen",
+      "prototype": {
+        "kind": "pen",
+        "points": [],
+        "nib": "diagonal",
+        "smoothing": false,
+        "antialias": true,
+        "id": "94d24ddb-5294-cf36-52d3-a0d196579389",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 22.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.highlighter.0",
+      "name": "Yellow",
+      "tool": "highlighter",
+      "prototype": {
+        "kind": "highlight",
+        "id": "c09dfe27-123c-6d6f-df7d-3f65458e2d75",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#80FFEB3B",
+          "width": 16,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#80FFEB3B",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.highlighter.1",
+      "name": "Green",
+      "tool": "highlighter",
+      "prototype": {
+        "kind": "highlight",
+        "id": "561e4824-eb43-45a8-9630-98462fd107d7",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#8076FF03",
+          "width": 16,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#8076FF03",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.highlighter.2",
+      "name": "Pink",
+      "tool": "highlighter",
+      "prototype": {
+        "kind": "highlight",
+        "id": "731aa1c3-a4fb-f376-b1ee-b684f1c6e955",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#80FF80AB",
+          "width": 16,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#80FF80AB",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.highlighter.3",
+      "name": "Cyan",
+      "tool": "highlighter",
+      "prototype": {
+        "kind": "highlight",
+        "id": "b26f70e0-5862-c882-dd42-18d18015d193",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#8018FFFF",
+          "width": 16,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#8018FFFF",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.highlighter.4",
+      "name": "Freehand Marker",
+      "tool": "highlighter",
+      "prototype": {
+        "kind": "highlight",
+        "points": [],
+        "id": "e4e875ff-e47c-c99e-078e-badd7e58552f",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#80FFEB3B",
+          "width": 20,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.magnify.0",
+      "name": "Round Lens",
+      "tool": "magnify",
+      "prototype": {
+        "kind": "magnify",
+        "lensShape": "ellipse",
+        "scale": 2,
+        "sourceRect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "showConnector": true,
+        "id": "b9cd7d69-13f4-9116-a2ba-cd973f48f5f8",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "shadow": {
+          "color": "#FF000000",
+          "angleDegrees": 45,
+          "distance": 4,
+          "blur": 8,
+          "opacity": 0.45,
+          "offset": {}
+        },
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.magnify.1",
+      "name": "Square Lens",
+      "tool": "magnify",
+      "prototype": {
+        "kind": "magnify",
+        "lensShape": "rectangle",
+        "scale": 3,
+        "sourceRect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "showConnector": true,
+        "id": "58ee897d-0840-29f2-8d04-fa83dd65dd8d",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 5.7,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "shadow": {
+          "color": "#FF000000",
+          "angleDegrees": 45,
+          "distance": 4,
+          "blur": 8,
+          "opacity": 0.45,
+          "offset": {}
+        },
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.magnify.2",
+      "name": "Rounded Lens",
+      "tool": "magnify",
+      "prototype": {
+        "kind": "magnify",
+        "lensShape": "roundedRectangle",
+        "scale": 2.5,
+        "sourceRect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "showConnector": false,
+        "id": "b2483d6c-5bc3-0aa7-de14-50530ba4ff30",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF0000FF",
+          "width": 5.7,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "shadow": {
+          "color": "#FF000000",
+          "angleDegrees": 45,
+          "distance": 5,
+          "blur": 8,
+          "opacity": 0.6,
+          "offset": {}
+        },
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.blur.0",
+      "name": "Pixelate",
+      "tool": "blur",
+      "prototype": {
+        "kind": "blur",
+        "region": "rectangle",
+        "mode": "pixelate",
+        "intensity": 50,
+        "solidColor": "#FF000000",
+        "id": "c52a1087-d8eb-fbe6-6a0b-f72decaf1713",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.blur.1",
+      "name": "Soft Blur",
+      "tool": "blur",
+      "prototype": {
+        "kind": "blur",
+        "region": "rectangle",
+        "mode": "gaussian",
+        "intensity": 60,
+        "solidColor": "#FF000000",
+        "id": "b0a716a4-dba2-e5a0-a415-10b9a51d67a2",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.blur.2",
+      "name": "Solid Box",
+      "tool": "blur",
+      "prototype": {
+        "kind": "blur",
+        "region": "rectangle",
+        "mode": "solid",
+        "intensity": 50,
+        "solidColor": "#FF000000",
+        "id": "de44848a-d518-6cc8-07ab-c5f7d2b90afe",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.blur.3",
+      "name": "Round Pixelate",
+      "tool": "blur",
+      "prototype": {
+        "kind": "blur",
+        "region": "ellipse",
+        "mode": "pixelate",
+        "intensity": 70,
+        "solidColor": "#FF000000",
+        "id": "86028d2a-3351-4729-b6f3-1fba0eb91c9f",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.cursor.0",
+      "name": "Arrow",
+      "tool": "cursor",
+      "prototype": {
+        "kind": "cursor",
+        "cursor": "arrow",
+        "scale": 1,
+        "id": "36c81123-0bfd-e6e2-2d94-7803eafec50a",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.cursor.1",
+      "name": "Large Hand",
+      "tool": "cursor",
+      "prototype": {
+        "kind": "cursor",
+        "cursor": "hand",
+        "scale": 1.5,
+        "id": "9f38caa2-8534-db6e-4723-9d57c127078a",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.fill.0",
+      "name": "Match Colour",
+      "tool": "fill",
+      "options": {
+        "color": "#FF000000",
+        "tolerance": 24,
+        "contiguous": true,
+        "opacity": 1
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.fill.1",
+      "name": "Loose Fill",
+      "tool": "fill",
+      "options": {
+        "color": "#FF0000FF",
+        "tolerance": 64,
+        "contiguous": true,
+        "opacity": 1
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.fill.2",
+      "name": "Global Replace",
+      "tool": "fill",
+      "options": {
+        "color": "#FF000000",
+        "tolerance": 16,
+        "contiguous": false,
+        "opacity": 1
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.eraser.0",
+      "name": "Round",
+      "tool": "eraser",
+      "options": {
+        "size": 20,
+        "shape": "circle",
+        "hardness": 1
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.eraser.1",
+      "name": "Soft",
+      "tool": "eraser",
+      "options": {
+        "size": 40,
+        "shape": "circle",
+        "hardness": 0.3
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.eraser.2",
+      "name": "Square",
+      "tool": "eraser",
+      "options": {
+        "size": 24,
+        "shape": "square",
+        "hardness": 1
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.selection.0",
+      "name": "Rectangle",
+      "tool": "selection",
+      "options": {
+        "shape": "rectangle",
+        "feather": 0
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.selection.1",
+      "name": "Ellipse",
+      "tool": "selection",
+      "options": {
+        "shape": "ellipse",
+        "feather": 0
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.selection.2",
+      "name": "Soft Edge",
+      "tool": "selection",
+      "options": {
+        "shape": "rectangle",
+        "feather": 8
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.magicwand.0",
+      "name": "Precise",
+      "tool": "magicWand",
+      "options": {
+        "tolerance": 16,
+        "contiguous": true,
+        "antialias": true
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.magicwand.1",
+      "name": "Normal",
+      "tool": "magicWand",
+      "options": {
+        "tolerance": 40,
+        "contiguous": true,
+        "antialias": true
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.magicwand.2",
+      "name": "Broad",
+      "tool": "magicWand",
+      "options": {
+        "tolerance": 70,
+        "contiguous": false,
+        "antialias": true
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.cutout.0",
+      "name": "Clean",
+      "tool": "cutOut",
+      "options": {
+        "edge": "None",
+        "orientation": "Horizontal"
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.cutout.1",
+      "name": "Torn",
+      "tool": "cutOut",
+      "options": {
+        "edge": "Tear",
+        "orientation": "Horizontal"
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.cutout.2",
+      "name": "Wave",
+      "tool": "cutOut",
+      "options": {
+        "edge": "Wave",
+        "orientation": "Horizontal"
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.cutout.3",
+      "name": "Saw",
+      "tool": "cutOut",
+      "options": {
+        "edge": "Saw",
+        "orientation": "Vertical"
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.crop.0",
+      "name": "Free",
+      "tool": "crop",
+      "options": {
+        "aspect": "free"
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.crop.1",
+      "name": "16:9",
+      "tool": "crop",
+      "options": {
+        "aspect": "16:9"
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.crop.2",
+      "name": "4:3",
+      "tool": "crop",
+      "options": {
+        "aspect": "4:3"
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.crop.3",
+      "name": "Square",
+      "tool": "crop",
+      "options": {
+        "aspect": "1:1"
+      },
+      "isFavorite": false,
+      "isBuiltIn": true
+    }
+  ],
+  "themeColors": [
+    "#FF000000",
+    "#FFFFFFFF",
+    "#FFFFFF00",
+    "#FF00FFFF",
+    "#FFFF00FF",
+    "#FF00FF00",
+    "#FFFF0000",
+    "#FF0000FF"
+  ],
+  "fontFamily": "Arial",
+  "dropShadow": false,
+  "isDefault": false,
+  "isBuiltIn": true,
+  "favorites": [
+    {
+      "id": "builtin.high-contrast.arrow.0",
+      "name": "Standard",
+      "tool": "arrow",
+      "prototype": {
+        "kind": "arrow",
+        "startCap": "none",
+        "endCap": "arrow",
+        "startCapScale": 1,
+        "endCapScale": 1,
+        "bezier": false,
+        "id": "aec92a05-2cb5-f91e-319a-9ea58030d935",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 7.6,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.shape.1",
+      "name": "Tinted Fill",
+      "tool": "shape",
+      "prototype": {
+        "kind": "shape",
+        "shape": "roundedRectangle",
+        "cornerRadius": 12,
+        "points": [],
+        "id": "3fdb9068-5b04-1c1e-27f1-65aadd74e6e8",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 5.7,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#59000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.callout.1",
+      "name": "Speech Bubble",
+      "tool": "callout",
+      "prototype": {
+        "kind": "callout",
+        "shapePresetId": "speech-bubble",
+        "tails": [],
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 18,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "center",
+          "vAlign": "middle",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "id": "44627978-9ef6-3fdf-94ea-a8cbbc14099f",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#FF000000",
+          "width": 3.8,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FFFFFF00",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.text.1",
+      "name": "Heading",
+      "tool": "text",
+      "prototype": {
+        "kind": "text",
+        "text": {
+          "runs": [
+            {
+              "text": "Text",
+              "fontFamily": "Arial",
+              "fontSize": 32,
+              "bold": true,
+              "italic": false,
+              "underline": false,
+              "strikethrough": false,
+              "color": "#FF000000"
+            }
+          ]
+        },
+        "textStyle": {
+          "hAlign": "left",
+          "vAlign": "top",
+          "padding": {
+            "left": 8,
+            "top": 8,
+            "right": 8,
+            "bottom": 8
+          },
+          "outlineWidth": 0,
+          "lineSpacing": 1,
+          "autoSize": true
+        },
+        "deselectBehavior": "deleteIfEmpty",
+        "id": "a8420fc6-070d-46eb-6423-318531d2c775",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "none",
+          "color": "#00000000",
+          "isVisible": false
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.step.0",
+      "name": "Circle",
+      "tool": "step",
+      "prototype": {
+        "kind": "step",
+        "style": "circle",
+        "sequence": "number",
+        "value": 1,
+        "textColor": "#FFFFFFFF",
+        "fontFamily": "Arial",
+        "id": "043bdfe8-0be1-6d05-6ec2-29f87815c47a",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#00000000",
+          "width": 0,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": false
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#FF000000",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    },
+    {
+      "id": "builtin.high-contrast.highlighter.0",
+      "name": "Yellow",
+      "tool": "highlighter",
+      "prototype": {
+        "kind": "highlight",
+        "id": "c09dfe27-123c-6d6f-df7d-3f65458e2d75",
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationDegrees": 0,
+        "stroke": {
+          "color": "#80FFEB3B",
+          "width": 16,
+          "dash": "solid",
+          "join": "round",
+          "isVisible": true
+        },
+        "fill": {
+          "kind": "solid",
+          "color": "#80FFEB3B",
+          "isVisible": true
+        },
+        "opacity": 1,
+        "isLocked": false,
+        "ignoresUndoAll": false
+      },
+      "isFavorite": true,
+      "isBuiltIn": true
+    }
+  ]
+}

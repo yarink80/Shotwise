@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Durchsuchen</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopieren</value>
+  </data>
+  <data name="CopyAll" xml:space="preserve">
+    <value>Alles kopieren</value>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>Speichern unter</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Breite</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Höhe</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Hintergrund</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Vorschau</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Nach oben</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Nach unten</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Erforderlich</value>
+  </data>
+  <data name="NewImage" xml:space="preserve">
+    <value>Neues Bild</value>
+  </data>
+  <data name="ResizeImage" xml:space="preserve">
+    <value>Bildgröße ändern</value>
+  </data>
+  <data name="ColorPicker" xml:space="preserve">
+    <value>Farbauswahl</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Drucken</value>
+  </data>
+</root>

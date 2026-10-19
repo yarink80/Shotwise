@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Authoring-time tool (not part of Shotwise.sln, not shipped): downloads the Fluent UI System Icons listed in
+    icons.manifest from the pinned @fluentui/svg-icons npm release and converts them into WPF XAML resource
+    dictionaries (Geometry for Regular/Filled, DrawingImage with gradients for Color/tinted icons).
+    Usage and options: see tools/icon-import/README.md.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>IconImport</RootNamespace>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="tile" x1="6" y1="6" x2="122" y2="122" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7C70FF"/><stop offset="1" stop-color="#5B4CF5"/></linearGradient>
+    <linearGradient id="hl" x1="0" y1="6" x2="0" y2="75.6" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.24"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="dot" x1="47" y1="47" x2="81" y2="81" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF7A45"/><stop offset="1" stop-color="#FF4D5E"/></linearGradient>
+    <radialGradient id="dotHl" cx="58.9" cy="57.88" r="10.2" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#tile)"/>
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#hl)"/>
+  <rect x="6.5" y="6.5" width="115" height="115" rx="27.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1"/>
+  <path d="M32 53V38A6 6 0 0 1 38 32H53M96 53V38A6 6 0 0 0 90 32H75M96 75V90A6 6 0 0 1 90 96H75M32 75V90A6 6 0 0 0 38 96H53" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="64" cy="65.7" r="17.68" fill="#2B1E9E" fill-opacity="0.28"/>
+  <circle cx="64" cy="64" r="17" fill="url(#dot)"/>
+  <circle cx="64" cy="64" r="17" fill="url(#dotHl)"/>
+</svg>

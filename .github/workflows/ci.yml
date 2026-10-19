@@ -1,0 +1,55 @@
+# Build + test on every push and pull request (Windows; the app is WPF + a native C++ shell extension).
+name: CI
+
+on:
+  push:
+    branches: ['**']
+    tags-ignore: ['v*']          # release tags are built by release.yml
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DOTNET_NOLOGO: '1'
+  DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+  MSBUILDDISABLENODEREUSE: '1'
+  NUGET_PACKAGES: ${{ github.workspace }}\.nuget\packages
+
+jobs:
+  build-test:
+    name: Build and test (windows-latest)
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}\.nuget\packages
+          key: nuget-${{ runner.os }}-${{ hashFiles('Directory.Packages.props', '**/*.csproj') }}
+          restore-keys: nuget-${{ runner.os }}-
+
+      # Restore, Debug build, native shell extension (Visual Studio C++ tools on the runner, found via vswhere) and every test
+      # project. Opt-in hardware/network tests (SHOTWISE_MANUAL_RECORDING, SHOTWISE_NET_TESTS, SHOTWISE_TEST_CREDMAN) stay skipped.
+      - name: Build and test
+        shell: pwsh
+        run: ./tools/build.ps1 -Test
+
+      - name: Upload test logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: |
+            tests/**/TestResults/**
+          if-no-files-found: ignore

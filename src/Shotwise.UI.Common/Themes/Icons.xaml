@@ -1,0 +1,84 @@
+<!-- Shotwise icon set (docs/DESIGN-SYSTEM.md "Icons").
+     Icon.<Name>.Regular / .Filled : Geometry in a 24x24 box - render with <sw:SwIcon Source="{StaticResource ...}" Size="20" /> (fill = Foreground).
+     Icon.<Name>.Color             : 24x24 DrawingImage with gradients - <sw:SwIcon Source=...> or <Image Source=...>.
+     Generated parts come from Fluent UI System Icons (MIT, Microsoft) via tools/icon-import; the brand mark below is Shotwise's own. -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    mc:Ignorable="po">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Shotwise.UI.Common;component/Themes/Icons.Regular.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Shotwise.UI.Common;component/Themes/Icons.Filled.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Shotwise.UI.Common;component/Themes/Icons.Color.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!-- Shotwise app mark (original artwork) = the app icon (src/Shotwise.App/Assets/shotwise-icon.svg, tools/icon-gen):
+         indigo-violet tile with a soft top highlight, white viewfinder brackets, coral shutter dot. 256-unit design box (the
+         transparent frame keeps the 12-unit margin so it lines up with the .ico). For 16-24 px chrome prefer AppIcon.ForSize(),
+         which returns the pixel-hinted bitmaps. -->
+    <DrawingImage x:Key="Icon.Brand.Color" po:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="#00000000" Geometry="M0 0H256V256H0Z" />
+                <GeometryDrawing>
+                    <GeometryDrawing.Geometry>
+                        <RectangleGeometry Rect="12,12,232,232" RadiusX="56" RadiusY="56" />
+                    </GeometryDrawing.Geometry>
+                    <GeometryDrawing.Brush>
+                        <LinearGradientBrush MappingMode="Absolute" StartPoint="12,12" EndPoint="244,244">
+                            <GradientStop Offset="0" Color="#7C70FF" />
+                            <GradientStop Offset="1" Color="#5B4CF5" />
+                        </LinearGradientBrush>
+                    </GeometryDrawing.Brush>
+                </GeometryDrawing>
+                <GeometryDrawing>
+                    <GeometryDrawing.Geometry>
+                        <RectangleGeometry Rect="12,12,232,232" RadiusX="56" RadiusY="56" />
+                    </GeometryDrawing.Geometry>
+                    <GeometryDrawing.Brush>
+                        <LinearGradientBrush MappingMode="Absolute" StartPoint="0,12" EndPoint="0,151.2">
+                            <GradientStop Offset="0" Color="#3DFFFFFF" />
+                            <GradientStop Offset="1" Color="#00FFFFFF" />
+                        </LinearGradientBrush>
+                    </GeometryDrawing.Brush>
+                </GeometryDrawing>
+                <GeometryDrawing Geometry="M64 106V76A12 12 0 0 1 76 64H106M192 106V76A12 12 0 0 0 180 64H150M192 150V180A12 12 0 0 1 180 192H150M64 150V180A12 12 0 0 0 76 192H106">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="White" Thickness="16" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="#472B1E9E">
+                    <GeometryDrawing.Geometry>
+                        <EllipseGeometry Center="128,131.4" RadiusX="35.36" RadiusY="35.36" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing>
+                    <GeometryDrawing.Geometry>
+                        <EllipseGeometry Center="128,128" RadiusX="34" RadiusY="34" />
+                    </GeometryDrawing.Geometry>
+                    <GeometryDrawing.Brush>
+                        <LinearGradientBrush MappingMode="Absolute" StartPoint="94,94" EndPoint="162,162">
+                            <GradientStop Offset="0" Color="#FF7A45" />
+                            <GradientStop Offset="1" Color="#FF4D5E" />
+                        </LinearGradientBrush>
+                    </GeometryDrawing.Brush>
+                </GeometryDrawing>
+                <GeometryDrawing>
+                    <GeometryDrawing.Geometry>
+                        <EllipseGeometry Center="128,128" RadiusX="34" RadiusY="34" />
+                    </GeometryDrawing.Geometry>
+                    <GeometryDrawing.Brush>
+                        <RadialGradientBrush MappingMode="Absolute" Center="117.8,115.76" GradientOrigin="117.8,115.76" RadiusX="20.4" RadiusY="20.4">
+                            <GradientStop Offset="0" Color="#73FFFFFF" />
+                            <GradientStop Offset="1" Color="#00FFFFFF" />
+                        </RadialGradientBrush>
+                    </GeometryDrawing.Brush>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+    <!-- Brand mark as a plain Geometry (tile only) for monochrome contexts. -->
+    <StreamGeometry x:Key="Icon.Brand.Filled" po:Freeze="True">F0 M6 0H18A6 6 0 0 1 24 6V18A6 6 0 0 1 18 24H6A6 6 0 0 1 0 18V6A6 6 0 0 1 6 0Z M12 8.4A3.6 3.6 0 1 0 12.01 8.4Z</StreamGeometry>
+</ResourceDictionary>

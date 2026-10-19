@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Screen/window/element capture engines, scrolling, panoramic, menu, step, clipboard watch, printer capture. Owner: WP-CAPTURE. -->
+  <PropertyGroup>
+    <TargetFramework>$(ShotwiseTfm)</TargetFramework>
+    <SupportedOSPlatformVersion>$(ShotwiseSupportedOSPlatformVersion)</SupportedOSPlatformVersion>
+    <RootNamespace>Shotwise.Capture</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.CsWin32" PrivateAssets="all" />
+    <PackageReference Include="Vortice.Direct3D11" />
+    <PackageReference Include="Vortice.DXGI" />
+    <PackageReference Include="Vortice.Direct2D1" />
+    <PackageReference Include="Interop.UIAutomationClient" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shotwise.Core\Shotwise.Core.csproj" />
+  </ItemGroup>
+
+</Project>

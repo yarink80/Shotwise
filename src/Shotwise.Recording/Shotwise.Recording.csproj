@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Video recorder, audio capture/mixing, webcam, compositor, cursor FX. Owner: WP-RECORDING. -->
+  <PropertyGroup>
+    <TargetFramework>$(ShotwiseTfm)</TargetFramework>
+    <SupportedOSPlatformVersion>$(ShotwiseSupportedOSPlatformVersion)</SupportedOSPlatformVersion>
+    <RootNamespace>Shotwise.Recording</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.CsWin32" PrivateAssets="all" />
+    <PackageReference Include="Vortice.MediaFoundation" />
+    <PackageReference Include="Vortice.Direct3D11" />
+    <PackageReference Include="Vortice.DXGI" />
+    <PackageReference Include="Vortice.Direct2D1" />
+    <PackageReference Include="NAudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shotwise.Core\Shotwise.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Shotwise.Recording.Tests" />
+  </ItemGroup>
+
+</Project>

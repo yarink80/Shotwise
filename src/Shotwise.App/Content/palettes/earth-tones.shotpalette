@@ -1,0 +1,17 @@
+{
+  "id": "builtin.earth-tones",
+  "name": "Earth Tones",
+  "colors": [
+    "#FF3E2723",
+    "#FF6D4C41",
+    "#FFA1887F",
+    "#FFD7CCC8",
+    "#FF556B2F",
+    "#FF8A9A5B",
+    "#FFC2B280",
+    "#FFB5651D",
+    "#FF8B3A3A",
+    "#FF2F4F4F"
+  ],
+  "isBuiltIn": true
+}

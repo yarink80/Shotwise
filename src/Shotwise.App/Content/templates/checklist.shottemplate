@@ -1,0 +1,732 @@
+{
+  "format": "shottemplate",
+  "version": 1,
+  "id": "shotwise.checklist",
+  "name": "Checklist",
+  "localizedNames": {},
+  "category": "Getting started",
+  "keywords": [
+    "checklist",
+    "layout",
+    "images"
+  ],
+  "maxImages": 5,
+  "prototype": {
+    "id": "9ff9463f-c5d2-4313-8406-4a7a9a331186",
+    "canvasSize": {
+      "width": 1200,
+      "height": 2160,
+      "isEmpty": false
+    },
+    "dpi": 96,
+    "background": {
+      "color": "#FFF8FAFC"
+    },
+    "cornerRadius": 0,
+    "annotations": [],
+    "sections": [
+      {
+        "id": "e9e5dd41-df49-45ac-990d-da1ce0e03b0b",
+        "type": "header",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 140
+        },
+        "background": "#FF172033",
+        "graphics": [
+          {
+            "kind": "text",
+            "text": {
+              "runs": [
+                {
+                  "text": "Checklist",
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 44,
+                  "bold": true,
+                  "italic": false,
+                  "underline": false,
+                  "strikethrough": false,
+                  "color": "#FFFFFFFF"
+                }
+              ]
+            },
+            "textStyle": {
+              "hAlign": "left",
+              "vAlign": "top",
+              "padding": {
+                "left": 8,
+                "top": 8,
+                "right": 8,
+                "bottom": 8
+              },
+              "outlineWidth": 0,
+              "lineSpacing": 1,
+              "autoSize": true
+            },
+            "deselectBehavior": "deleteIfEmpty",
+            "id": "a3201d94-c983-4c67-856c-9c39ca27ef6b",
+            "start": {
+              "x": 48,
+              "y": 36
+            },
+            "end": {
+              "x": 1152,
+              "y": 108
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#00000000",
+              "width": 0,
+              "dash": "solid",
+              "join": "round",
+              "isVisible": false
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          }
+        ]
+      },
+      {
+        "id": "1dd180d1-c23c-4aef-94aa-6f8488a97f38",
+        "type": "body",
+        "bounds": {
+          "x": 32,
+          "y": 180,
+          "width": 1136,
+          "height": 340
+        },
+        "background": "#FFFFFFFF",
+        "graphics": [
+          {
+            "kind": "text",
+            "text": {
+              "runs": [
+                {
+                  "text": "Check 1",
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 24,
+                  "bold": true,
+                  "italic": false,
+                  "underline": false,
+                  "strikethrough": false,
+                  "color": "#FF0F766E"
+                }
+              ]
+            },
+            "textStyle": {
+              "hAlign": "left",
+              "vAlign": "top",
+              "padding": {
+                "left": 8,
+                "top": 8,
+                "right": 8,
+                "bottom": 8
+              },
+              "outlineWidth": 0,
+              "lineSpacing": 1,
+              "autoSize": true
+            },
+            "deselectBehavior": "deleteIfEmpty",
+            "id": "36fde664-c9ef-46fc-9aa9-6532d5ddd7e7",
+            "start": {
+              "x": 48,
+              "y": 192
+            },
+            "end": {
+              "x": 1152,
+              "y": 232
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#00000000",
+              "width": 0,
+              "dash": "solid",
+              "join": "round",
+              "isVisible": false
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          },
+          {
+            "kind": "dropZone",
+            "sectionId": "1dd180d1-c23c-4aef-94aa-6f8488a97f38",
+            "contentOffset": {
+              "x": 0,
+              "y": 0
+            },
+            "contentZoom": 1,
+            "cornerRadius": 12,
+            "id": "4f592feb-71aa-4eea-b5f1-a2ac07fa5374",
+            "start": {
+              "x": 48,
+              "y": 248
+            },
+            "end": {
+              "x": 1152,
+              "y": 500
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#FF808080",
+              "width": 1,
+              "dash": "dash",
+              "join": "round",
+              "isVisible": true
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          }
+        ]
+      },
+      {
+        "id": "7d65b29f-ab3d-4196-93af-08067a2140ed",
+        "type": "body",
+        "bounds": {
+          "x": 32,
+          "y": 560,
+          "width": 1136,
+          "height": 340
+        },
+        "background": "#FFFFFFFF",
+        "graphics": [
+          {
+            "kind": "text",
+            "text": {
+              "runs": [
+                {
+                  "text": "Check 2",
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 24,
+                  "bold": true,
+                  "italic": false,
+                  "underline": false,
+                  "strikethrough": false,
+                  "color": "#FF0F766E"
+                }
+              ]
+            },
+            "textStyle": {
+              "hAlign": "left",
+              "vAlign": "top",
+              "padding": {
+                "left": 8,
+                "top": 8,
+                "right": 8,
+                "bottom": 8
+              },
+              "outlineWidth": 0,
+              "lineSpacing": 1,
+              "autoSize": true
+            },
+            "deselectBehavior": "deleteIfEmpty",
+            "id": "398d8f2d-e8d9-47ee-93f0-70426193612f",
+            "start": {
+              "x": 48,
+              "y": 572
+            },
+            "end": {
+              "x": 1152,
+              "y": 612
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#00000000",
+              "width": 0,
+              "dash": "solid",
+              "join": "round",
+              "isVisible": false
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          },
+          {
+            "kind": "dropZone",
+            "sectionId": "7d65b29f-ab3d-4196-93af-08067a2140ed",
+            "contentOffset": {
+              "x": 0,
+              "y": 0
+            },
+            "contentZoom": 1,
+            "cornerRadius": 12,
+            "id": "211856ce-f075-437b-875c-2614ccd4d0a6",
+            "start": {
+              "x": 48,
+              "y": 628
+            },
+            "end": {
+              "x": 1152,
+              "y": 880
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#FF808080",
+              "width": 1,
+              "dash": "dash",
+              "join": "round",
+              "isVisible": true
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          }
+        ]
+      },
+      {
+        "id": "a7c0e5c0-aa15-4c62-b3f2-9b6da4b6a8b6",
+        "type": "body",
+        "bounds": {
+          "x": 32,
+          "y": 940,
+          "width": 1136,
+          "height": 340
+        },
+        "background": "#FFFFFFFF",
+        "graphics": [
+          {
+            "kind": "text",
+            "text": {
+              "runs": [
+                {
+                  "text": "Check 3",
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 24,
+                  "bold": true,
+                  "italic": false,
+                  "underline": false,
+                  "strikethrough": false,
+                  "color": "#FF0F766E"
+                }
+              ]
+            },
+            "textStyle": {
+              "hAlign": "left",
+              "vAlign": "top",
+              "padding": {
+                "left": 8,
+                "top": 8,
+                "right": 8,
+                "bottom": 8
+              },
+              "outlineWidth": 0,
+              "lineSpacing": 1,
+              "autoSize": true
+            },
+            "deselectBehavior": "deleteIfEmpty",
+            "id": "1637f329-0618-4558-9910-f66de525b9ab",
+            "start": {
+              "x": 48,
+              "y": 952
+            },
+            "end": {
+              "x": 1152,
+              "y": 992
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#00000000",
+              "width": 0,
+              "dash": "solid",
+              "join": "round",
+              "isVisible": false
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          },
+          {
+            "kind": "dropZone",
+            "sectionId": "a7c0e5c0-aa15-4c62-b3f2-9b6da4b6a8b6",
+            "contentOffset": {
+              "x": 0,
+              "y": 0
+            },
+            "contentZoom": 1,
+            "cornerRadius": 12,
+            "id": "252c06e2-67d7-4838-8ea6-0487564270d5",
+            "start": {
+              "x": 48,
+              "y": 1008
+            },
+            "end": {
+              "x": 1152,
+              "y": 1260
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#FF808080",
+              "width": 1,
+              "dash": "dash",
+              "join": "round",
+              "isVisible": true
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          }
+        ]
+      },
+      {
+        "id": "466004ff-3587-40fd-b7e9-c78cc33a98c6",
+        "type": "body",
+        "bounds": {
+          "x": 32,
+          "y": 1320,
+          "width": 1136,
+          "height": 340
+        },
+        "background": "#FFFFFFFF",
+        "graphics": [
+          {
+            "kind": "text",
+            "text": {
+              "runs": [
+                {
+                  "text": "Check 4",
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 24,
+                  "bold": true,
+                  "italic": false,
+                  "underline": false,
+                  "strikethrough": false,
+                  "color": "#FF0F766E"
+                }
+              ]
+            },
+            "textStyle": {
+              "hAlign": "left",
+              "vAlign": "top",
+              "padding": {
+                "left": 8,
+                "top": 8,
+                "right": 8,
+                "bottom": 8
+              },
+              "outlineWidth": 0,
+              "lineSpacing": 1,
+              "autoSize": true
+            },
+            "deselectBehavior": "deleteIfEmpty",
+            "id": "deeed5c7-0cec-48d3-8c0a-d344b157362c",
+            "start": {
+              "x": 48,
+              "y": 1332
+            },
+            "end": {
+              "x": 1152,
+              "y": 1372
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#00000000",
+              "width": 0,
+              "dash": "solid",
+              "join": "round",
+              "isVisible": false
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          },
+          {
+            "kind": "dropZone",
+            "sectionId": "466004ff-3587-40fd-b7e9-c78cc33a98c6",
+            "contentOffset": {
+              "x": 0,
+              "y": 0
+            },
+            "contentZoom": 1,
+            "cornerRadius": 12,
+            "id": "c8ef4885-e654-4b7d-aa49-318dac059514",
+            "start": {
+              "x": 48,
+              "y": 1388
+            },
+            "end": {
+              "x": 1152,
+              "y": 1640
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#FF808080",
+              "width": 1,
+              "dash": "dash",
+              "join": "round",
+              "isVisible": true
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          }
+        ]
+      },
+      {
+        "id": "d0c3e16d-fc6c-4f16-b16e-af3a0bfecc44",
+        "type": "body",
+        "bounds": {
+          "x": 32,
+          "y": 1700,
+          "width": 1136,
+          "height": 340
+        },
+        "background": "#FFFFFFFF",
+        "graphics": [
+          {
+            "kind": "text",
+            "text": {
+              "runs": [
+                {
+                  "text": "Check 5",
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 24,
+                  "bold": true,
+                  "italic": false,
+                  "underline": false,
+                  "strikethrough": false,
+                  "color": "#FF0F766E"
+                }
+              ]
+            },
+            "textStyle": {
+              "hAlign": "left",
+              "vAlign": "top",
+              "padding": {
+                "left": 8,
+                "top": 8,
+                "right": 8,
+                "bottom": 8
+              },
+              "outlineWidth": 0,
+              "lineSpacing": 1,
+              "autoSize": true
+            },
+            "deselectBehavior": "deleteIfEmpty",
+            "id": "9e13087e-af7c-469f-a52e-64e04cbdadfb",
+            "start": {
+              "x": 48,
+              "y": 1712
+            },
+            "end": {
+              "x": 1152,
+              "y": 1752
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#00000000",
+              "width": 0,
+              "dash": "solid",
+              "join": "round",
+              "isVisible": false
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          },
+          {
+            "kind": "dropZone",
+            "sectionId": "d0c3e16d-fc6c-4f16-b16e-af3a0bfecc44",
+            "contentOffset": {
+              "x": 0,
+              "y": 0
+            },
+            "contentZoom": 1,
+            "cornerRadius": 12,
+            "id": "e6b42211-aef8-4f8d-8430-d3b22083fea2",
+            "start": {
+              "x": 48,
+              "y": 1768
+            },
+            "end": {
+              "x": 1152,
+              "y": 2020
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#FF808080",
+              "width": 1,
+              "dash": "dash",
+              "join": "round",
+              "isVisible": true
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          }
+        ]
+      },
+      {
+        "id": "afc1d017-0664-4842-8f49-612a778f44bc",
+        "type": "footer",
+        "bounds": {
+          "x": 32,
+          "y": 2100,
+          "width": 1136,
+          "height": 40
+        },
+        "graphics": [
+          {
+            "kind": "text",
+            "text": {
+              "runs": [
+                {
+                  "text": "Created with Shotwise",
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 16,
+                  "bold": false,
+                  "italic": false,
+                  "underline": false,
+                  "strikethrough": false,
+                  "color": "#FF475569"
+                }
+              ]
+            },
+            "textStyle": {
+              "hAlign": "left",
+              "vAlign": "top",
+              "padding": {
+                "left": 8,
+                "top": 8,
+                "right": 8,
+                "bottom": 8
+              },
+              "outlineWidth": 0,
+              "lineSpacing": 1,
+              "autoSize": true
+            },
+            "deselectBehavior": "deleteIfEmpty",
+            "id": "2281a0b0-5884-48d9-b682-6044d5e94da3",
+            "start": {
+              "x": 48,
+              "y": 2104
+            },
+            "end": {
+              "x": 1152,
+              "y": 2140
+            },
+            "rotationDegrees": 0,
+            "stroke": {
+              "color": "#00000000",
+              "width": 0,
+              "dash": "solid",
+              "join": "round",
+              "isVisible": false
+            },
+            "fill": {
+              "kind": "none",
+              "color": "#00000000",
+              "isVisible": false
+            },
+            "opacity": 1,
+            "isLocked": false,
+            "ignoresUndoAll": true
+          }
+        ]
+      }
+    ],
+    "stepCounters": {
+      "number": 1,
+      "upper": 1,
+      "lower": 1
+    },
+    "simplify": {
+      "autoSimplifyEnabled": false,
+      "detail": 8,
+      "opacity": 1,
+      "showOriginal": false,
+      "originalOpacity": 0.3,
+      "lockObjects": true,
+      "palette": "imageColors",
+      "customColors": [],
+      "lineSpacing": 1,
+      "textHeight": 10
+    },
+    "smartRedact": {
+      "enabled": false,
+      "categories": [
+        "email",
+        "phone",
+        "creditCard",
+        "ssn",
+        "ipAddress",
+        "url",
+        "date",
+        "postalAddress",
+        "face",
+        "other"
+      ],
+      "mode": "pixelate",
+      "solidColor": "#FF000000"
+    },
+    "view": {
+      "zoom": 1,
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "fitToWindow": true,
+      "showPixelGrid": false
+    }
+  },
+  "assets": [],
+  "isBuiltIn": true
+}

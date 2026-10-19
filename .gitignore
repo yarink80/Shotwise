@@ -1,0 +1,89 @@
+# Build output
+bin/
+obj/
+out/
+artifacts/
+publish/
+# Installer output (tools/package.ps1)
+dist/
+*_wpftmp.csproj
+*.g.cs
+*.g.i.cs
+
+# Native (C++) build output
+native/**/x64/
+native/**/Debug/
+native/**/Release/
+*.obj
+*.pch
+*.ipch
+*.ilk
+*.iobj
+*.ipdb
+*.tlog
+*.lastbuildstate
+
+# IDE / tooling
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+*.swp
+.DS_Store
+Thumbs.db
+
+# Test results / coverage
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Logs / local runtime data
+*.log
+swroot/
+
+# Secrets (never commit)
+*.pfx
+*.p12
+*.pem
+*.key
+.env
+.env.*
+appsettings.*.local.json
+secrets.json
+
+# ---------------------------------------------------------------------------------------------------------------
+# Local-only material: development notes, reviews, planning and raw screenshots stay out of the public repository.
+# ---------------------------------------------------------------------------------------------------------------
+.orchestration/
+docs/assessment/
+docs/review/
+docs/phase0/
+docs/adr/
+docs/wp/
+docs/screenshots/
+docs/MULTI-MACHINE-SCOPE.md
+docs/PERF-MEMORY-COMPARISON.md
+docs/DESIGN-BRIEF.md
+docs/BUILD-PLAN.md
+docs/INTEGRATION-PLAN.md
+docs/FIX-PLAN.md
+docs/CONTRACT-REQUESTS.md
+docs/STATUS.md
+spikes/
+# Experimental multi-PC services (not part of the public solution yet)
+src/Shotwise.Hub/
+src/Shotwise.BlobStore/
+tests/Shotwise.BlobStore.Tests/
+# Local solution that still includes the experimental projects
+Shotwise.local-full.sln

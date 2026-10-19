@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <ItemGroup Label="ProjectConfigurations">
+  <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+ </ItemGroup>
+ <PropertyGroup Label="Globals"><ProjectGuid>{BCFEAAE7-E347-444A-9D03-2146CA5C94CD}</ProjectGuid><Keyword>Win32Proj</Keyword><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+ <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+ <PropertyGroup Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet><UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries><UseDebugLibraries Condition="'$(Configuration)'=='Release'">false</UseDebugLibraries></PropertyGroup>
+ <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+ <PropertyGroup><OutDir>$(MSBuildThisFileDirectory)bin\$(Platform)\$(Configuration)\</OutDir><IntDir>$(MSBuildThisFileDirectory)obj\$(Platform)\$(Configuration)\</IntDir><TargetName>Shotwise.ShellExt</TargetName></PropertyGroup>
+ <ItemDefinitionGroup>
+  <ClCompile><WarningLevel>Level4</WarningLevel><LanguageStandard>stdcpp20</LanguageStandard><PreprocessorDefinitions>UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions><ExceptionHandling>Sync</ExceptionHandling><ConformanceMode>true</ConformanceMode><RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebug</RuntimeLibrary><RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreaded</RuntimeLibrary></ClCompile>
+  <Link><ModuleDefinitionFile>ShellExt.def</ModuleDefinitionFile><AdditionalDependencies>windowscodecs.lib;propsys.lib;ole32.lib;oleaut32.lib;shell32.lib;advapi32.lib;gdi32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies><SubSystem>Windows</SubSystem></Link>
+  <PostBuildEvent><Command>copy /Y "$(ProjectDir)Shotwise.propdesc" "$(OutDir)Shotwise.propdesc"</Command></PostBuildEvent>
+ </ItemDefinitionGroup>
+ <ItemGroup><ClCompile Include="ShellExt.cpp"/><ClInclude Include="DocumentReader.h"/><None Include="Shotwise.propdesc"/><None Include="ShellExt.def"/></ItemGroup>
+ <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

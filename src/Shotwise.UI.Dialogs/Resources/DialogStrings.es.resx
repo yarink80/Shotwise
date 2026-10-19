@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="OK" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Examinar</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="CopyAll" xml:space="preserve">
+    <value>Copiar todo</value>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>Guardar como</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>Preferencias</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Ancho</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Alto</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Fondo</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Vista previa</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Subir</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Bajar</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Obligatorio</value>
+  </data>
+  <data name="NewImage" xml:space="preserve">
+    <value>Nueva imagen</value>
+  </data>
+  <data name="ResizeImage" xml:space="preserve">
+    <value>Cambiar tamaño de imagen</value>
+  </data>
+  <data name="ColorPicker" xml:space="preserve">
+    <value>Selector de color</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+</root>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="tile" x1="1" y1="1" x2="23" y2="23" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7C70FF"/><stop offset="1" stop-color="#5B4CF5"/></linearGradient>
+    <linearGradient id="hl" x1="0" y1="1" x2="0" y2="14.2" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="dot" x1="8.5" y1="8.5" x2="15.5" y2="15.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF7A45"/><stop offset="1" stop-color="#FF4D5E"/></linearGradient>
+    <radialGradient id="dotHl" cx="10.95" cy="10.74" r="2.1" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="url(#tile)"/>
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="url(#hl)"/>
+  <path d="M6 10V6H10M18 10V6H14M18 14V18H14M6 14V18H10" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <circle cx="12" cy="12" r="3.5" fill="url(#dot)"/>
+</svg>

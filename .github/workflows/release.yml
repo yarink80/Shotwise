@@ -1,0 +1,154 @@
+# Builds the Velopack installer + update packages and publishes them as a GitHub Release of this repository.
+# Installed copies of Shotwise check these releases (docs/UPDATES.md).
+#
+# Trigger: push a tag v<version> (e.g. v0.9.1, or v0.9.2-beta.1 for the beta channel = GitHub pre-release),
+# or run it manually (Actions -> Release -> Run workflow) with a version.
+# The tag must match <Version> in Directory.Build.props (tools/release.ps1 bumps it).
+#
+# Optional code signing (disabled when the secrets are absent):
+#   SIGN_PFX_BASE64   base64 of a code-signing .pfx      SIGN_PFX_PASSWORD   its password
+#   SIGN_TIMESTAMP_URL (optional, default http://timestamp.digicert.com)
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (x.y.z or x.y.z-beta.N); must equal <Version> in Directory.Build.props'
+        required: true
+      draft:
+        description: 'Leave the GitHub release as a draft (do not publish)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write              # create the release and upload its assets with GITHUB_TOKEN
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+env:
+  DOTNET_NOLOGO: '1'
+  DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+  MSBUILDDISABLENODEREUSE: '1'
+  NUGET_PACKAGES: ${{ github.workspace }}\.nuget\packages
+  REPO_URL: https://github.com/${{ github.repository }}
+  VPK_VERSION: '1.2.161'       # keep equal to the Velopack PackageVersion in Directory.Packages.props
+
+jobs:
+  release:
+    runs-on: windows-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}\.nuget\packages
+          key: nuget-${{ runner.os }}-${{ hashFiles('Directory.Packages.props', '**/*.csproj') }}
+          restore-keys: nuget-${{ runner.os }}-
+
+      - name: Resolve version and channel
+        id: v
+        shell: pwsh
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          $v = if ($env:GITHUB_EVENT_NAME -eq 'workflow_dispatch') { $env:INPUT_VERSION.Trim() } else { $env:GITHUB_REF_NAME -replace '^v', '' }
+          if ($v -notmatch '^\d+\.\d+\.\d+(-[0-9A-Za-z]+(\.[0-9A-Za-z]+)*)?$') { throw "Not a SemVer version: $v" }
+          $props = [xml](Get-Content Directory.Build.props -Raw)
+          $declared = ($props.Project.PropertyGroup | ForEach-Object { $_.Version } | Where-Object { $_ } | Select-Object -First 1)
+          if ($declared -ne $v) { throw "Directory.Build.props has Version $declared but the release is $v. Run tools/release.ps1 -Version $v and commit." }
+          if (-not (Test-Path "docs/RELEASE-NOTES-$v.md")) { throw "docs/RELEASE-NOTES-$v.md is missing." }
+          $pre = $v -match '-'
+          "version=$v" >> $env:GITHUB_OUTPUT
+          "prerelease=$($pre.ToString().ToLower())" >> $env:GITHUB_OUTPUT
+          Write-Host "Releasing $v (prerelease: $pre)"
+
+      - name: Install vpk
+        shell: pwsh
+        run: dotnet tool update -g vpk --version $env:VPK_VERSION
+
+      # Restore + Debug build + native shell extension (VS C++ tools on the runner) + all tests (opt-in hardware tests skipped).
+      - name: Build and test
+        shell: pwsh
+        run: ./tools/build.ps1 -Test
+
+      - name: Prepare code signing (optional)
+        id: sign
+        shell: pwsh
+        env:
+          SIGN_PFX_BASE64: ${{ secrets.SIGN_PFX_BASE64 }}
+          SIGN_PFX_PASSWORD: ${{ secrets.SIGN_PFX_PASSWORD }}
+          SIGN_TIMESTAMP_URL: ${{ secrets.SIGN_TIMESTAMP_URL }}
+        run: |
+          if (-not $env:SIGN_PFX_BASE64) { Write-Host 'No signing secrets: the release is unsigned (SmartScreen will warn).'; "params=" >> $env:GITHUB_OUTPUT; exit 0 }
+          $pfx = Join-Path $env:RUNNER_TEMP 'codesign.pfx'
+          [IO.File]::WriteAllBytes($pfx, [Convert]::FromBase64String($env:SIGN_PFX_BASE64))
+          $ts = if ($env:SIGN_TIMESTAMP_URL) { $env:SIGN_TIMESTAMP_URL } else { 'http://timestamp.digicert.com' }
+          Write-Host "::add-mask::$($env:SIGN_PFX_PASSWORD)"
+          "params=/f `"$pfx`" /p $($env:SIGN_PFX_PASSWORD) /fd sha256 /tr $ts /td sha256" >> $env:GITHUB_OUTPUT
+
+      # vpk download github (previous release -> delta package) + publish/prune + vpk pack, all in tools/package.ps1.
+      - name: Package (vpk download + pack)
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SIGN_PARAMS: ${{ steps.sign.outputs.params }}
+          VERSION: ${{ steps.v.outputs.version }}
+          PRERELEASE: ${{ steps.v.outputs.prerelease }}
+        run: |
+          $pkg = @{ Version = $env:VERSION; DownloadPrevious = $true; RepoUrl = $env:REPO_URL; Token = $env:GITHUB_TOKEN }
+          if ($env:PRERELEASE -eq 'true') { $pkg.Prerelease = $true }
+          if ($env:SIGN_PARAMS) { $pkg.SignParams = $env:SIGN_PARAMS }
+          ./tools/package.ps1 @pkg
+
+      - name: Upload to GitHub Releases (vpk upload github)
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ steps.v.outputs.version }}
+          PRERELEASE: ${{ steps.v.outputs.prerelease }}
+          DRAFT: ${{ github.event_name == 'workflow_dispatch' && inputs.draft }}
+        run: |
+          $v = $env:VERSION
+          $up = @('upload', 'github', '--repoUrl', $env:REPO_URL, '--token', $env:GITHUB_TOKEN, '--outputDir', "artifacts/package/$v/vpk",
+                  '--channel', 'win', '--releaseName', "Shotwise $v", '--tag', "v$v", '--targetCommitish', $env:GITHUB_SHA, '--merge')
+          if ($env:DRAFT -ne 'true') { $up += '--publish' }
+          if ($env:PRERELEASE -eq 'true') { $up += '--pre' }
+          vpk @up
+          if ($LASTEXITCODE -ne 0) { throw "vpk upload github failed ($LASTEXITCODE)" }
+
+      # The README/INSTALL link to friendly-named assets; attach them next to Velopack's own files.
+      - name: Attach Shotwise-Setup.exe, portable zip and SHA256SUMS.txt
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ steps.v.outputs.version }}
+        run: |
+          $v = $env:VERSION
+          $files = @('Shotwise-Setup.exe', 'Shotwise-Portable.zip', 'SHA256SUMS.txt') | ForEach-Object { Join-Path "dist/$v" $_ } | Where-Object { Test-Path $_ }
+          if (-not ($files -match 'Shotwise-Setup\.exe$')) { throw "dist/$v/Shotwise-Setup.exe missing" }
+          gh release upload "v$v" @files --clobber --repo $env:GITHUB_REPOSITORY
+          if ($LASTEXITCODE -ne 0) { throw "gh release upload failed ($LASTEXITCODE)" }
+
+      - name: Keep the installer as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: shotwise-${{ steps.v.outputs.version }}
+          path: dist/${{ steps.v.outputs.version }}/
+          retention-days: 30
+
+      - name: Remove signing material
+        if: always()
+        shell: pwsh
+        run: Remove-Item (Join-Path $env:RUNNER_TEMP 'codesign.pfx') -Force -ErrorAction SilentlyContinue

@@ -1,0 +1,44 @@
+<!-- Shotwise theme-independent tokens: radii, spacing (4/8/12/16/24 grid), typography, icon sizes. -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+
+    <!-- Radius -->
+    <CornerRadius x:Key="Shotwise.Radius.Control">6</CornerRadius>
+    <CornerRadius x:Key="Shotwise.Radius.Small">4</CornerRadius>
+    <CornerRadius x:Key="Shotwise.Radius.Tile">8</CornerRadius>
+    <CornerRadius x:Key="Shotwise.Radius.Card">10</CornerRadius>
+    <CornerRadius x:Key="Shotwise.Radius.CaptureCard">14</CornerRadius>
+    <CornerRadius x:Key="Shotwise.Radius.Pill">999</CornerRadius>
+
+    <!-- Spacing (uniform thickness) -->
+    <Thickness x:Key="Shotwise.Space.4">4</Thickness>
+    <Thickness x:Key="Shotwise.Space.8">8</Thickness>
+    <Thickness x:Key="Shotwise.Space.12">12</Thickness>
+    <Thickness x:Key="Shotwise.Space.16">16</Thickness>
+    <Thickness x:Key="Shotwise.Space.24">24</Thickness>
+    <sys:Double x:Key="Shotwise.Space.Value.4">4</sys:Double>
+    <sys:Double x:Key="Shotwise.Space.Value.8">8</sys:Double>
+    <sys:Double x:Key="Shotwise.Space.Value.12">12</sys:Double>
+    <sys:Double x:Key="Shotwise.Space.Value.16">16</sys:Double>
+    <sys:Double x:Key="Shotwise.Space.Value.24">24</sys:Double>
+
+    <!-- Layout sizes -->
+    <sys:Double x:Key="Shotwise.Size.TopBarHeight">56</sys:Double>
+    <sys:Double x:Key="Shotwise.Size.ControlHeight">32</sys:Double>
+    <sys:Double x:Key="Shotwise.Size.SidePanelWidth">312</sys:Double>
+    <sys:Double x:Key="Shotwise.Size.Icon.Small">16</sys:Double>
+    <sys:Double x:Key="Shotwise.Size.Icon.Chrome">20</sys:Double>
+    <sys:Double x:Key="Shotwise.Size.Icon.Tool">24</sys:Double>
+    <sys:Double x:Key="Shotwise.Size.Icon.Large">32</sys:Double>
+
+    <!-- Typography -->
+    <FontFamily x:Key="Shotwise.FontFamily">Segoe UI Variable Text, Segoe UI</FontFamily>
+    <FontFamily x:Key="Shotwise.FontFamily.Display">Segoe UI Variable Display, Segoe UI</FontFamily>
+    <sys:Double x:Key="Shotwise.FontSize.Display">28</sys:Double>
+    <sys:Double x:Key="Shotwise.FontSize.Title">20</sys:Double>
+    <sys:Double x:Key="Shotwise.FontSize.Subtitle">15</sys:Double>
+    <sys:Double x:Key="Shotwise.FontSize.Section">13</sys:Double>
+    <sys:Double x:Key="Shotwise.FontSize.Body">13</sys:Double>
+    <sys:Double x:Key="Shotwise.FontSize.Caption">11</sys:Double>
+</ResourceDictionary>

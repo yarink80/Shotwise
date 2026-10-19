@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="tile" x1="2" y1="2" x2="46" y2="46" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7C70FF"/><stop offset="1" stop-color="#5B4CF5"/></linearGradient>
+    <linearGradient id="hl" x1="0" y1="2" x2="0" y2="28.4" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.24"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="dot" x1="17" y1="17" x2="31" y2="31" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF7A45"/><stop offset="1" stop-color="#FF4D5E"/></linearGradient>
+    <radialGradient id="dotHl" cx="21.9" cy="21.48" r="4.2" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="url(#tile)"/>
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="url(#hl)"/>
+  <path d="M12 20V14A2 2 0 0 1 14 12H20M36 20V14A2 2 0 0 0 34 12H28M36 28V34A2 2 0 0 1 34 36H28M12 28V34A2 2 0 0 0 14 36H20" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="24.7" r="7.28" fill="#2B1E9E" fill-opacity="0.28"/>
+  <circle cx="24" cy="24" r="7" fill="url(#dot)"/>
+  <circle cx="24" cy="24" r="7" fill="url(#dotHl)"/>
+</svg>

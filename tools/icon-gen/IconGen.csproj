@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Authoring-time tool (not part of Shotwise.sln, not shipped): renders the original Shotwise app icon from parametric,
+    pixel-hinted SVG designs (one per size) with Svg.Skia/SkiaSharp and packs the multi-resolution .ico files, the PNGs and a
+    contact sheet. Usage: see tools/icon-gen/README.md.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>IconGen</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="Svg.Skia" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,33 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+                    xmlns:conv="clr-namespace:Shotwise.UI.Common.Converters">
+    <!-- Shared resources for all Shotwise UI libraries. Merge after the WPF-UI ThemesDictionary/ControlsDictionary:
+         <ResourceDictionary Source="pack://application:,,,/Shotwise.UI.Common;component/Resources/SharedResources.xaml" /> -->
+
+    <!-- Shotwise design system (tokens, icons, component styles) - docs/DESIGN-SYSTEM.md -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Shotwise.UI.Common;component/Themes/Shotwise.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <conv:BoolToVisibilityConverter x:Key="BoolToVisibility" />
+    <conv:BoolToVisibilityConverter x:Key="InverseBoolToVisibility" Invert="True" />
+    <conv:InverseBoolConverter x:Key="InverseBool" />
+    <conv:NullToVisibilityConverter x:Key="NullToVisibility" />
+    <conv:NullToVisibilityConverter x:Key="NullToCollapsed" Invert="True" />
+    <conv:ArgbToColorConverter x:Key="ArgbToColor" />
+    <conv:ArgbToBrushConverter x:Key="ArgbToBrush" />
+    <conv:EnumEqualsConverter x:Key="EnumEquals" />
+    <conv:BgraImageToImageSourceConverter x:Key="BgraImageToImageSource" />
+    <conv:HotkeyToStringConverter x:Key="HotkeyToString" />
+    <conv:FractionToPercentConverter x:Key="FractionToPercent" />
+
+    <!-- Spacing tokens -->
+    <Thickness x:Key="Shotwise.Spacing.Small">4</Thickness>
+    <Thickness x:Key="Shotwise.Spacing.Medium">8</Thickness>
+    <Thickness x:Key="Shotwise.Spacing.Large">16</Thickness>
+    <sys:Double x:Key="Shotwise.DialogMinWidth">360</sys:Double>
+
+    <!-- Segoe Fluent Icons font (Windows 11; Segoe MDL2 Assets fallback on Windows 10) -->
+    <FontFamily x:Key="Shotwise.IconFont">Segoe Fluent Icons, Segoe MDL2 Assets</FontFamily>
+</ResourceDictionary>

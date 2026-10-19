@@ -1,0 +1,17 @@
+{
+  "id": "builtin.spectrum",
+  "name": "Spectrum",
+  "colors": [
+    "#FFE53935",
+    "#FFFB8C00",
+    "#FFFDD835",
+    "#FF7CB342",
+    "#FF00897B",
+    "#FF1E88E5",
+    "#FF3949AB",
+    "#FF8E24AA",
+    "#FFD81B60",
+    "#FF6D4C41"
+  ],
+  "isBuiltIn": true
+}

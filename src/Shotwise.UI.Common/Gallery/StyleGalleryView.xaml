@@ -1,0 +1,289 @@
+<UserControl x:Class="Shotwise.UI.Common.Gallery.StyleGalleryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sw="clr-namespace:Shotwise.UI.Common.Controls"
+             Width="1480" UseLayoutRounding="True" TextOptions.TextFormattingMode="Display"
+             FontFamily="{DynamicResource Shotwise.FontFamily}" Foreground="{DynamicResource Shotwise.TextPrimaryBrush}">
+    <!-- Living style gallery for the Shotwise design system (docs/DESIGN-SYSTEM.md). Every block uses only tokens + components. -->
+    <Border Background="{DynamicResource Shotwise.Surface0Brush}" Padding="32,28,32,36">
+        <StackPanel>
+
+            <!-- ============================================================ Header -->
+            <Grid Margin="0,0,0,24">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <sw:SwIcon Source="{DynamicResource Icon.Brand.Color}" Size="44" VerticalAlignment="Center" />
+                <StackPanel Grid.Column="1" Margin="14,0,0,0" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource Shotwise.Text.Display}" Text="Shotwise design system" />
+                    <TextBlock Style="{StaticResource Shotwise.Text.Secondary}" Margin="0,2,0,0">
+                        <Run Text="Tokens, components and icons for every Shotwise window" />
+                        <Run Text=" · " />
+                        <Run Text="{DynamicResource Shotwise.ThemeName}" FontWeight="SemiBold" Foreground="{DynamicResource Shotwise.AccentTextBrush}" />
+                        <Run Text=" theme" FontWeight="SemiBold" Foreground="{DynamicResource Shotwise.AccentTextBrush}" />
+                    </TextBlock>
+                </StackPanel>
+                <Border Grid.Column="2" Style="{StaticResource Shotwise.SegmentedNav}" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <sw:NavItem x:Name="LightThemeItem" GroupName="GalleryTheme" Icon="{DynamicResource Icon.Lightbulb.Regular}" Content="Light" Checked="OnLightChecked" />
+                        <sw:NavItem x:Name="DarkThemeItem" GroupName="GalleryTheme" Icon="{DynamicResource Icon.Lightbulb.Filled}" Content="Dark" Checked="OnDarkChecked" />
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <!-- ============================================================ Editor top bar -->
+            <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="EDITOR TOP BAR  ·  SegmentedNav · ToolButton · ToolCommandButton · GhostButton · SplitButton" Margin="2,0,0,8" />
+            <sw:Card Padding="0" Margin="0,0,0,28">
+                <Grid Height="64" Margin="8,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Button Style="{StaticResource Shotwise.IconButton}" sw:SwUi.Icon="{DynamicResource Icon.Menu.Regular}" ToolTip="Menu (Alt)" AutomationProperties.Name="Menu" VerticalAlignment="Center" />
+                    <Border Grid.Column="1" Style="{StaticResource Shotwise.SegmentedNav}" Margin="8,0,0,0" VerticalAlignment="Center">
+                        <StackPanel Orientation="Horizontal">
+                            <sw:NavItem GroupName="Mode" Icon="{DynamicResource Icon.Editor.Regular}" Content="Editor" IsChecked="True" />
+                            <sw:NavItem GroupName="Mode" Icon="{DynamicResource Icon.Library.Regular}" Content="Library" />
+                            <sw:NavItem GroupName="Mode" Icon="{DynamicResource Icon.Capture.Regular}" Content="Capture" ShowDot="True" />
+                            <sw:NavItem GroupName="Mode" Icon="{DynamicResource Icon.Create.Regular}" Content="Create" />
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="2" Style="{StaticResource Shotwise.VDivider}" Margin="12,14" />
+                    <StackPanel Grid.Column="3" Orientation="Horizontal" VerticalAlignment="Center">
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Favorites.Color}" Content="Favorites" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Arrow.Color}" Content="Arrow" Shortcut="A" IsChecked="True" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Text.Color}" Content="Text" Shortcut="T" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Callout.Color}" Content="Callout" Shortcut="C" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Shape.Color}" Content="Shape" Shortcut="R" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Stamp.Color}" Content="Stamp" Shortcut="S" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Step.Color}" Content="Step" Shortcut="N" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Blur.Color}" Content="Blur" Shortcut="B" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Crop.Color}" Content="Crop" Shortcut="X" />
+                        <sw:ToolButton GroupName="Tools" Icon="{DynamicResource Icon.Tool.Selection.Color}" Content="Selection" Shortcut="M" />
+                        <Button Style="{StaticResource Shotwise.ToolCommandButton}" sw:SwUi.Icon="{DynamicResource Icon.More.Regular}" Content="More" />
+                    </StackPanel>
+                    <Border Grid.Column="4" Style="{StaticResource Shotwise.VDivider}" Margin="6,14" />
+                    <StackPanel Grid.Column="5" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Button Style="{StaticResource Shotwise.ToolCommandButton}" sw:SwUi.Icon="{DynamicResource Icon.Undo.Regular}" Content="Undo" ToolTip="Undo (Ctrl+Z)" />
+                        <Button Style="{StaticResource Shotwise.ToolCommandButton}" sw:SwUi.Icon="{DynamicResource Icon.Redo.Regular}" Content="Redo" IsEnabled="False" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="7" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Button Style="{StaticResource Shotwise.GhostButton}" sw:SwUi.Icon="{DynamicResource Icon.Copy.Regular}" Content="Copy All" Margin="0,0,8,0" />
+                        <sw:SplitButton Icon="{DynamicResource Icon.Share.Regular}" Content="Share" DropDownToolTip="Share destinations" />
+                    </StackPanel>
+                </Grid>
+            </sw:Card>
+
+            <!-- ============================================================ Row: capture card | tool panel | buttons + feedback -->
+            <Grid Margin="0,0,0,28">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="28" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="28" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Capture window -->
+                <StackPanel>
+                    <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="CAPTURE WINDOW  ·  ModeRail · ToggleSwitchRow · CaptureButton" Margin="2,0,0,8" />
+                    <sw:Card Width="580" Padding="12" CornerRadius="14">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0,2,10,0">
+                                <sw:NavItem Style="{StaticResource Shotwise.ModeRailItem}" GroupName="CaptureMode" Icon="{DynamicResource Icon.AllInOne.Color}" Content="All-in-One" IsChecked="True" />
+                                <sw:NavItem Style="{StaticResource Shotwise.ModeRailItem}" GroupName="CaptureMode" Icon="{DynamicResource Icon.Image.Color}" Content="Image" />
+                                <sw:NavItem Style="{StaticResource Shotwise.ModeRailItem}" GroupName="CaptureMode" Icon="{DynamicResource Icon.Video.Color}" Content="Video" />
+                            </StackPanel>
+                            <Border Grid.Column="1" Background="{DynamicResource Shotwise.Surface0Brush}" CornerRadius="10" Padding="4">
+                                <StackPanel>
+                                    <sw:ToggleSwitchRow Content="Preview in Editor" IsChecked="True" />
+                                    <sw:ToggleSwitchRow Content="Copy to Clipboard" IsChecked="True" />
+                                    <sw:ToggleSwitchRow Content="Capture Cursor" />
+                                    <sw:ToggleSwitchRow Content="Delay">
+                                        <sw:ToggleSwitchRow.Trailing>
+                                            <Border Style="{StaticResource Shotwise.Chip}">
+                                                <TextBlock Text="5 s" />
+                                            </Border>
+                                        </sw:ToggleSwitchRow.Trailing>
+                                    </sw:ToggleSwitchRow>
+                                    <Button Style="{StaticResource Shotwise.GhostButton}" HorizontalAlignment="Left" Margin="2,2,0,0" MinHeight="28"
+                                            sw:SwUi.Icon="{DynamicResource Icon.ChevronDown.Regular}" sw:SwUi.IconSize="12" Content="More options" Foreground="{DynamicResource Shotwise.AccentTextBrush}" />
+                                </StackPanel>
+                            </Border>
+                            <Grid Grid.Column="2" Margin="10,0,0,0">
+                                <sw:CaptureButton Content="Capture" Shortcut="Print Screen" Margin="8,14,8,0" VerticalAlignment="Top" />
+                                <Button Style="{StaticResource Shotwise.IconButton}" Width="28" Height="28" sw:SwUi.IconSize="16" sw:SwUi.Icon="{DynamicResource Icon.Reset.Regular}"
+                                        HorizontalAlignment="Right" VerticalAlignment="Top" ToolTip="Reset options" AutomationProperties.Name="Reset options" />
+                            </Grid>
+                            <DockPanel Grid.Row="1" Grid.ColumnSpan="3" Margin="0,10,0,0" LastChildFill="False">
+                                <Button Style="{StaticResource Shotwise.GhostButton}" sw:SwUi.Icon="{DynamicResource Icon.Settings.Regular}" Content="Presets" />
+                                <Button Style="{StaticResource Shotwise.IconButton}" sw:SwUi.Icon="{DynamicResource Icon.Add.Regular}" ToolTip="New preset" AutomationProperties.Name="New preset" Margin="4,0,0,0" />
+                                <Button DockPanel.Dock="Right" Style="{StaticResource Shotwise.GhostButton}" sw:SwUi.Icon="{DynamicResource Icon.Editor.Regular}" Content="Open Editor" />
+                            </DockPanel>
+                        </Grid>
+                    </sw:Card>
+
+                    <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="LIBRARY  ·  SearchBox · NavListItem · EmptyState" Margin="2,24,0,8" />
+                    <sw:Card Width="580" Padding="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="210" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Border BorderBrush="{DynamicResource Shotwise.BorderSubtleBrush}" BorderThickness="0,0,1,0" Padding="10">
+                                <StackPanel>
+                                    <TextBox Style="{StaticResource Shotwise.SearchBox}" Tag="Search captures" Margin="0,0,0,10" />
+                                    <sw:NavItem Style="{StaticResource Shotwise.NavListItem}" GroupName="Lib" Icon="{DynamicResource Icon.Grid.Regular}" Content="All" Badge="128" IsChecked="True" />
+                                    <sw:NavItem Style="{StaticResource Shotwise.NavListItem}" GroupName="Lib" Icon="{DynamicResource Icon.Image.Regular}" Content="Images" Badge="96" />
+                                    <sw:NavItem Style="{StaticResource Shotwise.NavListItem}" GroupName="Lib" Icon="{DynamicResource Icon.Video.Regular}" Content="Videos" Badge="24" />
+                                    <sw:NavItem Style="{StaticResource Shotwise.NavListItem}" GroupName="Lib" Icon="{DynamicResource Icon.Tag.Regular}" Content="Tags" Badge="7" />
+                                    <sw:NavItem Style="{StaticResource Shotwise.NavListItem}" GroupName="Lib" Icon="{DynamicResource Icon.Apps.Regular}" Content="Apps" />
+                                    <sw:NavItem Style="{StaticResource Shotwise.NavListItem}" GroupName="Lib" Icon="{DynamicResource Icon.Calendar.Regular}" Content="Dates" />
+                                </StackPanel>
+                            </Border>
+                            <sw:EmptyState Grid.Column="1" Illustration="{DynamicResource Icon.Library.Color}" Title="No captures yet"
+                                           Description="Press Print Screen or use the Capture button to take your first screenshot.">
+                                <sw:EmptyState.Action>
+                                    <Button Style="{StaticResource Shotwise.PrimaryButton}" sw:SwUi.Icon="{DynamicResource Icon.Capture.Filled}" Content="New capture" />
+                                </sw:EmptyState.Action>
+                            </sw:EmptyState>
+                        </Grid>
+                    </sw:Card>
+                </StackPanel>
+
+                <!-- Right panel: quick styles + tool properties -->
+                <StackPanel Grid.Column="2">
+                    <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="SIDE PANEL  ·  PanelHeader · QuickStyleTile · ColorSwatchButton" Margin="2,0,0,8" />
+                    <sw:Card Width="312" Padding="0">
+                        <StackPanel>
+                            <sw:PanelHeader Content="Quick Styles">
+                                <sw:PanelHeader.Actions>
+                                    <ComboBox x:Name="ThemeCombo" MinWidth="120" SelectedIndex="0" FontSize="12" />
+                                </sw:PanelHeader.Actions>
+                            </sw:PanelHeader>
+                            <ListBox x:Name="QuickStyles" Style="{StaticResource Shotwise.TileList}" Height="216" Margin="8,0,4,4" SelectedIndex="0" />
+                            <Border Style="{StaticResource Shotwise.Divider}" Margin="0" />
+                            <sw:PanelHeader Content="Tool Properties" HelpText="Change how the selected arrow looks" />
+                            <StackPanel Margin="16,0,16,14">
+                                <UniformGrid Columns="3" Margin="0,0,0,12">
+                                    <sw:ColorSwatchButton x:Name="ColorSwatch" Label="Color" />
+                                    <sw:ColorSwatchButton x:Name="FillSwatch" Label="Fill" />
+                                    <StackPanel>
+                                        <TextBlock Style="{StaticResource Shotwise.Text.Caption}" Text="Shadow" HorizontalAlignment="Center" Margin="0,0,0,5" />
+                                        <sw:ShadowDirectionPicker Direction="BottomRight" />
+                                    </StackPanel>
+                                </UniformGrid>
+                                <Grid Margin="0,0,0,8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="6" />
+                                        <ColumnDefinition Width="1.15*" />
+                                        <ColumnDefinition Width="6" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <sw:StylePreviewComboBox x:Name="StartCap" MinWidth="0" PreviewTemplate="{StaticResource Shotwise.PreviewTemplate.Geometry}" AutomationProperties.Name="Start cap" />
+                                    <sw:StylePreviewComboBox x:Name="Dash" Grid.Column="2" MinWidth="0" PreviewTemplate="{StaticResource Shotwise.PreviewTemplate.DashArray}" AutomationProperties.Name="Line style" />
+                                    <sw:StylePreviewComboBox x:Name="EndCap" Grid.Column="4" MinWidth="0" PreviewTemplate="{StaticResource Shotwise.PreviewTemplate.Geometry}" AutomationProperties.Name="End cap" />
+                                </Grid>
+                                <sw:SliderWithValue Label="Width" Minimum="1" Maximum="40" Value="10" LabelWidth="70" />
+                                <sw:SliderWithValue Label="Opacity" Minimum="0" Maximum="100" Value="100" Unit="%" LabelWidth="70" />
+                                <sw:SliderWithValue Label="Start size" Minimum="1" Maximum="10" Value="3" LabelWidth="70" IsEnabled="False" />
+                                <sw:SliderWithValue Label="End size" Minimum="1" Maximum="10" Value="3" LabelWidth="70" />
+                                <sw:ToggleSwitchRow Content="Bezier curve" Padding="0,8" Margin="0,2,0,0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </sw:Card>
+                </StackPanel>
+
+                <!-- Buttons + feedback + tray -->
+                <StackPanel Grid.Column="4">
+                    <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="BUTTONS" Margin="2,0,0,8" />
+                    <sw:Card Margin="0,0,0,24">
+                        <StackPanel>
+                            <WrapPanel>
+                                <Button Style="{StaticResource Shotwise.PrimaryButton}" Content="Save" Margin="0,0,8,8" />
+                                <Button Style="{StaticResource Shotwise.PrimaryButton}" sw:SwUi.Icon="{DynamicResource Icon.Gif.Regular}" Content="Create GIF" Margin="0,0,8,8" />
+                                <Button Style="{StaticResource Shotwise.SecondaryButton}" Content="Cancel" Margin="0,0,8,8" />
+                                <Button Style="{StaticResource Shotwise.GhostButton}" sw:SwUi.Icon="{DynamicResource Icon.Copy.Regular}" Content="Copy All" Margin="0,0,8,8" />
+                                <Button Style="{StaticResource Shotwise.DangerButton}" sw:SwUi.Icon="{DynamicResource Icon.Delete.Regular}" Content="Delete" Margin="0,0,8,8" />
+                                <Button Style="{StaticResource Shotwise.PrimaryButton}" Content="Disabled" IsEnabled="False" Margin="0,0,8,8" />
+                            </WrapPanel>
+                            <WrapPanel Margin="0,4,0,0">
+                                <Button Style="{StaticResource Shotwise.IconButton}" sw:SwUi.Icon="{DynamicResource Icon.Settings.Regular}" ToolTip="Settings" AutomationProperties.Name="Settings" />
+                                <Button Style="{StaticResource Shotwise.IconButton}" sw:SwUi.Icon="{DynamicResource Icon.Help.Regular}" ToolTip="Help" AutomationProperties.Name="Help" />
+                                <Button Style="{StaticResource Shotwise.IconButton}" sw:SwUi.Icon="{DynamicResource Icon.Search.Regular}" ToolTip="Search" AutomationProperties.Name="Search" />
+                                <Button Style="{StaticResource Shotwise.IconButton}" sw:SwUi.Icon="{DynamicResource Icon.More.Regular}" ToolTip="More" AutomationProperties.Name="More" />
+                                <ToggleButton Style="{StaticResource Shotwise.IconButton}" sw:SwUi.Icon="{DynamicResource Icon.Pin.Filled}" IsChecked="True" ToolTip="Pinned" AutomationProperties.Name="Pin" />
+                                <Border Style="{StaticResource Shotwise.VDivider}" Margin="10,6" />
+                                <ToggleButton Style="{StaticResource Shotwise.GhostToggleButton}" sw:SwUi.Icon="{DynamicResource Icon.Effects.Regular}" Content="Effects" />
+                                <ToggleButton Style="{StaticResource Shotwise.GhostToggleButton}" sw:SwUi.Icon="{DynamicResource Icon.Properties.Regular}" Content="Properties" IsChecked="True" Margin="4,0,0,0" />
+                                <Border Style="{StaticResource Shotwise.VDivider}" Margin="10,6" />
+                                <Border Style="{StaticResource Shotwise.AccentChip}">
+                                    <TextBlock Text="New" />
+                                </Border>
+                                <Border Style="{StaticResource Shotwise.Badge}" Margin="8,0,0,0">
+                                    <TextBlock Text="12" />
+                                </Border>
+                            </WrapPanel>
+                        </StackPanel>
+                    </sw:Card>
+
+                    <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="FEEDBACK  ·  InfoBar · Toast" Margin="2,0,0,8" />
+                    <StackPanel Margin="0,0,0,24">
+                        <sw:InfoBar Severity="Informational" Title="Smart Redact" Message="Faces and e-mail addresses were found in this capture." Margin="0,0,0,8" />
+                        <sw:InfoBar Severity="Success" Title="Copied" Message="The image is on the clipboard." IsClosable="False" Margin="0,0,0,8" />
+                        <sw:InfoBar Severity="Warning" Title="Unsaved changes" Message="3 captures in the tray are not in the library yet." Margin="0,0,0,8">
+                            <sw:InfoBar.Action>
+                                <Button Style="{StaticResource Shotwise.SecondaryButton}" Content="Save all" MinHeight="28" />
+                            </sw:InfoBar.Action>
+                        </sw:InfoBar>
+                        <sw:InfoBar Severity="Error" Title="Upload failed" Message="Check your connection and try again." Margin="0,0,0,4" />
+                        <sw:InfoBar Style="{StaticResource Shotwise.Toast}" Severity="Success" Title="Saved to Library" Message="Capture 2026-10-18 09:41.png" Margin="0,8,0,0" HorizontalAlignment="Left">
+                            <sw:InfoBar.Action>
+                                <Button Style="{StaticResource Shotwise.GhostButton}" Content="Open" MinHeight="28" Foreground="{DynamicResource Shotwise.AccentTextBrush}" />
+                            </sw:InfoBar.Action>
+                        </sw:InfoBar>
+                    </StackPanel>
+
+                    <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="TRAY  ·  TrayItem (selected · pinned · video · unsaved)" Margin="2,0,0,8" />
+                    <Border Style="{StaticResource Shotwise.BottomBar}" CornerRadius="10" BorderThickness="1" Padding="6,4">
+                        <ListBox x:Name="Tray" Style="{StaticResource Shotwise.TrayList}" SelectedIndex="0" />
+                    </Border>
+                </StackPanel>
+            </Grid>
+
+            <!-- ============================================================ Icons -->
+            <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="COLOUR ICONS  ·  Icon.*.Color (tools, modes, status)" Margin="2,0,0,8" />
+            <sw:Card Margin="0,0,0,24" Padding="12">
+                <WrapPanel x:Name="ColorIcons" />
+            </sw:Card>
+            <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="CHROME ICONS  ·  Icon.*.Regular (Filled variants share the same keys)" Margin="2,0,0,8" />
+            <sw:Card Margin="0,0,0,24" Padding="12">
+                <WrapPanel x:Name="RegularIcons" />
+            </sw:Card>
+
+            <!-- ============================================================ Tokens -->
+            <TextBlock Style="{StaticResource Shotwise.Text.Overline}" Text="TOKENS  ·  {DynamicResource Shotwise.*Brush}" Margin="2,0,0,8" />
+            <sw:Card Padding="12">
+                <WrapPanel x:Name="Tokens" />
+            </sw:Card>
+        </StackPanel>
+    </Border>
+</UserControl>

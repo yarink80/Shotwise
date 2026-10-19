@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Authoring-time tool (not part of Shotwise.sln, not shipped): renders the images in docs/images that the README uses.
+    It dog-foods Shotwise's own libraries: sample captures are annotated with Shotwise.Core annotations and rendered by
+    Shotwise.Rendering, effects come from the Shotwise effect processor, Smart Redact / Grab Text run through
+    Shotwise.Vision (Windows OCR), and the demo GIF is encoded by Shotwise.Media's GIF encoder.
+    Usage: see the header of Program.cs.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>$(ShotwiseTfm)</TargetFramework>
+    <SupportedOSPlatformVersion>$(ShotwiseSupportedOSPlatformVersion)</SupportedOSPlatformVersion>
+    <RootNamespace>ReadmeAssets</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="Svg.Skia" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Shotwise.Core\Shotwise.Core.csproj" />
+    <ProjectReference Include="..\..\src\Shotwise.Rendering\Shotwise.Rendering.csproj" />
+    <ProjectReference Include="..\..\src\Shotwise.Media\Shotwise.Media.csproj" />
+    <ProjectReference Include="..\..\src\Shotwise.Vision\Shotwise.Vision.csproj" />
+  </ItemGroup>
+
+</Project>

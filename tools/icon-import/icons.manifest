@@ -1,0 +1,114 @@
+# Shotwise icon manifest (input of tools/icon-import).
+# Format:  Key | fluent-icon-name | variants
+#   r            -> Icon.<Key>.Regular  (Geometry, 20 px design scaled to a 24-unit box)
+#   f            -> Icon.<Key>.Filled   (Geometry, 24 px design)
+#   c[:name]     -> Icon.<Key>.Color    (DrawingImage, Fluent "Color" icon <name or fluent-icon-name>_24_color, gradients kept)
+#   t:#top,#bottom -> Icon.<Key>.Color  (DrawingImage, the Filled 24 px glyph painted with a Shotwise hue gradient)
+# Hues for the t: variants are Shotwise's own palette (docs/DESIGN-SYSTEM.md "Tool hues").
+
+# ---- Editor tools (every tool gets Regular + Filled + Color) ----
+Tool.Select      | cursor          | r f t:#B9BED0,#5A5F73
+Tool.Move        | arrow_move      | r f t:#A3ABBE,#4B5468
+Tool.Arrow       | arrow_up_left   | r f t:#FF9466,#EE3B2B
+Tool.Line        | line            | r f t:#FFC27A,#F26B0F
+Tool.Shape       | shapes          | r f t:#5EE08A,#139A45
+Tool.Callout     | comment         | r f c
+Tool.Text        | text_t          | r f t:#6FB4FF,#2160E8
+Tool.Stamp       | sticker         | r f t:#FF8CC8,#D9206F
+Tool.Step        | number_circle_1 | r f t:#B9A2FF,#7434E6
+Tool.Pen         | pen             | r f t:#FFD84D,#E09A00
+Tool.Highlighter | highlight       | r f t:#FFE866,#EFAE00
+Tool.Fill        | paint_bucket    | r f t:#FFB46B,#E8590C
+Tool.Eraser      | eraser          | r f t:#FF9DB2,#DE1D4B
+Tool.Magnify     | zoom_in         | r f t:#7FD6FF,#0A84CC
+Tool.Blur        | blur            | r f t:#86D9E4,#2F8295
+Tool.Crop        | crop            | r f t:#40E2C6,#0C8A7D
+Tool.CutOut      | cut             | r f t:#FFD257,#D27A05
+Tool.Selection   | select_object   | r f t:#9097FF,#4C43E0
+Tool.MagicWand   | wand            | r f t:#F08DFF,#A11BB0
+Tool.Simplify    | shape_union     | r f t:#B8E85A,#4B8A0E
+Tool.GrabText    | scan_type       | r f c
+Tool.Cursor      | cursor_click    | r f t:#CFD7E3,#5F6F86
+Tool.Favorites   | star            | r f c
+
+# ---- Capture / modes / navigation ----
+Capture          | camera          | r f c
+Video            | video           | r f c
+AllInOne         | screenshot      | r f t:#A49AFF,#5B4CF5
+Record           | record          | r f
+RecordStop       | record_stop     | r f
+ScreenshotRecord | screenshot_record | r f
+Library          | library         | r f c
+Grid             | grid            | r f
+Create           | add_circle      | r f c
+Add              | add             | r f
+Editor           | edit            | r f c
+Image            | image           | r f c
+Webcam           | video_person    | r f
+Mic              | mic             | r f c
+MicOff           | mic_off         | r f
+Speaker          | speaker_2       | r f
+SpeakerMute      | speaker_mute    | r f
+Scroll           | arrow_autofit_height | r f
+Window           | window          | r f
+Desktop          | desktop         | r f
+Timer            | timer           | r f
+
+# ---- Commands ----
+Undo             | arrow_undo      | r f
+Redo             | arrow_redo      | r f
+Share            | share           | r f
+Copy             | copy            | r f
+Save             | save            | r f
+Open             | open            | r f
+Folder           | folder          | r f
+Delete           | delete          | r f
+Search           | search          | r f
+Tag              | tag             | r f
+Pin              | pin             | r f c
+Play             | play            | r f
+Pause            | pause           | r f
+Stop             | stop            | r f
+Settings         | settings        | r f c
+Help             | question_circle | r f c
+More             | more_horizontal | r f
+MoreVertical     | more_vertical   | r f
+Menu             | navigation      | r f
+ChevronDown      | chevron_down    | r f
+Dismiss          | dismiss         | r f
+Checkmark        | checkmark       | r f
+Reset            | arrow_reset     | r f
+Eyedropper       | eyedropper      | r f
+Link             | link            | r f c
+History          | history         | r f c
+Print            | print           | r f
+Mail             | mail            | r f
+Cloud            | cloud           | r f
+Download         | arrow_download  | r f
+Export           | arrow_export_ltr | r f
+ZoomOut          | zoom_out        | r f
+FitScreen        | scale_fit       | r f
+FullScreen       | full_screen_maximize | r f
+Effects          | sparkle         | r f
+Properties       | panel_right     | r f
+Color            | color           | r f
+Shadow           | image_shadow    | r f
+Resize           | resize          | r f
+Gif              | gif             | r f
+Document         | document        | r f c
+Filter           | filter          | r f
+Home             | home            | r f
+Person           | person          | r f
+Apps             | apps            | r f c
+Calendar         | calendar        | r f
+Globe            | globe           | r f
+Keyboard         | keyboard        | r f
+Lightbulb        | lightbulb       | r f c
+Collections      | collections     | r f
+VideoClip        | video_clip      | r f
+
+# ---- Status ----
+Info             | info            | r f
+Success          | checkmark_circle | r f c
+Warning          | warning         | r f c
+Error            | error_circle    | r f c

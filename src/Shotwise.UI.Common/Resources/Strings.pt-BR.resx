@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- Portuguese (Brazil, pt-BR) translations. Empty stub: falls back to Strings.resx (en-US). -->
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Recording_SourceLost" xml:space="preserve"><value>A janela ou o dispositivo gravado não está mais disponível. A gravação foi interrompida e o que foi gravado foi salvo.</value></data>
+  <data name="Recording_SavedToAlternatePath" xml:space="preserve"><value>Não foi possível salvar a gravação com o nome escolhido. Ela foi salva com outro nome na mesma pasta.</value></data>
+</root>

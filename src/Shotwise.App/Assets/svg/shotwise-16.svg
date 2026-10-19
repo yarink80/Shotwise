@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7C70FF"/><stop offset="1" stop-color="#5B4CF5"/></linearGradient>
+    <linearGradient id="hl" x1="0" y1="0" x2="0" y2="9.6" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="dot" x1="5" y1="5" x2="11" y2="11" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF7A45"/><stop offset="1" stop-color="#FF4D5E"/></linearGradient>
+    <radialGradient id="dotHl" cx="7.1" cy="6.92" r="1.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="0" y="0" width="16" height="16" rx="3.5" fill="url(#tile)"/>
+  <rect x="0" y="0" width="16" height="16" rx="3.5" fill="url(#hl)"/>
+  <path d="M3.5 6.5V3.5H6.5M12.5 6.5V3.5H9.5M12.5 9.5V12.5H9.5M3.5 9.5V12.5H6.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <circle cx="8" cy="8" r="3" fill="url(#dot)"/>
+</svg>

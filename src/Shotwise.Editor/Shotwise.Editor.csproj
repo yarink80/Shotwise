@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- UI-agnostic editor interaction engine (no WPF, no Skia). -->
+  <PropertyGroup>
+    <TargetFramework>$(ShotwiseLogicTfm)</TargetFramework>
+    <RootNamespace>Shotwise.Editor</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shotwise.Core\Shotwise.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Shotwise.Editor.Tests" />
+  </ItemGroup>
+
+</Project>

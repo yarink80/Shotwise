@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- French (fr) translations. Empty stub: falls back to Strings.resx (en-US). -->
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Recording_SourceLost" xml:space="preserve"><value>La fenêtre ou le périphérique enregistré n'est plus disponible. L'enregistrement a été arrêté et ce qui a été enregistré a été sauvegardé.</value></data>
+  <data name="Recording_SavedToAlternatePath" xml:space="preserve"><value>L'enregistrement n'a pas pu être sauvegardé sous le nom choisi. Il a été sauvegardé sous un autre nom dans le même dossier.</value></data>
+</root>

@@ -1,0 +1,72 @@
+name: Bug report
+description: Something in Shotwise does not work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Security issues: please use
+        [private vulnerability reporting](https://github.com/yarink80/Shotwise/security/advisories/new) instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+      placeholder: |
+        1. Pressed PrintScreen and dragged a region on my second monitor
+        2. Expected the capture to open in the editor
+        3. Nothing happened
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Capture (image, scrolling, panorama, menus, step capture)
+        - Recording (video, audio, webcam, ScreenDraw)
+        - Editor (tools, effects, stamps, templates)
+        - Smart Redact / Grab Text / other AI tools
+        - Library and search
+        - Video trimming / GIF
+        - Sharing and destinations
+        - Hotkeys, tray, startup
+        - Install, update or uninstall
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Shotwise version
+      placeholder: "0.9.1"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: Run `winver` to see it.
+      placeholder: "Windows 11 24H2 (26100)"
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Display setup
+      description: Number of monitors, resolutions and scaling (for example 150 %), HDR on or off, remote desktop or not.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and screenshots
+      description: |
+        Logs are in `%LOCALAPPDATA%\Shotwise\logs`. Please remove anything private before attaching.
+        Drag screenshots or a short recording into this box.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the existing issues and this is not a duplicate.
+          required: true
+        - label: I am using the latest release.

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- OCR, tables, Smart Move, Simplify, Smart Redact, inpainting, wand, stitching, faces, denoise host, model manager. Owner: WP-VISION. -->
+  <PropertyGroup>
+    <TargetFramework>$(ShotwiseTfm)</TargetFramework>
+    <SupportedOSPlatformVersion>$(ShotwiseSupportedOSPlatformVersion)</SupportedOSPlatformVersion>
+    <RootNamespace>Shotwise.Vision</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp4" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="models.manifest.json" LogicalName="Shotwise.Vision.models.manifest.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shotwise.Core\Shotwise.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Shotwise.Vision.Tests" />
+  </ItemGroup>
+
+</Project>

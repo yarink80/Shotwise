@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Authoring-time tool (not part of Shotwise.sln, not shipped): builds the built-in stamp packs under
+    src/Shotwise.App/Content/stamps from (a) Microsoft Fluent Emoji (MIT, pinned commit) and (b) our own parametric artwork,
+    validates every SVG through the same Svg.Skia path the app uses, and renders contact sheets.
+    Usage: see the header of Program.cs.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>StampGen</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="Svg.Skia" />
+  </ItemGroup>
+
+</Project>

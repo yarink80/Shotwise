@@ -1,0 +1,10 @@
+<!-- Theme-level fallback for the Shotwise custom controls (used when an app did not merge SharedResources / Shotwise.xaml).
+     Apps normally merge Themes/Shotwise.xaml (via SharedResources.xaml), whose tokens are swapped per theme; these are Light defaults. -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Shotwise.UI.Common;component/Themes/Tokens.Light.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Shotwise.UI.Common;component/Themes/Metrics.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Shotwise.UI.Common;component/Themes/Controls.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

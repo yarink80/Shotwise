@@ -1,0 +1,14 @@
+<Project>
+  <!-- Shared build targets for every Shotwise project. Owned by WP-FOUNDATION. -->
+
+  <!--
+    OpenCvSharp4 ships a Roslyn analyzer (also flowing transitively) compiled against a newer compiler than the .NET 8
+    SDK's Roslyn, which produces warning CS9057 in every project that references Vision. It only adds diagnostics, so it
+    is removed from the compilation. Remove this target when the solution moves to a newer SDK.
+  -->
+  <Target Name="ShotwiseRemoveIncompatibleAnalyzers" BeforeTargets="CoreCompile" Condition="'@(Analyzer)' != ''">
+    <ItemGroup>
+      <Analyzer Remove="@(Analyzer)" Condition="'%(Filename)' == 'OpenCvSharp.Analyzers'" />
+    </ItemGroup>
+  </Target>
+</Project>

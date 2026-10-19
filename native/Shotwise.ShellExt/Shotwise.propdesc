@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://schemas.microsoft.com/windows/2006/propertydescription" schemaVersion="1.0">
+  <propertyDescriptionList publisher="Shotwise" product="Shotwise">
+    <propertyDescription name="Shotwise.AppName" formatID="{D53CFC01-6A85-42A6-9379-BCE158678215}" propID="2"><searchInfo isColumn="true"/><labelInfo label="Application"/><typeInfo type="String" isViewable="true"/><displayInfo displayType="String"/></propertyDescription>
+    <propertyDescription name="Shotwise.AppCompany" formatID="{D53CFC01-6A85-42A6-9379-BCE158678215}" propID="3"><labelInfo label="Application company"/><typeInfo type="String" isViewable="true"/><displayInfo displayType="String"/></propertyDescription>
+    <propertyDescription name="Shotwise.WindowTitle" formatID="{D53CFC01-6A85-42A6-9379-BCE158678215}" propID="4"><searchInfo isColumn="true"/><labelInfo label="Window"/><typeInfo type="String" isViewable="true"/><displayInfo displayType="String"/></propertyDescription>
+    <propertyDescription name="Shotwise.Url" formatID="{D53CFC01-6A85-42A6-9379-BCE158678215}" propID="5"><searchInfo isColumn="true"/><labelInfo label="Source URL"/><typeInfo type="String" isViewable="true"/><displayInfo displayType="String"/></propertyDescription>
+    <propertyDescription name="Shotwise.OcrText" formatID="{D53CFC01-6A85-42A6-9379-BCE158678215}" propID="6"><searchInfo inInvertedIndex="true"/><labelInfo label="Recognized text"/><typeInfo type="String" isViewable="true"/><displayInfo displayType="String"/></propertyDescription>
+  </propertyDescriptionList>
+</schema>

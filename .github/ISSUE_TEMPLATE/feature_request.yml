@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest an idea or an improvement for Shotwise.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task or the problem first. Knowing the "why" helps find the best solution.
+      placeholder: When I document a bug for my team, I have to ...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like Shotwise to do?
+      description: Your idea for a solution. Mock-ups or annotated screenshots are very welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Capture
+        - Recording
+        - Editor
+        - Stamps, templates, themes
+        - Smart Redact / Grab Text / other AI tools
+        - Library and search
+        - Video trimming / GIF
+        - Sharing and destinations
+        - Platform (hotkeys, tray, updates, settings)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and workarounds
+      description: Anything you tried or considered.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the existing issues and this has not been requested yet.
+          required: true

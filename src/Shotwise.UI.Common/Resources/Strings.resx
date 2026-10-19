@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- Shotwise UI strings (en-US, neutral). Add keys here; culture files Strings.{culture}.resx override them.
+       Strongly typed class Shotwise.UI.Common.Resources.Strings is generated at build time.
+       Naming: Area_Item. Error messages: Error_{ErrorCode}. -->
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- App / tray -->
+  <data name="App_Name" xml:space="preserve"><value>Shotwise</value></data>
+  <data name="App_Tagline" xml:space="preserve"><value>Capture, annotate and share your screen.</value></data>
+  <data name="Tray_ToolTip" xml:space="preserve"><value>Shotwise — press {0} to capture</value></data>
+  <data name="Tray_Capture" xml:space="preserve"><value>Capture</value></data>
+  <data name="Tray_OpenEditor" xml:space="preserve"><value>Open Editor</value></data>
+  <data name="Tray_OpenCaptureWindow" xml:space="preserve"><value>Open Capture Window</value></data>
+  <data name="Tray_ShowWidget" xml:space="preserve"><value>Show Capture Widget</value></data>
+  <data name="Tray_Preferences" xml:space="preserve"><value>Preferences…</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Exit</value></data>
+  <data name="Tray_Recording" xml:space="preserve"><value>recording</value></data>
+  <data name="MainWindow_Title" xml:space="preserve"><value>Shotwise</value></data>
+  <data name="MainWindow_Placeholder" xml:space="preserve"><value>Shotwise is running in the notification area. The editor and capture window are coming soon.</value></data>
+  <data name="MainWindow_NotAvailable" xml:space="preserve"><value>This feature is not available in this build yet.</value></data>
+
+  <!-- Common -->
+  <data name="Common_OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Common_Apply" xml:space="preserve"><value>Apply</value></data>
+  <data name="Common_Close" xml:space="preserve"><value>Close</value></data>
+  <data name="Common_Yes" xml:space="preserve"><value>Yes</value></data>
+  <data name="Common_No" xml:space="preserve"><value>No</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>Save</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Common_Rename" xml:space="preserve"><value>Rename</value></data>
+  <data name="Common_Browse" xml:space="preserve"><value>Browse…</value></data>
+  <data name="Common_Reset" xml:space="preserve"><value>Reset</value></data>
+  <data name="Common_RestoreDefaults" xml:space="preserve"><value>Restore Defaults</value></data>
+  <data name="Common_Help" xml:space="preserve"><value>Help</value></data>
+  <data name="Common_Copy" xml:space="preserve"><value>Copy</value></data>
+  <data name="Common_CopyAll" xml:space="preserve"><value>Copy All</value></data>
+  <data name="Common_Import" xml:space="preserve"><value>Import…</value></data>
+  <data name="Common_Export" xml:space="preserve"><value>Export…</value></data>
+  <data name="Common_DontAskAgain" xml:space="preserve"><value>Don't ask me again</value></data>
+  <data name="Common_Details" xml:space="preserve"><value>Details</value></data>
+
+  <!-- Theme / language -->
+  <data name="Theme_System" xml:space="preserve"><value>System</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Light</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Dark</value></data>
+  <data name="Language_System" xml:space="preserve"><value>Use Windows language</value></data>
+
+  <!-- Capture modes / presets (built-in preset names are localized via Preset_{Id}) -->
+  <data name="CaptureMode_AllInOne" xml:space="preserve"><value>All-in-One</value></data>
+  <data name="CaptureMode_Image" xml:space="preserve"><value>Image</value></data>
+  <data name="CaptureMode_Video" xml:space="preserve"><value>Video</value></data>
+  <data name="Preset_AllInOne" xml:space="preserve"><value>All-in-One</value></data>
+  <data name="Preset_ImageRegion" xml:space="preserve"><value>Image Region</value></data>
+  <data name="Preset_Video" xml:space="preserve"><value>Video</value></data>
+  <data name="Preset_GrabText" xml:space="preserve"><value>Grab Text</value></data>
+  <data name="Preset_Panoramic" xml:space="preserve"><value>Panoramic</value></data>
+  <data name="Preset_StepCapture" xml:space="preserve"><value>Step Capture</value></data>
+  <data name="Preset_Fullscreen" xml:space="preserve"><value>Fullscreen</value></data>
+  <data name="Preset_Window" xml:space="preserve"><value>Window</value></data>
+
+  <!-- Errors (key = Error_ + ErrorCode name) -->
+  <data name="Error_Unknown" xml:space="preserve"><value>Something went wrong.</value></data>
+  <data name="Error_Cancelled" xml:space="preserve"><value>The operation was cancelled.</value></data>
+  <data name="Error_InvalidArgument" xml:space="preserve"><value>An invalid value was supplied.</value></data>
+  <data name="Error_NotSupported" xml:space="preserve"><value>This operation is not supported.</value></data>
+  <data name="Error_OutOfMemory" xml:space="preserve"><value>There is not enough memory to complete the operation.</value></data>
+  <data name="Error_PolicyDisabled" xml:space="preserve"><value>This feature has been disabled by your administrator.</value></data>
+  <data name="Error_FileNotFound" xml:space="preserve"><value>The file could not be found.</value></data>
+  <data name="Error_AccessDenied" xml:space="preserve"><value>Access to the file or folder was denied.</value></data>
+  <data name="Error_DiskFull" xml:space="preserve"><value>There is not enough disk space.</value></data>
+  <data name="Error_InvalidFileFormat" xml:space="preserve"><value>The file is not in a recognized format.</value></data>
+  <data name="Error_UnsupportedFormat" xml:space="preserve"><value>This file format is not supported.</value></data>
+  <data name="Error_CorruptFile" xml:space="preserve"><value>The file is damaged and cannot be opened.</value></data>
+  <data name="Error_NewerFormatVersion" xml:space="preserve"><value>The file was created by a newer version of Shotwise. Please update to open it.</value></data>
+  <data name="Error_FileTooLarge" xml:space="preserve"><value>The file is too large.</value></data>
+  <data name="Error_PathTraversal" xml:space="preserve"><value>The file contains unsafe paths and was not opened.</value></data>
+  <data name="Error_TooManyEntries" xml:space="preserve"><value>The file contains too many items and was not opened.</value></data>
+  <data name="Error_ImageTooLarge" xml:space="preserve"><value>The image is too large.</value></data>
+  <data name="Error_CodecUnavailable" xml:space="preserve"><value>No decoder is available for this image.</value></data>
+  <data name="Error_FileInUse" xml:space="preserve"><value>The file is in use by another program.</value></data>
+  <data name="Error_ImportFailed" xml:space="preserve"><value>The import failed.</value></data>
+  <data name="Error_ExportFailed" xml:space="preserve"><value>The export failed.</value></data>
+  <data name="Error_AssetMissing" xml:space="preserve"><value>Part of the document (an embedded image) is missing.</value></data>
+  <data name="Error_CaptureFailed" xml:space="preserve"><value>The capture failed.</value></data>
+  <data name="Error_CaptureCancelled" xml:space="preserve"><value>The capture was cancelled.</value></data>
+  <data name="Error_NoMonitor" xml:space="preserve"><value>No display was found to capture.</value></data>
+  <data name="Error_WindowNotFound" xml:space="preserve"><value>The window is no longer available.</value></data>
+  <data name="Error_SelectionTooSmall" xml:space="preserve"><value>The selection is too small. Select at least 8 × 8 pixels.</value></data>
+  <data name="Error_ScrollingFailed" xml:space="preserve"><value>Automatic scrolling did not work in this window. Try a panoramic capture instead.</value></data>
+  <data name="Error_ScrollingNotScrollable" xml:space="preserve"><value>This area cannot be scrolled.</value></data>
+  <data name="Error_StitchingFailed" xml:space="preserve"><value>The captured frames could not be stitched together.</value></data>
+  <data name="Error_HdrUnsupported" xml:space="preserve"><value>HDR capture is not supported on this display.</value></data>
+  <data name="Error_ClipboardEmpty" xml:space="preserve"><value>The clipboard does not contain an image.</value></data>
+  <data name="Error_ClipboardUnavailable" xml:space="preserve"><value>The clipboard is in use by another program. Try again.</value></data>
+  <data name="Error_PrinterInstallFailed" xml:space="preserve"><value>The Shotwise Printer could not be installed.</value></data>
+  <data name="Error_PrinterLoopRefused" xml:space="preserve"><value>You cannot print to the Shotwise Printer from the editor.</value></data>
+  <data name="Error_CaptureProtectedContent" xml:space="preserve"><value>Some content is protected and could not be captured.</value></data>
+  <data name="Error_RecordingFailed" xml:space="preserve"><value>The recording failed.</value></data>
+  <data name="Error_DeviceBusy" xml:space="preserve"><value>The device is in use by another application.</value></data>
+  <data name="Error_DeviceNotFound" xml:space="preserve"><value>The device was not found. Check that it is connected.</value></data>
+  <data name="Error_PrivacyDenied" xml:space="preserve"><value>Windows privacy settings block access to this device.</value></data>
+  <data name="Error_MediaFeaturePackMissing" xml:space="preserve"><value>Video features require the Windows Media Feature Pack.</value></data>
+  <data name="Error_VideoDisabledByPolicy" xml:space="preserve"><value>Video recording has been disabled by your administrator.</value></data>
+  <data name="Error_LowDiskSpace" xml:space="preserve"><value>Disk space is running low.</value></data>
+  <data name="Error_EncoderUnavailable" xml:space="preserve"><value>No video encoder is available.</value></data>
+  <data name="Error_DecoderUnavailable" xml:space="preserve"><value>No video decoder is available for this file.</value></data>
+  <data name="Error_AudioInitFailed" xml:space="preserve"><value>Audio could not be initialized.</value></data>
+  <data name="Error_CannotCutEntireMedia" xml:space="preserve"><value>You cannot cut the entire video.</value></data>
+  <data name="Error_GifTooLong" xml:space="preserve"><value>GIFs longer than 30 seconds can be very large. Consider using a selection.</value></data>
+  <data name="Error_MediaRenderFailed" xml:space="preserve"><value>The video could not be rendered.</value></data>
+  <data name="Error_OcrUnavailable" xml:space="preserve"><value>Text recognition is not available.</value></data>
+  <data name="Error_OcrLanguageMissing" xml:space="preserve"><value>No text recognition language is installed. Add one in Windows Settings › Language.</value></data>
+  <data name="Error_OcrFailed" xml:space="preserve"><value>Text recognition failed.</value></data>
+  <data name="Error_OcrImageTooLarge" xml:space="preserve"><value>The image is too large for text recognition.</value></data>
+  <data name="Error_ModelUnavailable" xml:space="preserve"><value>The required model is not installed.</value></data>
+  <data name="Error_ModelDownloadFailed" xml:space="preserve"><value>The model could not be downloaded.</value></data>
+  <data name="Error_ModelChecksumMismatch" xml:space="preserve"><value>The downloaded model failed verification and was discarded.</value></data>
+  <data name="Error_NoComponentsFound" xml:space="preserve"><value>No objects were found. Try adjusting the detail level.</value></data>
+  <data name="Error_NoRedactionsFound" xml:space="preserve"><value>No sensitive information was found.</value></data>
+  <data name="Error_InpaintFailed" xml:space="preserve"><value>The background could not be filled.</value></data>
+  <data name="Error_LibraryUnavailable" xml:space="preserve"><value>The library is not available.</value></data>
+  <data name="Error_LibraryLocationInvalid" xml:space="preserve"><value>The selected library location cannot be used.</value></data>
+  <data name="Error_LibraryMoveFailed" xml:space="preserve"><value>The library could not be moved.</value></data>
+  <data name="Error_BackupFailed" xml:space="preserve"><value>The backup could not be created.</value></data>
+  <data name="Error_RestoreFailed" xml:space="preserve"><value>The backup could not be imported.</value></data>
+  <data name="Error_LibraryItemNotFound" xml:space="preserve"><value>The item is no longer in the library.</value></data>
+  <data name="Error_ShareFailed" xml:space="preserve"><value>Sharing failed.</value></data>
+  <data name="Error_ShareCancelled" xml:space="preserve"><value>Sharing was cancelled.</value></data>
+  <data name="Error_ShareNoFile" xml:space="preserve"><value>There is nothing to share.</value></data>
+  <data name="Error_ShareMultipleFiles" xml:space="preserve"><value>This destination accepts only one file at a time.</value></data>
+  <data name="Error_ShareInProgress" xml:space="preserve"><value>Another share is already in progress.</value></data>
+  <data name="Error_DestinationNotConfigured" xml:space="preserve"><value>This destination is not set up yet. Configure it in Preferences › Share.</value></data>
+  <data name="Error_DestinationUnavailable" xml:space="preserve"><value>This destination is currently unavailable.</value></data>
+  <data name="Error_AuthenticationFailed" xml:space="preserve"><value>Sign-in failed.</value></data>
+  <data name="Error_AuthorizationRequired" xml:space="preserve"><value>Please sign in to continue.</value></data>
+  <data name="Error_NetworkError" xml:space="preserve"><value>A network error occurred.</value></data>
+  <data name="Error_QuotaExceeded" xml:space="preserve"><value>The storage quota has been exceeded.</value></data>
+  <data name="Error_OfficeNotInstalled" xml:space="preserve"><value>The required Office application is not installed.</value></data>
+  <data name="Error_ProgramNotFound" xml:space="preserve"><value>The program could not be found.</value></data>
+  <data name="Error_UploadRejected" xml:space="preserve"><value>The server rejected the upload.</value></data>
+  <data name="Error_HotkeyDuplicate" xml:space="preserve"><value>This shortcut is already assigned in Shotwise.</value></data>
+  <data name="Error_HotkeyUnsupported" xml:space="preserve"><value>This key combination cannot be used as a shortcut.</value></data>
+  <data name="Error_HotkeyInUse" xml:space="preserve"><value>This shortcut is used by Windows or another application.</value></data>
+  <data name="Error_UpdateSignatureInvalid" xml:space="preserve"><value>The update could not be verified and was not installed.</value></data>
+  <data name="Error_UpdateFailed" xml:space="preserve"><value>The update failed.</value></data>
+  <data name="Error_MobileServerFailed" xml:space="preserve"><value>Mobile sharing could not be started.</value></data>
+  <data name="Error_MobilePairingExpired" xml:space="preserve"><value>The pairing code has expired. Create a new one.</value></data>
+  <data name="Error_SingleInstanceFailed" xml:space="preserve"><value>Could not contact the running instance of Shotwise.</value></data>
+  <data name="Error_ShellRegistrationFailed" xml:space="preserve"><value>File associations could not be registered.</value></data>
+  <data name="Error_SettingsCorrupt" xml:space="preserve"><value>Your settings could not be read and were reset to defaults.</value></data>
+  <data name="Error_PresetImportFailed" xml:space="preserve"><value>The presets could not be imported.</value></data>
+  <data name="Error_ThemeImportFailed" xml:space="preserve"><value>The theme could not be imported.</value></data>
+  <data name="Error_TemplateImportFailed" xml:space="preserve"><value>The template could not be imported.</value></data>
+  <data name="Error_StampImportFailed" xml:space="preserve"><value>The stamps could not be imported.</value></data>
+  <data name="Error_TemplateIncompatible" xml:space="preserve"><value>This template was created by a newer version and may not display correctly.</value></data>
+  <!-- Warning keys raised through IVideoRecorder.Warning (WP-RECORDING); shown by the recording HUD. -->
+  <data name="Recording_NoiseSuppressionUnavailable" xml:space="preserve"><value>Noise removal is not available, so the microphone is recorded without it.</value></data>
+  <data name="Recording_CaptureFallback" xml:space="preserve"><value>A compatibility capture method is being used. Performance may be reduced.</value></data>
+  <data name="Recording_LowDiskSpace" xml:space="preserve"><value>Disk space is running low. The recording stops automatically when almost no space is left.</value></data>
+  <data name="Recording_DiskLimitReached" xml:space="preserve"><value>The disk is almost full. The recording was stopped to keep it playable.</value></data>
+  <data name="Recording_SourceLost" xml:space="preserve"><value>The recorded window or device is no longer available. The recording was stopped and what was recorded has been saved.</value></data>
+  <data name="Recording_SavedToAlternatePath" xml:space="preserve"><value>The recording could not be saved under the chosen name. It was saved under a different name in the same folder.</value></data>
+</root>

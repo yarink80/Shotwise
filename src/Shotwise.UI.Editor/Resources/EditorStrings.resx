@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Backup_Filter" xml:space="preserve"><value>Shotwise library backup (*.shotarchive)|*.shotarchive</value></data>
+  <data name="Bg_AutoFill" xml:space="preserve"><value>Auto-fill</value></data>
+  <data name="Bg_Black" xml:space="preserve"><value>Black</value></data>
+  <data name="Bg_Custom" xml:space="preserve"><value>Custom…</value></data>
+  <data name="Bg_DarkGray" xml:space="preserve"><value>Dark Gray</value></data>
+  <data name="Bg_Gray" xml:space="preserve"><value>Gray</value></data>
+  <data name="Bg_LightGray" xml:space="preserve"><value>Light Gray (Default)</value></data>
+  <data name="Bg_Transparent" xml:space="preserve"><value>Transparent</value></data>
+  <data name="Bg_White" xml:space="preserve"><value>White</value></data>
+  <data name="Blur_Blur" xml:space="preserve"><value>Blur</value></data>
+  <data name="Blur_Pixelate" xml:space="preserve"><value>Pixelate</value></data>
+  <data name="Blur_Solid" xml:space="preserve"><value>Solid</value></data>
+  <data name="Close_Discard" xml:space="preserve"><value>Don&apos;t save</value></data>
+  <data name="Close_Save" xml:space="preserve"><value>Save</value></data>
+  <data name="Close_SavePrompt" xml:space="preserve"><value>&quot;{0}&quot; has unsaved changes. Do you want to save them?</value></data>
+  <data name="Close_SaveTitle" xml:space="preserve"><value>Save changes?</value></data>
+  <data name="Cmd_About" xml:space="preserve"><value>About Shotwise</value></data>
+  <data name="Cmd_ActualSize" xml:space="preserve"><value>Actual size (Ctrl+0)</value></data>
+  <data name="Cmd_AddToQuickStyles" xml:space="preserve"><value>Add to Quick Styles</value></data>
+  <data name="Cmd_AlignBottom" xml:space="preserve"><value>Bottom</value></data>
+  <data name="Cmd_AlignCenter" xml:space="preserve"><value>Center</value></data>
+  <data name="Cmd_AlignLeft" xml:space="preserve"><value>Left</value></data>
+  <data name="Cmd_AlignMiddle" xml:space="preserve"><value>Middle</value></data>
+  <data name="Cmd_AlignRight" xml:space="preserve"><value>Right</value></data>
+  <data name="Cmd_AlignTop" xml:space="preserve"><value>Top</value></data>
+  <data name="Cmd_ApplyTemplate" xml:space="preserve"><value>Apply Template…</value></data>
+  <data name="Cmd_AutoSimplify" xml:space="preserve"><value>Auto Simplify</value></data>
+  <data name="Cmd_BatchExport" xml:space="preserve"><value>Export / Batch Convert…</value></data>
+  <data name="Cmd_BringForward" xml:space="preserve"><value>Bring Forward</value></data>
+  <data name="Cmd_BringToFront" xml:space="preserve"><value>Bring to Front</value></data>
+  <data name="Cmd_CanvasColor" xml:space="preserve"><value>Canvas Color…</value></data>
+  <data name="Cmd_CanvasSnapping" xml:space="preserve"><value>Canvas Snapping</value></data>
+  <data name="Cmd_CapturePreferences" xml:space="preserve"><value>Capture Preferences…</value></data>
+  <data name="Cmd_CheckForUpdates" xml:space="preserve"><value>Check for Updates</value></data>
+  <data name="Cmd_CloseDocument" xml:space="preserve"><value>Close</value></data>
+  <data name="Cmd_CombineImages" xml:space="preserve"><value>Combine Images…</value></data>
+  <data name="Cmd_CombineInTemplate" xml:space="preserve"><value>Combine in Template…</value></data>
+  <data name="Cmd_CombineVideos" xml:space="preserve"><value>Combine Videos…</value></data>
+  <data name="Cmd_ConnectMobile" xml:space="preserve"><value>Connect Mobile Device…</value></data>
+  <data name="Cmd_Copy" xml:space="preserve"><value>Copy</value></data>
+  <data name="Cmd_CopyAll" xml:space="preserve"><value>Copy All</value></data>
+  <data name="Cmd_CreateFromTemplate" xml:space="preserve"><value>Create Image from Template…</value></data>
+  <data name="Cmd_CustomAngle" xml:space="preserve"><value>Custom Angle…</value></data>
+  <data name="Cmd_Cut" xml:space="preserve"><value>Cut</value></data>
+  <data name="Cmd_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Cmd_Deselect" xml:space="preserve"><value>Deselect All</value></data>
+  <data name="Cmd_DistributeH" xml:space="preserve"><value>Distribute Horizontally</value></data>
+  <data name="Cmd_DistributeV" xml:space="preserve"><value>Distribute Vertically</value></data>
+  <data name="Cmd_Duplicate" xml:space="preserve"><value>Duplicate</value></data>
+  <data name="Cmd_EditText" xml:space="preserve"><value>Edit Text</value></data>
+  <data name="Cmd_EditorPreferences" xml:space="preserve"><value>Editor Preferences…</value></data>
+  <data name="Cmd_ExitEditor" xml:space="preserve"><value>Close Editor</value></data>
+  <data name="Cmd_Flatten" xml:space="preserve"><value>Flatten</value></data>
+  <data name="Cmd_FlattenAll" xml:space="preserve"><value>Flatten All</value></data>
+  <data name="Cmd_FlipImageH" xml:space="preserve"><value>Flip Horizontal</value></data>
+  <data name="Cmd_FlipImageV" xml:space="preserve"><value>Flip Vertical</value></data>
+  <data name="Cmd_FlipObjectsH" xml:space="preserve"><value>Flip Objects Horizontally</value></data>
+  <data name="Cmd_FlipObjectsV" xml:space="preserve"><value>Flip Objects Vertically</value></data>
+  <data name="Cmd_GettingStarted" xml:space="preserve"><value>Getting Started</value></data>
+  <data name="Cmd_GrabText" xml:space="preserve"><value>Grab Text…</value></data>
+  <data name="Cmd_Group" xml:space="preserve"><value>Group</value></data>
+  <data name="Cmd_ImportStamps" xml:space="preserve"><value>Import Stamps…</value></data>
+  <data name="Cmd_ImportTemplates" xml:space="preserve"><value>Import Templates…</value></data>
+  <data name="Cmd_ImportToLibrary" xml:space="preserve"><value>Import to Library…</value></data>
+  <data name="Cmd_InvertSelection" xml:space="preserve"><value>Invert Selection</value></data>
+  <data name="Cmd_LibraryBackup" xml:space="preserve"><value>Back Up Library…</value></data>
+  <data name="Cmd_LibraryLocation" xml:space="preserve"><value>Library Location…</value></data>
+  <data name="Cmd_LibraryOpenSelected" xml:space="preserve"><value>Open Selected</value></data>
+  <data name="Cmd_LibraryRefresh" xml:space="preserve"><value>Refresh</value></data>
+  <data name="Cmd_LibraryRestore" xml:space="preserve"><value>Restore Backup…</value></data>
+  <data name="Cmd_LibraryReveal" xml:space="preserve"><value>Show in Explorer</value></data>
+  <data name="Cmd_LibrarySearch" xml:space="preserve"><value>Search Library</value></data>
+  <data name="Cmd_Lock" xml:space="preserve"><value>Lock</value></data>
+  <data name="Cmd_MoveToRecycleBin" xml:space="preserve"><value>Move to Recycle Bin</value></data>
+  <data name="Cmd_NewCapture" xml:space="preserve"><value>New Capture</value></data>
+  <data name="Cmd_NewFromClipboard" xml:space="preserve"><value>New from Clipboard</value></data>
+  <data name="Cmd_NewImage" xml:space="preserve"><value>New Image…</value></data>
+  <data name="Cmd_Open" xml:space="preserve"><value>Open…</value></data>
+  <data name="Cmd_PageSetup" xml:space="preserve"><value>Page Setup…</value></data>
+  <data name="Cmd_Paste" xml:space="preserve"><value>Paste</value></data>
+  <data name="Cmd_Pin" xml:space="preserve"><value>Pin / Unpin</value></data>
+  <data name="Cmd_PixelGrid" xml:space="preserve"><value>Pixel Grid</value></data>
+  <data name="Cmd_Print" xml:space="preserve"><value>Print…</value></data>
+  <data name="Cmd_PrintPreview" xml:space="preserve"><value>Print Preview</value></data>
+  <data name="Cmd_QuickPrint" xml:space="preserve"><value>Quick Print</value></data>
+  <data name="Cmd_Redo" xml:space="preserve"><value>Redo (Ctrl+Y)</value></data>
+  <data name="Cmd_Rename" xml:space="preserve"><value>Rename</value></data>
+  <data name="Cmd_ResizeCanvas" xml:space="preserve"><value>Resize Canvas…</value></data>
+  <data name="Cmd_ResizeImage" xml:space="preserve"><value>Resize Image…</value></data>
+  <data name="Cmd_RevertToOriginal" xml:space="preserve"><value>Revert to Original</value></data>
+  <data name="Cmd_Rotate180" xml:space="preserve"><value>180 Degrees</value></data>
+  <data name="Cmd_RotateCcw" xml:space="preserve"><value>Counter Clockwise</value></data>
+  <data name="Cmd_RotateCw" xml:space="preserve"><value>Clockwise</value></data>
+  <data name="Cmd_Save" xml:space="preserve"><value>Save</value></data>
+  <data name="Cmd_SaveAs" xml:space="preserve"><value>Save As…</value></data>
+  <data name="Cmd_SelectAll" xml:space="preserve"><value>Select All</value></data>
+  <data name="Cmd_SelectAllObjects" xml:space="preserve"><value>Select All Objects</value></data>
+  <data name="Cmd_SendBackward" xml:space="preserve"><value>Send Backward</value></data>
+  <data name="Cmd_SendToBack" xml:space="preserve"><value>Send to Back</value></data>
+  <data name="Cmd_ShareAccounts" xml:space="preserve"><value>Share Preferences…</value></data>
+  <data name="Cmd_ShareHistory" xml:space="preserve"><value>Share History…</value></data>
+  <data name="Cmd_ShareLink" xml:space="preserve"><value>Share Link</value></data>
+  <data name="Cmd_ShrinkToFit" xml:space="preserve"><value>Shrink to Fit</value></data>
+  <data name="Cmd_SmartRedact" xml:space="preserve"><value>Smart Redact</value></data>
+  <data name="Cmd_SwitchToEditor" xml:space="preserve"><value>Switch to Editor</value></data>
+  <data name="Cmd_SwitchToLibrary" xml:space="preserve"><value>Switch to Library</value></data>
+  <data name="Cmd_TagImage" xml:space="preserve"><value>Tag Image…</value></data>
+  <data name="Cmd_ToggleEffects" xml:space="preserve"><value>Effects</value></data>
+  <data name="Cmd_ToggleProperties" xml:space="preserve"><value>Tool Properties</value></data>
+  <data name="Cmd_ToggleTray" xml:space="preserve"><value>Recent Images Tray</value></data>
+  <data name="Cmd_Trim" xml:space="preserve"><value>Trim</value></data>
+  <data name="Cmd_Tutorials" xml:space="preserve"><value>Tutorials</value></data>
+  <data name="Cmd_Undo" xml:space="preserve"><value>Undo (Ctrl+Z)</value></data>
+  <data name="Cmd_UndoStack" xml:space="preserve"><value>Undo Stack…</value></data>
+  <data name="Cmd_Ungroup" xml:space="preserve"><value>Ungroup</value></data>
+  <data name="Cmd_Unlock" xml:space="preserve"><value>Unlock</value></data>
+  <data name="Cmd_VideoCutOut" xml:space="preserve"><value>Cut Out</value></data>
+  <data name="Cmd_VideoMute" xml:space="preserve"><value>Mute / Unmute</value></data>
+  <data name="Cmd_VideoNextFrame" xml:space="preserve"><value>Next Frame</value></data>
+  <data name="Cmd_VideoPlayPause" xml:space="preserve"><value>Play / Pause</value></data>
+  <data name="Cmd_VideoPrevFrame" xml:space="preserve"><value>Previous Frame</value></data>
+  <data name="Cmd_VideoSaveFrame" xml:space="preserve"><value>Save Frame as Image</value></data>
+  <data name="Cmd_VideoSaveGif" xml:space="preserve"><value>Save Video as GIF…</value></data>
+  <data name="Cmd_VideoSaveSelection" xml:space="preserve"><value>Save Selection as New Video…</value></data>
+  <data name="Cmd_VideoVolumeDown" xml:space="preserve"><value>Volume Down</value></data>
+  <data name="Cmd_VideoVolumeUp" xml:space="preserve"><value>Volume Up</value></data>
+  <data name="Cmd_WhatsNew" xml:space="preserve"><value>What&apos;s New</value></data>
+  <data name="Cmd_ZoomIn" xml:space="preserve"><value>Zoom in (Ctrl++)</value></data>
+  <data name="Cmd_ZoomOut" xml:space="preserve"><value>Zoom out (Ctrl+-)</value></data>
+  <data name="Cmd_ZoomToFit" xml:space="preserve"><value>Zoom to fit</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Common_Dismiss" xml:space="preserve"><value>Dismiss</value></data>
+  <data name="Common_Edit" xml:space="preserve"><value>Edit</value></data>
+  <data name="Common_MoveDown" xml:space="preserve"><value>Move down</value></data>
+  <data name="Common_MoveUp" xml:space="preserve"><value>Move up</value></data>
+  <data name="Common_OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Common_Remove" xml:space="preserve"><value>Remove</value></data>
+  <data name="Common_Rename" xml:space="preserve"><value>Rename</value></data>
+  <data name="Crop_Apply" xml:space="preserve"><value>Apply</value></data>
+  <data name="Crop_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Crop_Free" xml:space="preserve"><value>Free</value></data>
+  <data name="Crop_Reset" xml:space="preserve"><value>Reset crop</value></data>
+  <data name="CutOut_Horizontal" xml:space="preserve"><value>Horizontal band</value></data>
+  <data name="CutOut_Vertical" xml:space="preserve"><value>Vertical band</value></data>
+  <data name="Dash_Dash" xml:space="preserve"><value>Dashed</value></data>
+  <data name="Dash_DashDot" xml:space="preserve"><value>Dash-dot</value></data>
+  <data name="Dash_Dot" xml:space="preserve"><value>Dotted</value></data>
+  <data name="Dash_Solid" xml:space="preserve"><value>Solid</value></data>
+  <data name="Doc_Copy" xml:space="preserve"><value>{0} copy</value></data>
+  <data name="Doc_Untitled" xml:space="preserve"><value>Untitled {0}</value></data>
+  <data name="Effect_Border" xml:space="preserve"><value>Border</value></data>
+  <data name="Effect_Caption" xml:space="preserve"><value>Capture info</value></data>
+  <data name="Effect_ColorAdjust" xml:space="preserve"><value>Colour adjustment</value></data>
+  <data name="Effect_ColorReplace" xml:space="preserve"><value>Colour replacement</value></data>
+  <data name="Effect_EdgesOf" xml:space="preserve"><value>Edges ({0})</value></data>
+  <data name="Effect_FilterOf" xml:space="preserve"><value>Filter ({0})</value></data>
+  <data name="Effect_Flip" xml:space="preserve"><value>Flip</value></data>
+  <data name="Effect_PageCurl" xml:space="preserve"><value>Page curl</value></data>
+  <data name="Effect_Perspective" xml:space="preserve"><value>Perspective</value></data>
+  <data name="Effect_Resize" xml:space="preserve"><value>Resize</value></data>
+  <data name="Effect_RotateOf" xml:space="preserve"><value>Rotate {0}°</value></data>
+  <data name="Effect_Shadow" xml:space="preserve"><value>Shadow</value></data>
+  <data name="Effect_Shear" xml:space="preserve"><value>Shear</value></data>
+  <data name="Effect_Spotlight" xml:space="preserve"><value>Spotlight and magnify</value></data>
+  <data name="Effect_Transparency" xml:space="preserve"><value>Transparency</value></data>
+  <data name="Effect_Trim" xml:space="preserve"><value>Trim</value></data>
+  <data name="Effect_Watermark" xml:space="preserve"><value>Watermark</value></data>
+  <data name="Effects_Add" xml:space="preserve"><value>Add an effect</value></data>
+  <data name="Effects_AddTip" xml:space="preserve"><value>Edit the effect and add it to the stack below</value></data>
+  <data name="Effects_AddToStack" xml:space="preserve"><value>Add</value></data>
+  <data name="Effects_ApplyNow" xml:space="preserve"><value>Apply…</value></data>
+  <data name="Effects_ApplyQuick" xml:space="preserve"><value>Apply</value></data>
+  <data name="Effects_ApplyStack" xml:space="preserve"><value>Apply stack</value></data>
+  <data name="Effects_ApplyTip" xml:space="preserve"><value>Edit the effect with a live preview, then apply it to the image</value></data>
+  <data name="Effects_Clear" xml:space="preserve"><value>Clear</value></data>
+  <data name="Effects_Combined" xml:space="preserve"><value>Combined effect</value></data>
+  <data name="Effects_Quick" xml:space="preserve"><value>Quick Effects</value></data>
+  <data name="Effects_QuickName" xml:space="preserve"><value>Name for the Quick Effect</value></data>
+  <data name="Effects_SaveQuick" xml:space="preserve"><value>Save as Quick Effect…</value></data>
+  <data name="Effects_Stack" xml:space="preserve"><value>Effect stack</value></data>
+  <data name="Effects_StackEmpty" xml:space="preserve"><value>Add at least one effect to the stack first.</value></data>
+  <data name="Effects_StackHint" xml:space="preserve"><value>Effects you add appear here and are applied in order.</value></data>
+  <data name="Erase_Canvas" xml:space="preserve"><value>Canvas colour</value></data>
+  <data name="Erase_Transparent" xml:space="preserve"><value>Transparent</value></data>
+  <data name="Error_Title" xml:space="preserve"><value>Something went wrong</value></data>
+  <data name="Learn_GettingStarted" xml:space="preserve"><value>Getting started</value></data>
+  <data name="Learn_KeyEdit" xml:space="preserve"><value>Edit</value></data>
+  <data name="Learn_KeyFile" xml:space="preserve"><value>File</value></data>
+  <data name="Learn_KeyVideo" xml:space="preserve"><value>Video</value></data>
+  <data name="Learn_KeyView" xml:space="preserve"><value>View and tools</value></data>
+  <data name="Learn_Library" xml:space="preserve"><value>Browse library</value></data>
+  <data name="Learn_N1" xml:space="preserve"><value>Images, templates, videos and GIFs open side by side in the tray. Switch between them with a click.</value></data>
+  <data name="Learn_N1T" xml:space="preserve"><value>One window for everything</value></data>
+  <data name="Learn_N2" xml:space="preserve"><value>Smart Redact, Smart Move, Auto Simplify, Grab Text and Edit Text work on your own computer. Models download only when you choose to use them.</value></data>
+  <data name="Learn_N2T" xml:space="preserve"><value>Smart tools</value></data>
+  <data name="Learn_N3" xml:space="preserve"><value>The library is a plain folder you choose, backups are a single file, and nothing is sent anywhere unless you share it.</value></data>
+  <data name="Learn_N3T" xml:space="preserve"><value>Your data, your rules</value></data>
+  <data name="Learn_NewCapture" xml:space="preserve"><value>New capture</value></data>
+  <data name="Learn_NewImage" xml:space="preserve"><value>New image…</value></data>
+  <data name="Learn_Open" xml:space="preserve"><value>Open file…</value></data>
+  <data name="Learn_Shortcuts" xml:space="preserve"><value>Keyboard shortcuts</value></data>
+  <data name="Learn_ShowOnStartup" xml:space="preserve"><value>Show this page when no image is open</value></data>
+  <data name="Learn_Step1" xml:space="preserve"><value>Press the capture hotkey (PrintScreen by default) or choose New Capture. Drag a region, click a window, or pick the full screen, then choose image, video or scrolling capture.</value></data>
+  <data name="Learn_Step1T" xml:space="preserve"><value>1. Capture</value></data>
+  <data name="Learn_Step2" xml:space="preserve"><value>Pick a tool on the toolbar. Arrows, callouts, text, steps, stamps, blur and more stay editable until you flatten or export. Use Quick Styles on the right to reuse your favourite looks.</value></data>
+  <data name="Learn_Step2T" xml:space="preserve"><value>2. Mark it up</value></data>
+  <data name="Learn_Step3" xml:space="preserve"><value>Open the Effects panel to add borders, shadows, torn edges, colour changes and more. Save combinations as Quick Effects.</value></data>
+  <data name="Learn_Step3T" xml:space="preserve"><value>3. Polish</value></data>
+  <data name="Learn_Step4" xml:space="preserve"><value>Use the Share button to save, copy, print, email or upload to any destination you have set up in Preferences.</value></data>
+  <data name="Learn_Step4T" xml:space="preserve"><value>4. Share</value></data>
+  <data name="Learn_Step5" xml:space="preserve"><value>Every capture is kept in your library. Search by what is in the picture, filter by application, website, date or tag, and pin your favourites to the tray.</value></data>
+  <data name="Learn_Step5T" xml:space="preserve"><value>5. Find it again</value></data>
+  <data name="Learn_T1" xml:space="preserve"><value>Choose Image → Smart Redact. Review the categories found (faces, emails, numbers…), pick blur, pixelate or solid, then press Done.</value></data>
+  <data name="Learn_T1T" xml:space="preserve"><value>Hide sensitive information</value></data>
+  <data name="Learn_T2" xml:space="preserve"><value>Use the Step capture preset, click through your task, and the editor opens a guide with numbered steps. Combine screenshots with File → Create Image from Template.</value></data>
+  <data name="Learn_T2T" xml:space="preserve"><value>Make a step-by-step guide</value></data>
+  <data name="Learn_T3" xml:space="preserve"><value>Open a video, drag across the timeline to select a range, then Cut Out removes it or Trim keeps only it. Every change can be undone.</value></data>
+  <data name="Learn_T3T" xml:space="preserve"><value>Trim a recording</value></data>
+  <data name="Learn_T4" xml:space="preserve"><value>In the video view choose Create GIF, pick a preset (screen video, high motion, small file) and optional fade-out.</value></data>
+  <data name="Learn_T4T" xml:space="preserve"><value>Turn a video into a GIF</value></data>
+  <data name="Learn_T5" xml:space="preserve"><value>Choose the Move tool and turn on Smart Move. Buttons and panels become objects you can move, resize or delete.</value></data>
+  <data name="Learn_T5T" xml:space="preserve"><value>Move things around in a screenshot</value></data>
+  <data name="Learn_T6" xml:space="preserve"><value>Choose Edit → Grab Text, or use the Grab Text tool to drag over a region. Copy the result as text or as a table.</value></data>
+  <data name="Learn_T6T" xml:space="preserve"><value>Copy text out of an image</value></data>
+  <data name="Learn_Tagline" xml:space="preserve"><value>Capture anything on your screen, mark it up, and share it in seconds.</value></data>
+  <data name="Learn_Tutorials" xml:space="preserve"><value>Tutorials</value></data>
+  <data name="Learn_Welcome" xml:space="preserve"><value>Welcome to Shotwise</value></data>
+  <data name="Learn_WhatsNew" xml:space="preserve"><value>What&apos;s new</value></data>
+  <data name="Lib_AllFiles" xml:space="preserve"><value>All Files</value></data>
+  <data name="Lib_AllGroups" xml:space="preserve"><value>All</value></data>
+  <data name="Lib_Browse" xml:space="preserve"><value>Browse</value></data>
+  <data name="Lib_ByApp" xml:space="preserve"><value>Application</value></data>
+  <data name="Lib_ByDay" xml:space="preserve"><value>Date (day)</value></data>
+  <data name="Lib_ByKind" xml:space="preserve"><value>Media type</value></data>
+  <data name="Lib_ByMonth" xml:space="preserve"><value>Date (month)</value></data>
+  <data name="Lib_ByTag" xml:space="preserve"><value>Tag</value></data>
+  <data name="Lib_ByWebsite" xml:space="preserve"><value>Website</value></data>
+  <data name="Lib_ByYear" xml:space="preserve"><value>Date (year)</value></data>
+  <data name="Lib_ClearSearch" xml:space="preserve"><value>Clear search</value></data>
+  <data name="Lib_CombineImages" xml:space="preserve"><value>Combine Images…</value></data>
+  <data name="Lib_CombineVideos" xml:space="preserve"><value>Combine Videos…</value></data>
+  <data name="Lib_CopyPath" xml:space="preserve"><value>Copy path</value></data>
+  <data name="Lib_Count" xml:space="preserve"><value>{0} items{1}</value></data>
+  <data name="Lib_CreateGif" xml:space="preserve"><value>Create GIF…</value></data>
+  <data name="Lib_Delete" xml:space="preserve"><value>Move to Recycle Bin</value></data>
+  <data name="Lib_DeleteMany" xml:space="preserve"><value>Move {0} items to the Recycle Bin?</value></data>
+  <data name="Lib_DeleteOne" xml:space="preserve"><value>Move &quot;{0}&quot; to the Recycle Bin?</value></data>
+  <data name="Lib_DeleteTitle" xml:space="preserve"><value>Move to Recycle Bin</value></data>
+  <data name="Lib_Empty" xml:space="preserve"><value>No items match.</value></data>
+  <data name="Lib_Favorite" xml:space="preserve"><value>Add to favourites</value></data>
+  <data name="Lib_Favorites" xml:space="preserve"><value>Favourites</value></data>
+  <data name="Lib_GroupBy" xml:space="preserve"><value>Group by</value></data>
+  <data name="Lib_Images" xml:space="preserve"><value>Images</value></data>
+  <data name="Lib_Open" xml:space="preserve"><value>Open</value></data>
+  <data name="Lib_Refresh" xml:space="preserve"><value>Refresh</value></data>
+  <data name="Lib_Reveal" xml:space="preserve"><value>Show in Explorer</value></data>
+  <data name="Lib_SearchTip" xml:space="preserve"><value>Search names, applications, window titles, web addresses, text in images and tags</value></data>
+  <data name="Lib_Selected" xml:space="preserve"><value>, {0} selected</value></data>
+  <data name="Lib_ShareHistory" xml:space="preserve"><value>Share history…</value></data>
+  <data name="Lib_Size" xml:space="preserve"><value>Size</value></data>
+  <data name="Lib_Steps" xml:space="preserve"><value>Step Captures</value></data>
+  <data name="Lib_Tags" xml:space="preserve"><value>Tags…</value></data>
+  <data name="Lib_Unavailable" xml:space="preserve"><value>The library is not available.</value></data>
+  <data name="Lib_Unfavorite" xml:space="preserve"><value>Remove from favourites</value></data>
+  <data name="Lib_Unknown" xml:space="preserve"><value>(unknown)</value></data>
+  <data name="Lib_Videos" xml:space="preserve"><value>Videos</value></data>
+  <data name="Menu_AddToMyStamps" xml:space="preserve"><value>Add to My Stamps</value></data>
+  <data name="Menu_Align" xml:space="preserve"><value>Align</value></data>
+  <data name="Menu_Arrange" xml:space="preserve"><value>Arrange</value></data>
+  <data name="Menu_Background" xml:space="preserve"><value>Background Color</value></data>
+  <data name="Menu_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Menu_Deselect" xml:space="preserve"><value>Deselect</value></data>
+  <data name="Menu_Edit" xml:space="preserve"><value>Edit</value></data>
+  <data name="Menu_File" xml:space="preserve"><value>File</value></data>
+  <data name="Menu_Help" xml:space="preserve"><value>Help</value></data>
+  <data name="Menu_Image" xml:space="preserve"><value>Image</value></data>
+  <data name="Menu_Import" xml:space="preserve"><value>Import</value></data>
+  <data name="Menu_Library" xml:space="preserve"><value>Library</value></data>
+  <data name="Menu_Loading" xml:space="preserve"><value>Loading…</value></data>
+  <data name="Menu_NewCapture" xml:space="preserve"><value>New Capture</value></data>
+  <data name="Menu_NoRecent" xml:space="preserve"><value>(none)</value></data>
+  <data name="Menu_OpenRecent" xml:space="preserve"><value>Open Recent</value></data>
+  <data name="Menu_Order" xml:space="preserve"><value>Order</value></data>
+  <data name="Menu_Rotate" xml:space="preserve"><value>Rotate</value></data>
+  <data name="Menu_SelectAll" xml:space="preserve"><value>Select all</value></data>
+  <data name="Menu_Share" xml:space="preserve"><value>Share</value></data>
+  <data name="Menu_Tools" xml:space="preserve"><value>Tools</value></data>
+  <data name="Menu_Video" xml:space="preserve"><value>Video</value></data>
+  <data name="Menu_View" xml:space="preserve"><value>View</value></data>
+  <data name="Msg_AnglePrompt" xml:space="preserve"><value>Rotate by (degrees, positive = clockwise)</value></data>
+  <data name="Msg_BackingUp" xml:space="preserve"><value>Backing up the library…</value></data>
+  <data name="Msg_BackupDone" xml:space="preserve"><value>Library backup created</value></data>
+  <data name="Msg_BatchDone" xml:space="preserve"><value>Exported {0} of {1} files</value></data>
+  <data name="Msg_BatchExport" xml:space="preserve"><value>Exporting…</value></data>
+  <data name="Msg_CheckingUpdates" xml:space="preserve"><value>Checking for updates…</value></data>
+  <data name="Msg_ColorPicked" xml:space="preserve"><value>Picked {0}</value></data>
+  <data name="Msg_CombiningVideos" xml:space="preserve"><value>Combining videos…</value></data>
+  <data name="Msg_Copied" xml:space="preserve"><value>Copied to the clipboard</value></data>
+  <data name="Msg_CopyColor" xml:space="preserve"><value>Copy</value></data>
+  <data name="Msg_CreatingGif" xml:space="preserve"><value>Creating GIF…</value></data>
+  <data name="Msg_Downloading" xml:space="preserve"><value>Downloading update…</value></data>
+  <data name="Msg_FeatureUnavailable" xml:space="preserve"><value>This feature needs a component that is not installed. {0}</value></data>
+  <data name="Msg_Imported" xml:space="preserve"><value>Imported {0} of {1} files</value></data>
+  <data name="Msg_Importing" xml:space="preserve"><value>Importing to the library…</value></data>
+  <data name="Msg_Install" xml:space="preserve"><value>Install</value></data>
+  <data name="Msg_LibraryMoved" xml:space="preserve"><value>Library moved</value></data>
+  <data name="Msg_MovingLibrary" xml:space="preserve"><value>Moving the library…</value></data>
+  <data name="Msg_NeedTwoImages" xml:space="preserve"><value>Select at least two images in the tray to combine them.</value></data>
+  <data name="Msg_NeedTwoVideos" xml:space="preserve"><value>Select at least two videos to combine.</value></data>
+  <data name="Msg_NoCapture" xml:space="preserve"><value>Capture is not available.</value></data>
+  <data name="Msg_NoGif" xml:space="preserve"><value>GIF creation is not available.</value></data>
+  <data name="Msg_NoVideo" xml:space="preserve"><value>Video support is not available.</value></data>
+  <data name="Msg_NotInLibrary" xml:space="preserve"><value>Save the image to the library first to tag it.</value></data>
+  <data name="Msg_RestartForLibrary" xml:space="preserve"><value>The new library location is used the next time Shotwise starts.</value></data>
+  <data name="Msg_Restore" xml:space="preserve"><value>Restore</value></data>
+  <data name="Msg_RestoreConfirm" xml:space="preserve"><value>Items from the backup are added to your library. Existing files are never overwritten. Continue?</value></data>
+  <data name="Msg_RestoreDone" xml:space="preserve"><value>Backup restored</value></data>
+  <data name="Msg_Restoring" xml:space="preserve"><value>Restoring the library…</value></data>
+  <data name="Msg_Saved" xml:space="preserve"><value>Saved {0}</value></data>
+  <data name="Msg_SnapOff" xml:space="preserve"><value>Canvas snapping off</value></data>
+  <data name="Msg_SnapOn" xml:space="preserve"><value>Canvas snapping on</value></data>
+  <data name="Msg_StampAdded" xml:space="preserve"><value>Added &quot;{0}&quot; to My Stamps</value></data>
+  <data name="Msg_StampsImported" xml:space="preserve"><value>Stamps imported</value></data>
+  <data name="Msg_TemplatesImported" xml:space="preserve"><value>Templates imported</value></data>
+  <data name="Msg_UpdateAvailable" xml:space="preserve"><value>Update available</value></data>
+  <data name="Msg_UpdatesOff" xml:space="preserve"><value>Update checking is not available.</value></data>
+  <data name="Msg_UpdatesUnsupported" xml:space="preserve"><value>Shotwise {0}. {1}</value></data>
+  <data name="Msg_UpdatesPolicy" xml:space="preserve"><value>Updates are turned off by your organization.</value></data>
+  <data name="Msg_UpdatesOffline" xml:space="preserve"><value>You are offline. Connect to the internet and try again.</value></data>
+  <data name="Msg_UpdateCheckFailed" xml:space="preserve"><value>The update check did not complete: {0}</value></data>
+  <data name="Msg_UpToDateVersion" xml:space="preserve"><value>Shotwise {0} is up to date.</value></data>
+  <data name="Msg_UpdateAvailableBody2" xml:space="preserve"><value>Shotwise {0} is available (you have {1}). Download it now?</value></data>
+  <data name="Msg_UpdateNotes" xml:space="preserve"><value>What's new: {0}</value></data>
+  <data name="Msg_UpdateSize" xml:space="preserve"><value>Download size: {0:N1} MB</value></data>
+  <data name="Msg_Download" xml:space="preserve"><value>Download</value></data>
+  <data name="Msg_UpdateDownloadFailed" xml:space="preserve"><value>The download did not complete: {0}</value></data>
+  <data name="Update_ReadyTitle" xml:space="preserve"><value>Shotwise {0} is ready</value></data>
+  <data name="Update_ReadyBody" xml:space="preserve"><value>Restart Shotwise to finish updating. Your work is saved first. If you choose Later, the update installs the next time you exit Shotwise.</value></data>
+  <data name="Update_RestartNow" xml:space="preserve"><value>Restart now</value></data>
+  <data name="Update_Later" xml:space="preserve"><value>Later</value></data>
+  <data name="Update_BlockedBody" xml:space="preserve"><value>Shotwise restarts to update after the capture or recording has finished.</value></data>
+  <data name="Open_All" xml:space="preserve"><value>All files</value></data>
+  <data name="Open_AllSupported" xml:space="preserve"><value>All supported files</value></data>
+  <data name="Open_Images" xml:space="preserve"><value>Images and documents</value></data>
+  <data name="Open_Videos" xml:space="preserve"><value>Videos</value></data>
+  <data name="Palette_Custom" xml:space="preserve"><value>Custom</value></data>
+  <data name="Palette_Dark" xml:space="preserve"><value>Dark</value></data>
+  <data name="Palette_Gray" xml:space="preserve"><value>Grayscale</value></data>
+  <data name="Palette_Image" xml:space="preserve"><value>Image colours</value></data>
+  <data name="Palette_Light" xml:space="preserve"><value>Light</value></data>
+  <data name="Props_AddQuickStyle" xml:space="preserve"><value>Add to Quick Styles</value></data>
+  <data name="Props_AddTail" xml:space="preserve"><value>Add tail</value></data>
+  <data name="Props_Antialias" xml:space="preserve"><value>Antialias</value></data>
+  <data name="Props_Appearance" xml:space="preserve"><value>Appearance</value></data>
+  <data name="Props_Aspect" xml:space="preserve"><value>Aspect ratio</value></data>
+  <data name="Props_AutoDetail" xml:space="preserve"><value>Automatic detail</value></data>
+  <data name="Props_AutoExpand" xml:space="preserve"><value>Auto-expand canvas</value></data>
+  <data name="Props_AutoSimplify" xml:space="preserve"><value>Auto Simplify…</value></data>
+  <data name="Props_AutoSize" xml:space="preserve"><value>Resize box to fit text</value></data>
+  <data name="Props_Background" xml:space="preserve"><value>Background</value></data>
+  <data name="Props_Bezier" xml:space="preserve"><value>Curved (Bézier)</value></data>
+  <data name="Props_Blur" xml:space="preserve"><value>Blur</value></data>
+  <data name="Props_BlurType" xml:space="preserve"><value>Type</value></data>
+  <data name="Props_CalloutShape" xml:space="preserve"><value>Callout shape</value></data>
+  <data name="Props_Canvas" xml:space="preserve"><value>Canvas</value></data>
+  <data name="Props_CanvasColour" xml:space="preserve"><value>Canvas colour</value></data>
+  <data name="Props_CanvasShadow" xml:space="preserve"><value>Canvas shadow</value></data>
+  <data name="Props_Colour" xml:space="preserve"><value>Colour</value></data>
+  <data name="Props_ComponentsFound" xml:space="preserve"><value>{0} objects found</value></data>
+  <data name="Props_Connector" xml:space="preserve"><value>Show connector</value></data>
+  <data name="Props_CornerRadius" xml:space="preserve"><value>Corner radius</value></data>
+  <data name="Props_CreateAsVector" xml:space="preserve"><value>Create as vector</value></data>
+  <data name="Props_Crop" xml:space="preserve"><value>Crop</value></data>
+  <data name="Props_Cursor" xml:space="preserve"><value>Cursor</value></data>
+  <data name="Props_CursorKind" xml:space="preserve"><value>Kind</value></data>
+  <data name="Props_CutOut" xml:space="preserve"><value>Cut Out</value></data>
+  <data name="Props_CutOutHint" xml:space="preserve"><value>Drag across the image to mark the strip to remove.</value></data>
+  <data name="Props_Dash" xml:space="preserve"><value>Style</value></data>
+  <data name="Props_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Props_DeleteCropped" xml:space="preserve"><value>Delete cropped content</value></data>
+  <data name="Props_Detail" xml:space="preserve"><value>Detail</value></data>
+  <data name="Props_Direction" xml:space="preserve"><value>Direction</value></data>
+  <data name="Props_DoubleLine" xml:space="preserve"><value>Double line</value></data>
+  <data name="Props_Duplicate" xml:space="preserve"><value>Duplicate</value></data>
+  <data name="Props_Edge" xml:space="preserve"><value>Edge</value></data>
+  <data name="Props_EditTextMode" xml:space="preserve"><value>Edit text (replace text with editable objects)</value></data>
+  <data name="Props_EditValue" xml:space="preserve"><value>Edit value…</value></data>
+  <data name="Props_EndCap" xml:space="preserve"><value>End</value></data>
+  <data name="Props_EndSize" xml:space="preserve"><value>End size</value></data>
+  <data name="Props_Ends" xml:space="preserve"><value>Ends</value></data>
+  <data name="Props_EraseTo" xml:space="preserve"><value>Erase to</value></data>
+  <data name="Props_Eraser" xml:space="preserve"><value>Eraser</value></data>
+  <data name="Props_Family" xml:space="preserve"><value>Family</value></data>
+  <data name="Props_Fill" xml:space="preserve"><value>Fill</value></data>
+  <data name="Props_FillHint" xml:space="preserve"><value>Alt+click picks a colour from the image. Right-click sets the canvas colour.</value></data>
+  <data name="Props_FillOn" xml:space="preserve"><value>Fill with colour</value></data>
+  <data name="Props_Font" xml:space="preserve"><value>Font</value></data>
+  <data name="Props_Format" xml:space="preserve"><value>Format</value></data>
+  <data name="Props_Freehand" xml:space="preserve"><value>Freehand</value></data>
+  <data name="Props_GlobalColour" xml:space="preserve"><value>Global colour fill</value></data>
+  <data name="Props_GrabNow" xml:space="preserve"><value>Grab text from whole image</value></data>
+  <data name="Props_GrabText" xml:space="preserve"><value>Grab Text</value></data>
+  <data name="Props_HAlign" xml:space="preserve"><value>Horizontal</value></data>
+  <data name="Props_Highlight" xml:space="preserve"><value>Highlight</value></data>
+  <data name="Props_Intensity" xml:space="preserve"><value>Intensity</value></data>
+  <data name="Props_Language" xml:space="preserve"><value>Language</value></data>
+  <data name="Props_Layout" xml:space="preserve"><value>Layout</value></data>
+  <data name="Props_Lens" xml:space="preserve"><value>Lens</value></data>
+  <data name="Props_LineSpacing" xml:space="preserve"><value>Line spacing</value></data>
+  <data name="Props_MagicWand" xml:space="preserve"><value>Magic Wand</value></data>
+  <data name="Props_Magnify" xml:space="preserve"><value>Magnify</value></data>
+  <data name="Props_Mode" xml:space="preserve"><value>Mode</value></data>
+  <data name="Props_NextStep" xml:space="preserve"><value>Next value: {0}</value></data>
+  <data name="Props_Nib" xml:space="preserve"><value>Nib</value></data>
+  <data name="Props_NoDoc" xml:space="preserve"><value>Open or capture an image to see tool properties.</value></data>
+  <data name="Props_Opacity" xml:space="preserve"><value>Opacity</value></data>
+  <data name="Props_Outline" xml:space="preserve"><value>Outline</value></data>
+  <data name="Props_Padding" xml:space="preserve"><value>Padding</value></data>
+  <data name="Props_Palette" xml:space="preserve"><value>Palette</value></data>
+  <data name="Props_Pen" xml:space="preserve"><value>Pen</value></data>
+  <data name="Props_PhotoQuality" xml:space="preserve"><value>Photo quality fill</value></data>
+  <data name="Props_Quality" xml:space="preserve"><value>Quality</value></data>
+  <data name="Props_Refine" xml:space="preserve"><value>Refine edge</value></data>
+  <data name="Props_Region" xml:space="preserve"><value>Region</value></data>
+  <data name="Props_RemoveTail" xml:space="preserve"><value>Remove tail</value></data>
+  <data name="Props_RestartSequence" xml:space="preserve"><value>Restart sequence</value></data>
+  <data name="Props_Scale" xml:space="preserve"><value>Magnification</value></data>
+  <data name="Props_Selected" xml:space="preserve"><value>{0} objects selected</value></data>
+  <data name="Props_Selection" xml:space="preserve"><value>Selection</value></data>
+  <data name="Props_Shadow" xml:space="preserve"><value>Shadow</value></data>
+  <data name="Props_ShadowAngle" xml:space="preserve"><value>Angle</value></data>
+  <data name="Props_ShadowBlur" xml:space="preserve"><value>Blur</value></data>
+  <data name="Props_ShadowColour" xml:space="preserve"><value>Shadow colour</value></data>
+  <data name="Props_ShadowDistance" xml:space="preserve"><value>Distance</value></data>
+  <data name="Props_ShadowOpacity" xml:space="preserve"><value>Shadow opacity</value></data>
+  <data name="Props_Shape" xml:space="preserve"><value>Shape</value></data>
+  <data name="Props_ShapeKind" xml:space="preserve"><value>Kind</value></data>
+  <data name="Props_Simplify" xml:space="preserve"><value>Simplify</value></data>
+  <data name="Props_Size" xml:space="preserve"><value>Size</value></data>
+  <data name="Props_SmartMove" xml:space="preserve"><value>Smart Move</value></data>
+  <data name="Props_SmartMoveOn" xml:space="preserve"><value>Detect interface elements</value></data>
+  <data name="Props_SmartRedact" xml:space="preserve"><value>Smart Redact…</value></data>
+  <data name="Props_Smooth" xml:space="preserve"><value>Smooth</value></data>
+  <data name="Props_SnapObject" xml:space="preserve"><value>Snap to object</value></data>
+  <data name="Props_Stamp" xml:space="preserve"><value>Stamp</value></data>
+  <data name="Props_StartCap" xml:space="preserve"><value>Start</value></data>
+  <data name="Props_StartSize" xml:space="preserve"><value>Start size</value></data>
+  <data name="Props_Step" xml:space="preserve"><value>Step</value></data>
+  <data name="Props_StepSequence" xml:space="preserve"><value>Sequence</value></data>
+  <data name="Props_StepStyle" xml:space="preserve"><value>Style</value></data>
+  <data name="Props_StepValuePrompt" xml:space="preserve"><value>Step value (number)</value></data>
+  <data name="Props_Tail" xml:space="preserve"><value>Tail</value></data>
+  <data name="Props_TailCurved" xml:space="preserve"><value>Curved tail</value></data>
+  <data name="Props_TailWidth" xml:space="preserve"><value>Width</value></data>
+  <data name="Props_TextColour" xml:space="preserve"><value>Text colour</value></data>
+  <data name="Props_TextOutline" xml:space="preserve"><value>Text outline</value></data>
+  <data name="Props_Tolerance" xml:space="preserve"><value>Tolerance</value></data>
+  <data name="Props_Transparent" xml:space="preserve"><value>Fill with transparency</value></data>
+  <data name="Props_VAlign" xml:space="preserve"><value>Vertical</value></data>
+  <data name="Props_Width" xml:space="preserve"><value>Width</value></data>
+  <data name="Quality_Photo" xml:space="preserve"><value>Photo quality</value></data>
+  <data name="Quality_Speed" xml:space="preserve"><value>Speed</value></data>
+  <data name="Redact_Address" xml:space="preserve"><value>Addresses</value></data>
+  <data name="Redact_Card" xml:space="preserve"><value>Credit card numbers</value></data>
+  <data name="Redact_Clear" xml:space="preserve"><value>Clear</value></data>
+  <data name="Redact_Colour" xml:space="preserve"><value>Cover colour</value></data>
+  <data name="Redact_Date" xml:space="preserve"><value>Dates</value></data>
+  <data name="Redact_Done" xml:space="preserve"><value>Done</value></data>
+  <data name="Redact_Email" xml:space="preserve"><value>Email addresses</value></data>
+  <data name="Redact_Face" xml:space="preserve"><value>Faces</value></data>
+  <data name="Redact_Found" xml:space="preserve"><value>{0} items found.</value></data>
+  <data name="Redact_Hint" xml:space="preserve"><value>Finds sensitive information in the image and covers it. Review the categories, then click Done.</value></data>
+  <data name="Redact_Ip" xml:space="preserve"><value>IP addresses</value></data>
+  <data name="Redact_NoData" xml:space="preserve"><value>No sensitive data was found.</value></data>
+  <data name="Redact_Phone" xml:space="preserve"><value>Phone numbers</value></data>
+  <data name="Redact_Scan" xml:space="preserve"><value>Find sensitive information</value></data>
+  <data name="Redact_Scanning" xml:space="preserve"><value>Looking for sensitive information…</value></data>
+  <data name="Redact_Ssn" xml:space="preserve"><value>Social security numbers</value></data>
+  <data name="Redact_Style" xml:space="preserve"><value>Style</value></data>
+  <data name="Redact_Title" xml:space="preserve"><value>Smart Redact</value></data>
+  <data name="Redact_Type" xml:space="preserve"><value>Redaction type</value></data>
+  <data name="Redact_Url" xml:space="preserve"><value>Web addresses</value></data>
+  <data name="Rename_Prompt" xml:space="preserve"><value>New name</value></data>
+  <data name="Shape_Ellipse" xml:space="preserve"><value>Ellipse</value></data>
+  <data name="Shape_Freehand" xml:space="preserve"><value>Freehand</value></data>
+  <data name="Shape_Polygon" xml:space="preserve"><value>Polygon</value></data>
+  <data name="Shape_Rect" xml:space="preserve"><value>Rectangle</value></data>
+  <data name="Shape_Rounded" xml:space="preserve"><value>Rounded rectangle</value></data>
+  <data name="Share_AllHistory" xml:space="preserve"><value>All items</value></data>
+  <data name="Share_Button" xml:space="preserve"><value>Share</value></data>
+  <data name="Share_ButtonTip" xml:space="preserve"><value>Share this item</value></data>
+  <data name="Share_CopyLink" xml:space="preserve"><value>Copy link</value></data>
+  <data name="Share_Done" xml:space="preserve"><value>Shared to {0}.</value></data>
+  <data name="Share_Failed" xml:space="preserve"><value>Sharing to {0} failed.</value></data>
+  <data name="Share_History" xml:space="preserve"><value>Share history…</value></data>
+  <data name="Share_LastLink" xml:space="preserve"><value>Last link: {0}</value></data>
+  <data name="Share_NeedsAccount" xml:space="preserve"><value>Sign in under Share Preferences to use this destination.</value></data>
+  <data name="Share_NoDestinations" xml:space="preserve"><value>No destinations available for this item</value></data>
+  <data name="Share_NoHistory" xml:space="preserve"><value>This item has not been shared yet.</value></data>
+  <data name="Share_NothingOpen" xml:space="preserve"><value>Open an image or video to share it</value></data>
+  <data name="Share_OpenDestination" xml:space="preserve"><value>Open</value></data>
+  <data name="Share_OpenLink" xml:space="preserve"><value>Open link</value></data>
+  <data name="Share_Preferences" xml:space="preserve"><value>Share preferences…</value></data>
+  <data name="Share_Progress" xml:space="preserve"><value>Sharing to {0}…</value></data>
+  <data name="Share_Title" xml:space="preserve"><value>Share</value></data>
+  <data name="Share_Unavailable" xml:space="preserve"><value>Sharing is not available in this build.</value></data>
+  <data name="Simplify_Auto" xml:space="preserve"><value>Auto Simplify</value></data>
+  <data name="Simplify_Colours" xml:space="preserve"><value>Colours</value></data>
+  <data name="Simplify_Detail" xml:space="preserve"><value>Detail</value></data>
+  <data name="Simplify_Draw" xml:space="preserve"><value>Draw</value></data>
+  <data name="Simplify_Hint" xml:space="preserve"><value>Replaces text and interface detail with simple shapes so viewers focus on what matters.</value></data>
+  <data name="Simplify_LineSpacing" xml:space="preserve"><value>Line spacing</value></data>
+  <data name="Simplify_Lock" xml:space="preserve"><value>Lock objects</value></data>
+  <data name="Simplify_Move" xml:space="preserve"><value>Move</value></data>
+  <data name="Simplify_Opacity" xml:space="preserve"><value>Opacity</value></data>
+  <data name="Simplify_OriginalOpacity" xml:space="preserve"><value>Original opacity</value></data>
+  <data name="Simplify_Palette" xml:space="preserve"><value>Palette</value></data>
+  <data name="Simplify_ShowOriginal" xml:space="preserve"><value>Show original</value></data>
+  <data name="Simplify_TextHeight" xml:space="preserve"><value>Text height</value></data>
+  <data name="Simplify_Title" xml:space="preserve"><value>Auto Simplify</value></data>
+  <data name="Sort_Largest" xml:space="preserve"><value>Largest first</value></data>
+  <data name="Sort_NameAsc" xml:space="preserve"><value>Name A–Z</value></data>
+  <data name="Sort_NameDesc" xml:space="preserve"><value>Name Z–A</value></data>
+  <data name="Sort_Newest" xml:space="preserve"><value>Newest first</value></data>
+  <data name="Sort_Oldest" xml:space="preserve"><value>Oldest first</value></data>
+  <data name="Sort_Smallest" xml:space="preserve"><value>Smallest first</value></data>
+  <data name="Stamp_All" xml:space="preserve"><value>All stamps</value></data>
+  <data name="Stamp_Count" xml:space="preserve"><value>{0} stamps</value></data>
+  <data name="Stamp_Favorite" xml:space="preserve"><value>Add to favourites</value></data>
+  <data name="Stamp_Favorites" xml:space="preserve"><value>Favourites</value></data>
+  <data name="Stamp_Import" xml:space="preserve"><value>Import stamps…</value></data>
+  <data name="Stamp_NoResults" xml:space="preserve"><value>No stamps found.</value></data>
+  <data name="Stamp_PackFilter" xml:space="preserve"><value>Stamp packs (*.shotstamps)|*.shotstamps|All files|*.*</value></data>
+  <data name="Stamp_Unavailable" xml:space="preserve"><value>The stamp catalog is not available.</value></data>
+  <data name="Stamp_Unfavorite" xml:space="preserve"><value>Remove from favourites</value></data>
+  <data name="Status_Drag" xml:space="preserve"><value>Drag this out to copy the image as a file</value></data>
+  <data name="Styles_Add" xml:space="preserve"><value>Add current</value></data>
+  <data name="Styles_AddTip" xml:space="preserve"><value>Save the selected object&apos;s (or the tool&apos;s) style as a quick style</value></data>
+  <data name="Styles_AddTitle" xml:space="preserve"><value>Add to Quick Styles</value></data>
+  <data name="Styles_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Styles_Export" xml:space="preserve"><value>Export…</value></data>
+  <data name="Styles_Favorite" xml:space="preserve"><value>Favourite</value></data>
+  <data name="Styles_Favorites" xml:space="preserve"><value>Favorites</value></data>
+  <data name="Styles_ForTool" xml:space="preserve"><value>{0} styles</value></data>
+  <data name="Styles_Import" xml:space="preserve"><value>Import…</value></data>
+  <data name="Styles_NamePrompt" xml:space="preserve"><value>Name for the new quick style</value></data>
+  <data name="Styles_NoFavorites" xml:space="preserve"><value>No favourites yet. Click the star on a quick style to add it here.</value></data>
+  <data name="Styles_None" xml:space="preserve"><value>Open an image to use quick styles.</value></data>
+  <data name="Styles_NoneForTool" xml:space="preserve"><value>No quick styles for this tool.</value></data>
+  <data name="Styles_Rename" xml:space="preserve"><value>Rename…</value></data>
+  <data name="Styles_Restore" xml:space="preserve"><value>Restore defaults</value></data>
+  <data name="Styles_RestoreConfirm" xml:space="preserve"><value>Restore the built-in themes and quick styles? Your own themes are kept.</value></data>
+  <data name="Styles_Theme" xml:space="preserve"><value>Theme</value></data>
+  <data name="Styles_ThemeColours" xml:space="preserve"><value>Theme colours</value></data>
+  <data name="Styles_ThemeFilter" xml:space="preserve"><value>Shotwise themes (*.shottheme)|*.shottheme|All files|*.*</value></data>
+  <data name="Tab_Effects" xml:space="preserve"><value>Effects</value></data>
+  <data name="Tab_Properties" xml:space="preserve"><value>Properties</value></data>
+  <data name="Tab_Redact" xml:space="preserve"><value>Smart Redact</value></data>
+  <data name="Tab_Simplify" xml:space="preserve"><value>Simplify</value></data>
+  <data name="Tab_Styles" xml:space="preserve"><value>Quick Styles</value></data>
+  <data name="Template_Filter" xml:space="preserve"><value>Shotwise templates (*.shottemplate)|*.shottemplate|All files|*.*</value></data>
+  <data name="Text_Bold" xml:space="preserve"><value>Bold (Ctrl+B)</value></data>
+  <data name="Text_Color" xml:space="preserve"><value>Text colour</value></data>
+  <data name="Text_Italic" xml:space="preserve"><value>Italic (Ctrl+I)</value></data>
+  <data name="Text_Strike" xml:space="preserve"><value>Strikethrough</value></data>
+  <data name="Text_Underline" xml:space="preserve"><value>Underline (Ctrl+U)</value></data>
+  <data name="ToolDesc_Arrow" xml:space="preserve"><value>Draw arrows, straight or curved.</value></data>
+  <data name="ToolDesc_Blur" xml:space="preserve"><value>Blur, pixelate or cover sensitive areas.</value></data>
+  <data name="ToolDesc_Callout" xml:space="preserve"><value>Add text in a callout shape with tails.</value></data>
+  <data name="ToolDesc_Crop" xml:space="preserve"><value>Crop the image.</value></data>
+  <data name="ToolDesc_Cursor" xml:space="preserve"><value>Insert a mouse cursor.</value></data>
+  <data name="ToolDesc_CutOut" xml:space="preserve"><value>Remove a strip and join the remaining parts.</value></data>
+  <data name="ToolDesc_Eraser" xml:space="preserve"><value>Erase pixels.</value></data>
+  <data name="ToolDesc_Favorites" xml:space="preserve"><value>Quick styles you starred.</value></data>
+  <data name="ToolDesc_Fill" xml:space="preserve"><value>Flood fill similar pixels.</value></data>
+  <data name="ToolDesc_GrabText" xml:space="preserve"><value>Recognise text in the image.</value></data>
+  <data name="ToolDesc_Highlighter" xml:space="preserve"><value>Highlight an area.</value></data>
+  <data name="ToolDesc_Line" xml:space="preserve"><value>Draw lines and curves.</value></data>
+  <data name="ToolDesc_MagicWand" xml:space="preserve"><value>Select pixels by colour.</value></data>
+  <data name="ToolDesc_Magnify" xml:space="preserve"><value>Enlarge part of the image in a lens.</value></data>
+  <data name="ToolDesc_Move" xml:space="preserve"><value>Move objects; Smart Move detects interface elements in the image.</value></data>
+  <data name="ToolDesc_Pen" xml:space="preserve"><value>Draw freehand.</value></data>
+  <data name="ToolDesc_Select" xml:space="preserve"><value>Select, move, resize and rotate objects.</value></data>
+  <data name="ToolDesc_Selection" xml:space="preserve"><value>Select pixels, then move, copy or delete them.</value></data>
+  <data name="ToolDesc_Shape" xml:space="preserve"><value>Draw rectangles, ellipses and polygons.</value></data>
+  <data name="ToolDesc_Simplify" xml:space="preserve"><value>Cover detail with simplified shapes.</value></data>
+  <data name="ToolDesc_Stamp" xml:space="preserve"><value>Place stamps and icons.</value></data>
+  <data name="ToolDesc_Step" xml:space="preserve"><value>Add numbered or lettered steps.</value></data>
+  <data name="ToolDesc_Text" xml:space="preserve"><value>Add rich text.</value></data>
+  <data name="Tool_Arrow" xml:space="preserve"><value>Arrow</value></data>
+  <data name="Tool_Blur" xml:space="preserve"><value>Blur</value></data>
+  <data name="Tool_Callout" xml:space="preserve"><value>Callout</value></data>
+  <data name="Tool_Crop" xml:space="preserve"><value>Crop</value></data>
+  <data name="Tool_Cursor" xml:space="preserve"><value>Cursor</value></data>
+  <data name="Tool_CutOut" xml:space="preserve"><value>Cut Out</value></data>
+  <data name="Tool_Eraser" xml:space="preserve"><value>Eraser</value></data>
+  <data name="Tool_Favorites" xml:space="preserve"><value>Favorites</value></data>
+  <data name="Tool_Fill" xml:space="preserve"><value>Fill</value></data>
+  <data name="Tool_GrabText" xml:space="preserve"><value>Grab Text</value></data>
+  <data name="Tool_Highlighter" xml:space="preserve"><value>Highlighter</value></data>
+  <data name="Tool_Line" xml:space="preserve"><value>Line</value></data>
+  <data name="Tool_MagicWand" xml:space="preserve"><value>Magic Wand</value></data>
+  <data name="Tool_Magnify" xml:space="preserve"><value>Magnify</value></data>
+  <data name="Tool_Move" xml:space="preserve"><value>Move</value></data>
+  <data name="Tool_Pen" xml:space="preserve"><value>Pen</value></data>
+  <data name="Tool_Select" xml:space="preserve"><value>Select</value></data>
+  <data name="Tool_Selection" xml:space="preserve"><value>Selection</value></data>
+  <data name="Tool_Shape" xml:space="preserve"><value>Shape</value></data>
+  <data name="Tool_Simplify" xml:space="preserve"><value>Simplify</value></data>
+  <data name="Tool_Stamp" xml:space="preserve"><value>Stamp</value></data>
+  <data name="Tool_Step" xml:space="preserve"><value>Step</value></data>
+  <data name="Tool_Text" xml:space="preserve"><value>Text</value></data>
+  <data name="Toolbar_Customize" xml:space="preserve"><value>Customize toolbar…</value></data>
+  <data name="Toolbar_CustomizeTitle" xml:space="preserve"><value>Customize toolbar</value></data>
+  <data name="Toolbar_Labels" xml:space="preserve"><value>Show labels</value></data>
+  <data name="Toolbar_More" xml:space="preserve"><value>More tools</value></data>
+  <data name="Toolbar_Reset" xml:space="preserve"><value>Reset</value></data>
+  <data name="Tray_Close" xml:space="preserve"><value>Close</value></data>
+  <data name="Tray_CombineImages" xml:space="preserve"><value>Combine Images…</value></data>
+  <data name="Tray_CombineVideos" xml:space="preserve"><value>Combine Videos…</value></data>
+  <data name="Tray_CreateGif" xml:space="preserve"><value>Create GIF…</value></data>
+  <data name="Tray_Delete" xml:space="preserve"><value>Move to Recycle Bin</value></data>
+  <data name="Tray_Duplicate" xml:space="preserve"><value>Duplicate</value></data>
+  <data name="Tray_Open" xml:space="preserve"><value>Open</value></data>
+  <data name="Tray_Pin" xml:space="preserve"><value>Pin</value></data>
+  <data name="Tray_Rename" xml:space="preserve"><value>Rename</value></data>
+  <data name="Tray_Reveal" xml:space="preserve"><value>Show in Explorer</value></data>
+  <data name="Tray_ShareHistory" xml:space="preserve"><value>Share history…</value></data>
+  <data name="Tray_Tag" xml:space="preserve"><value>Tags…</value></data>
+  <data name="Tray_Unpin" xml:space="preserve"><value>Unpin</value></data>
+  <data name="Tray_Unsaved" xml:space="preserve"><value>Unsaved changes</value></data>
+  <data name="Undo_Original" xml:space="preserve"><value>Original image</value></data>
+  <data name="Undo_UndoAll" xml:space="preserve"><value>Revert to original</value></data>
+  <data name="Undo_WindowTitle" xml:space="preserve"><value>Undo Stack</value></data>
+  <data name="Video_ClearSelection" xml:space="preserve"><value>Clear selection</value></data>
+  <data name="Video_CreatingGif" xml:space="preserve"><value>Creating GIF…</value></data>
+  <data name="Video_CutOut" xml:space="preserve"><value>Cut Out</value></data>
+  <data name="Video_CutOutTip" xml:space="preserve"><value>Remove the selected range (select a range on the timeline first)</value></data>
+  <data name="Video_Edited" xml:space="preserve"><value>after edits</value></data>
+  <data name="Video_Mute" xml:space="preserve"><value>Mute</value></data>
+  <data name="Video_NextFrame" xml:space="preserve"><value>Next frame (.)</value></data>
+  <data name="Video_Pause" xml:space="preserve"><value>Pause (Space)</value></data>
+  <data name="Video_Play" xml:space="preserve"><value>Play (Space)</value></data>
+  <data name="Video_PlayFailed" xml:space="preserve"><value>This video cannot be played here. You can still step through frames, edit and save it.</value></data>
+  <data name="Video_PrevFrame" xml:space="preserve"><value>Previous frame (,)</value></data>
+  <data name="Video_Rendering" xml:space="preserve"><value>Saving video…</value></data>
+  <data name="Video_RestoreCut" xml:space="preserve"><value>Restore this cut</value></data>
+  <data name="Video_SaveFrame" xml:space="preserve"><value>Save Frame as Image</value></data>
+  <data name="Video_SaveGif" xml:space="preserve"><value>Create GIF…</value></data>
+  <data name="Video_SaveSelection" xml:space="preserve"><value>Save Selection as New Video…</value></data>
+  <data name="Video_Stop" xml:space="preserve"><value>Stop</value></data>
+  <data name="Video_TrimToSelection" xml:space="preserve"><value>Trim to selection</value></data>
+  <data name="Window_Learn" xml:space="preserve"><value>Getting started</value></data>
+  <data name="Window_Library" xml:space="preserve"><value>Library</value></data>
+  <data name="Window_NoDoc" xml:space="preserve"><value>No image open</value></data>
+  <data name="Window_Title" xml:space="preserve"><value>Shotwise Editor</value></data>
+  <!-- D2 editor redesign (and earlier keys that were only present as inline fallbacks) -->
+  <data name="Bottom_Tag" xml:space="preserve"><value>Tag</value></data>
+  <data name="Cmd_LearningCenter" xml:space="preserve"><value>Learning Center</value></data>
+  <data name="Cmd_RecentCaptures" xml:space="preserve"><value>Recent Captures</value></data>
+  <data name="Cmd_VideoFromImages" xml:space="preserve"><value>Video from Images…</value></data>
+  <data name="Cmd_VideoProperties" xml:space="preserve"><value>Video Properties…</value></data>
+  <data name="Effects_AddHint" xml:space="preserve"><value>Click a card to adjust the effect with a live preview and apply it; + adds it to the stack.</value></data>
+  <data name="Effects_AddToStackTip" xml:space="preserve"><value>Add {0} to the stack</value></data>
+  <data name="Effects_Help" xml:space="preserve"><value>Borders, shadows, edges and colour changes for the whole image.</value></data>
+  <data name="Learn_LibrarySub" xml:space="preserve"><value>Search every capture</value></data>
+  <data name="Learn_NewCaptureSub" xml:space="preserve"><value>Image, video or scrolling</value></data>
+  <data name="Learn_NewImageSub" xml:space="preserve"><value>Blank canvas or clipboard</value></data>
+  <data name="Learn_OpenSub" xml:space="preserve"><value>Images, videos, .shotx</value></data>
+  <data name="Lib_AllCaptures" xml:space="preserve"><value>All captures</value></data>
+  <data name="Lib_BrowseBy" xml:space="preserve"><value>Browse by</value></data>
+  <data name="Lib_EmptyBody" xml:space="preserve"><value>Take a screenshot or a recording and it lands here automatically. Try another filter or search.</value></data>
+  <data name="Lib_EmptyTitle" xml:space="preserve"><value>No captures here yet</value></data>
+  <data name="Lib_ImportPastFolder" xml:space="preserve"><value>Import a folder…</value></data>
+  <data name="Lib_ImportPastFolderTitle" xml:space="preserve"><value>Choose a folder with past captures</value></data>
+  <data name="Lib_ImportPastLater" xml:space="preserve"><value>Not now</value></data>
+  <data name="Lib_ImportPastNever" xml:space="preserve"><value>Don't show again</value></data>
+  <data name="Lib_ImportPastPrompt" xml:space="preserve"><value>Bring your existing screenshots and recordings into the library to search, tag and reuse them.</value></data>
+  <data name="Lib_ImportPastTitle" xml:space="preserve"><value>Bring in your existing captures</value></data>
+  <data name="Lib_Search" xml:space="preserve"><value>Search the library</value></data>
+  <data name="Lib_SearchPlaceholder" xml:space="preserve"><value>Search captures, text in images, apps, tags…</value></data>
+  <data name="Lib_Share" xml:space="preserve"><value>Share…</value></data>
+  <data name="Lib_Sort" xml:space="preserve"><value>Sort</value></data>
+  <data name="Lib_Title" xml:space="preserve"><value>Library</value></data>
+  <data name="Menu_Main" xml:space="preserve"><value>Menu (F10)</value></data>
+  <data name="Model_Download" xml:space="preserve"><value>Download model…</value></data>
+  <data name="Model_FaceReason" xml:space="preserve"><value>Finding faces needs the YuNet face detection model. Other categories work without it.</value></data>
+  <data name="Model_LamaMissing" xml:space="preserve"><value>The photo-quality model is not installed; a basic fill is used.</value></data>
+  <data name="Model_LamaReason" xml:space="preserve"><value>Photo-quality fill (Smart Move, Edit Text, selection auto-fill) needs the LaMa inpainting model. Without it a basic fill is used.</value></data>
+  <data name="Msg_NoVideoFromImages" xml:space="preserve"><value>Recording video from images is not available.</value></data>
+  <data name="Msg_SaveVideoFirst" xml:space="preserve"><value>Save the video first, then edit its properties.</value></data>
+  <data name="Msg_VideoRecorded" xml:space="preserve"><value>Video saved: {0}</value></data>
+  <data name="Msg_WritingMetadata" xml:space="preserve"><value>Saving video properties…</value></data>
+  <data name="Nav_Capture" xml:space="preserve"><value>Capture</value></data>
+  <data name="Nav_Create" xml:space="preserve"><value>Create</value></data>
+  <data name="Nav_Editor" xml:space="preserve"><value>Editor</value></data>
+  <data name="Nav_Library" xml:space="preserve"><value>Library</value></data>
+  <data name="Props_Border" xml:space="preserve"><value>Border</value></data>
+  <data name="Props_CanvasColourShort" xml:space="preserve"><value>Canvas</value></data>
+  <data name="Props_CanvasSize" xml:space="preserve"><value>Canvas size</value></data>
+  <data name="Props_Color" xml:space="preserve"><value>Color</value></data>
+  <data name="Props_CropSize" xml:space="preserve"><value>Size</value></data>
+  <data name="Props_NextStepLabel" xml:space="preserve"><value>Next value</value></data>
+  <data name="Props_PaletteColour" xml:space="preserve"><value>Palette colour {0}</value></data>
+  <data name="Props_SelectionChip" xml:space="preserve"><value>Selection</value></data>
+  <data name="Props_TextColourShort" xml:space="preserve"><value>Text</value></data>
+  <data name="Props_ToolProperties" xml:space="preserve"><value>Tool Properties</value></data>
+  <data name="QuickPopup_Title" xml:space="preserve"><value>{0} styles</value></data>
+  <data name="Redact_Categories" xml:space="preserve"><value>Find</value></data>
+  <data name="Redact_DownloadFaceModel" xml:space="preserve"><value>Download face model…</value></data>
+  <data name="Redact_FaceModelTip" xml:space="preserve"><value>Faces are found with a small downloadable model (YuNet, MIT licence).</value></data>
+  <data name="Redact_FacesSkipped" xml:space="preserve"><value>Faces were not searched: the face model is not installed.</value></data>
+  <data name="Redact_HelpShort" xml:space="preserve"><value>Find and cover sensitive information.</value></data>
+  <data name="Share_ButtonTipTo" xml:space="preserve"><value>Share to {0}</value></data>
+  <data name="Share_DestinationOptions" xml:space="preserve"><value>Destination options</value></data>
+  <data name="Share_Destinations" xml:space="preserve"><value>Share destinations</value></data>
+  <data name="Share_NotConfigured" xml:space="preserve"><value>Not set up yet</value></data>
+  <data name="Share_OptionsFor" xml:space="preserve"><value>{0}…</value></data>
+  <data name="Side_BackToProperties" xml:space="preserve"><value>Back to Tool Properties</value></data>
+  <data name="Simplify_HelpShort" xml:space="preserve"><value>Replace detail with simple shapes.</value></data>
+  <data name="Simplify_Look" xml:space="preserve"><value>Look</value></data>
+  <data name="Stamp_Category" xml:space="preserve"><value>Stamp category</value></data>
+  <data name="Stamp_SearchPlaceholder" xml:space="preserve"><value>Search stamps</value></data>
+  <data name="Status_Zoom" xml:space="preserve"><value>Zoom</value></data>
+  <data name="Styles_ApplyColour" xml:space="preserve"><value>Use {0}</value></data>
+  <data name="Styles_FavCount" xml:space="preserve"><value>Favorites · {0}</value></data>
+  <data name="Styles_More" xml:space="preserve"><value>Quick style options</value></data>
+  <data name="Styles_NotForTool" xml:space="preserve"><value>{0} has no quick styles. Pick a drawing tool to see its styles.</value></data>
+  <data name="Styles_ThemeTip" xml:space="preserve"><value>Style theme</value></data>
+  <data name="Styles_ToolCount" xml:space="preserve"><value>{0} · {1} styles</value></data>
+  <data name="Styles_Unfavorite" xml:space="preserve"><value>Remove from favourites</value></data>
+  <data name="Styles_Use" xml:space="preserve"><value>Use this style</value></data>
+  <data name="Tip_CopyAll" xml:space="preserve"><value>Copy the whole image with its annotations (Ctrl+Shift+C)</value></data>
+  <data name="Tip_DrawHint" xml:space="preserve"><value>Drag on the canvas to draw; pick a Quick Style to change its look.</value></data>
+  <data name="Tip_Effects" xml:space="preserve"><value>Show the Effects panel</value></data>
+  <data name="Tip_Properties" xml:space="preserve"><value>Show Quick Styles and Tool Properties</value></data>
+  <data name="Tip_Recent" xml:space="preserve"><value>Show or hide recent captures</value></data>
+  <data name="Toolbar_CustomizeHint" xml:space="preserve"><value>Switch tools on to show them on the toolbar; the others stay one click away under More. The first nine are Ctrl+1…9.</value></data>
+  <data name="Toolbar_DragHint" xml:space="preserve"><value>Drag a tool onto the toolbar to pin it; drag a toolbar tool onto More to unpin it.</value></data>
+  <data name="Toolbar_MoreLabel" xml:space="preserve"><value>More</value></data>
+  <data name="Toolbar_MoreTitle" xml:space="preserve"><value>More tools</value></data>
+  <data name="Toolbar_Redo" xml:space="preserve"><value>Redo</value></data>
+  <data name="Toolbar_ShowTool" xml:space="preserve"><value>Show {0} on the toolbar</value></data>
+  <data name="Toolbar_Undo" xml:space="preserve"><value>Undo</value></data>
+  <data name="Tray_Library" xml:space="preserve"><value>Library</value></data>
+  <data name="Tray_LibraryTip" xml:space="preserve"><value>Open the library (all captures)</value></data>
+  <data name="Undo_Caption" xml:space="preserve"><value>{0} steps · click a step to go back to it</value></data>
+  <data name="Vfi_Bar" xml:space="preserve"><value>Video from Images recording controls</value></data>
+  <data name="Vfi_Fps" xml:space="preserve"><value>{0} fps</value></data>
+  <data name="Vfi_FrameRate" xml:space="preserve"><value>Frame rate</value></data>
+  <data name="Vfi_Intro" xml:space="preserve"><value>Records the canvas while you draw, move and remove annotations, with optional narration. Click Stop in the bar above the canvas to finish; the video opens in the editor.</value></data>
+  <data name="Vfi_Microphone" xml:space="preserve"><value>Record microphone narration</value></data>
+  <data name="Vfi_Pause" xml:space="preserve"><value>Pause</value></data>
+  <data name="Vfi_Recording" xml:space="preserve"><value>Recording the canvas</value></data>
+  <data name="Vfi_Resume" xml:space="preserve"><value>Resume</value></data>
+  <data name="Vfi_Start" xml:space="preserve"><value>Start recording</value></data>
+  <data name="Vfi_Stop" xml:space="preserve"><value>Stop</value></data>
+  <data name="Vfi_SystemAudio" xml:space="preserve"><value>Record system audio</value></data>
+  <data name="VideoProps_Comments" xml:space="preserve"><value>Comments</value></data>
+  <data name="VideoProps_Tags" xml:space="preserve"><value>Tags</value></data>
+  <data name="VideoProps_TagsHint" xml:space="preserve"><value>Separate tags with commas.</value></data>
+  <data name="VideoProps_Title" xml:space="preserve"><value>Title</value></data>
+  <data name="Video_PauseName" xml:space="preserve"><value>Pause</value></data>
+  <data name="Video_PlayName" xml:space="preserve"><value>Play</value></data>
+  <data name="Video_Save" xml:space="preserve"><value>Save</value></data>
+  <data name="Video_SaveTip" xml:space="preserve"><value>Save the edited video (Ctrl+S)</value></data>
+  <data name="Video_Timeline" xml:space="preserve"><value>Timeline</value></data>
+  <data name="Video_Volume" xml:space="preserve"><value>Volume</value></data>
+</root>

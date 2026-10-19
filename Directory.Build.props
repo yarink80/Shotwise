@@ -1,0 +1,31 @@
+<Project>
+  <!-- Shared build settings for every Shotwise project. -->
+  <PropertyGroup>
+    <!-- Target frameworks: change these two properties to retarget the whole solution (e.g. to net10.0). -->
+    <ShotwiseTfm>net8.0-windows10.0.22621.0</ShotwiseTfm>
+    <ShotwiseLogicTfm>net8.0</ShotwiseLogicTfm>
+    <ShotwiseSupportedOSPlatformVersion>10.0.19041.0</ShotwiseSupportedOSPlatformVersion>
+
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+    <Platforms>x64</Platforms>
+    <Platform Condition="'$(Platform)' == '' or '$(Platform)' == 'AnyCPU' or '$(Platform)' == 'Any CPU'">x64</Platform>
+    <PlatformTarget>x64</PlatformTarget>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+
+    <Product>Shotwise</Product>
+    <Company>Shotwise contributors</Company>
+    <Copyright>Copyright (c) Shotwise contributors</Copyright>
+    <!-- Release version (tools/package.ps1 -Version passes the same value to the installer). -->
+    <Version>0.9.1</Version>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <SatelliteResourceLanguages>en;de;es;fr;ja;pt-BR</SatelliteResourceLanguages>
+
+    <Deterministic>true</Deterministic>
+    <!-- NU1701: compatibility fallbacks are reviewed per package; CA1416: platform checks are handled by TFM. -->
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
+  </PropertyGroup>
+</Project>

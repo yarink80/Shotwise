@@ -1,0 +1,15 @@
+{
+  "id": "builtin.grayscale",
+  "name": "Grayscale",
+  "colors": [
+    "#FF000000",
+    "#FF242424",
+    "#FF484848",
+    "#FF6C6C6C",
+    "#FF909090",
+    "#FFB4B4B4",
+    "#FFD8D8D8",
+    "#FFFFFFFF"
+  ],
+  "isBuiltIn": true
+}

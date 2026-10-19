@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="tile" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7C70FF"/><stop offset="1" stop-color="#5B4CF5"/></linearGradient>
+    <linearGradient id="hl" x1="0" y1="1" x2="0" y2="11.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="dot" x1="7" y1="7" x2="13" y2="13" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF7A45"/><stop offset="1" stop-color="#FF4D5E"/></linearGradient>
+    <radialGradient id="dotHl" cx="9.1" cy="8.92" r="1.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="1" y="1" width="18" height="18" rx="4" fill="url(#tile)"/>
+  <rect x="1" y="1" width="18" height="18" rx="4" fill="url(#hl)"/>
+  <path d="M5 8V5H8M15 8V5H12M15 12V15H12M5 12V15H8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <circle cx="10" cy="10" r="3" fill="url(#dot)"/>
+</svg>
