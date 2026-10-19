@@ -163,7 +163,7 @@ public sealed class RecordingLogicTests
             after?.Invoke(i);
         }
     }
-    [Fact]
+    [GpuFact]
     public async Task DxgiSurfaceEncoderAcceptsSyntheticFrames()
     {
         // 256x144 is above the minimum frame size of current hardware H.264 MFTs (NVENC: 145x49).
@@ -214,7 +214,7 @@ public sealed class RecordingLogicTests
         }
         finally { if (File.Exists(path)) File.Delete(path); }
     }
-    [Theory]
+    [GpuTheory]
     [InlineData("Sample", 6)]
     [InlineData("Finalize", 1)]
     public async Task HardwareFailureAfterAcceptedFramesReencodesEverythingInSoftware(string failureStage, int failOnCall)
@@ -260,7 +260,7 @@ public sealed class RecordingLogicTests
             if (level == Microsoft.Extensions.Logging.LogLevel.Warning) Warnings++;
         }
     }
-    [Theory]
+    [GpuTheory]
     [InlineData("BeginWriting", true)]
     [InlineData("FirstSample", true)]
     [InlineData("BeginWriting", false)]
@@ -381,6 +381,45 @@ public sealed class RecordingLogicTests
         }
         finally { foreach (var file in Directory.GetFiles(folder)) File.Delete(file); Directory.Delete(folder); }
     }
+    /// <summary>
+    /// Hardware-encoder tests need a real GPU (an H.264 MFT on a non-software DXGI adapter). Hosted CI runners only have
+    /// Microsoft's Basic Render/WARP adapter, so these tests are skipped there with an explicit reason.
+    /// </summary>
+    internal static class GpuEncoderRequirement
+    {
+        public static readonly string? SkipReason = Probe();
+
+        private static string? Probe()
+        {
+            try
+            {
+                using var factory = Vortice.DXGI.DXGI.CreateDXGIFactory1<Vortice.DXGI.IDXGIFactory1>();
+                for (uint i = 0; factory.EnumAdapters1(i, out var adapter).Success; i++)
+                {
+                    using (adapter)
+                    {
+                        var desc = adapter.Description1;
+                        var software = (desc.Flags & Vortice.DXGI.AdapterFlags.Software) != 0 || desc.VendorId == 0x1414; // 0x1414 = Microsoft Basic Render / WARP
+                        if (!software) return null;
+                    }
+                }
+                return "Requires a hardware GPU with an H.264 encoder; only software display adapters were found (e.g. a CI virtual machine).";
+            }
+            catch (Exception ex)
+            {
+                return "Requires a hardware GPU; the DXGI adapter probe failed: " + ex.Message;
+            }
+        }
+    }
+    internal sealed class GpuFactAttribute : FactAttribute
+    {
+        public GpuFactAttribute() { if (GpuEncoderRequirement.SkipReason is { } reason) Skip = reason; }
+    }
+    internal sealed class GpuTheoryAttribute : TheoryAttribute
+    {
+        public GpuTheoryAttribute() { if (GpuEncoderRequirement.SkipReason is { } reason) Skip = reason; }
+    }
+
     /// <summary>Skipped unless SHOTWISE_MANUAL_RECORDING=1; the recording is kept when SHOTWISE_MANUAL_RECORDING_KEEP=1.</summary>
     internal sealed class ManualRecordingFactAttribute : FactAttribute
     {
