@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using Shotwise.Core.Capture;
 using Shotwise.Core.Platform;
 using Shotwise.Core.Settings;
+using Shotwise.UI.Capture.Controls;
 using Shotwise.UI.Capture.Coordinator;
 using Shotwise.UI.Capture.Infrastructure;
 using CoreModifiers = Shotwise.Core.Platform.ModifierKeys;
@@ -32,6 +33,7 @@ public sealed class CaptureHotkeysPage : UserControl
     private bool _commitRegistered;
     private Row? _recording;
     private IDisposable? _suspension;
+    private KeyComboRecorder? _recorder;   // low-level hook while recording: catches keys other apps hold globally (e.g. PrintScreen)
 
     private sealed class Row
     {
@@ -175,6 +177,14 @@ public sealed class CaptureHotkeysPage : UserControl
         row.Live = "";
         // Release our own global hotkeys so e.g. Ctrl+Shift+PrintScreen reaches the recorder instead of starting a capture.
         _suspension = (_sp?.GetService<ICaptureCoordinator>() as CaptureCoordinator)?.SuspendHotkeys();
+        // Other apps (another screenshot tool, Windows' PrintScreen→Snipping) can still hold a key globally; the hook sees it first.
+        _recorder = new KeyComboRecorder(Dispatcher);
+        _recorder.ModifiersChanged += m => { if (ReferenceEquals(_recording, row)) { row.Live = ModifiersText(m); Refresh(row); } };
+        _recorder.Captured += h => { if (!ReferenceEquals(_recording, row)) return; EndRecording(); Assign(row, h); };
+        _recorder.ClearRequested += () => { if (!ReferenceEquals(_recording, row)) return; EndRecording(); Assign(row, null); };
+        _recorder.CancelRequested += () => { if (ReferenceEquals(_recording, row)) EndRecording(); };
+        _recorder.TabPressed += () => { if (ReferenceEquals(_recording, row)) EndRecording(); };
+        if (!_recorder.Start()) { _recorder = null; }   // fall back to WPF key events below
         Refresh(row);
         row.Chip.Focus();
         Keyboard.Focus(row.Chip);
@@ -184,6 +194,8 @@ public sealed class CaptureHotkeysPage : UserControl
     {
         var row = _recording;
         _recording = null;
+        _recorder?.Dispose();
+        _recorder = null;
         _suspension?.Dispose();
         _suspension = null;
         if (row is not null) { row.Live = ""; Refresh(row); }
@@ -192,6 +204,7 @@ public sealed class CaptureHotkeysPage : UserControl
     private void OnRecorderKey(Row row, KeyEventArgs e, bool isUp)
     {
         if (!ReferenceEquals(_recording, row)) return;
+        if (_recorder is { IsActive: true }) { if (e.Key != Key.Tab) e.Handled = true; return; }   // the hook handles keys
         var key = e.Key == Key.System ? e.SystemKey : e.Key;
         if (key == Key.ImeProcessed) key = e.ImeProcessedKey;
         var mods = (CoreModifiers)(int)Keyboard.Modifiers;

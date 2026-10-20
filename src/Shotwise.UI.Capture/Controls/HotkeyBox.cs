@@ -11,11 +11,14 @@ namespace Shotwise.UI.Capture.Controls;
 /// <summary>
 /// Hotkey capture control: focus it and press a combination. Backspace / Delete (no modifiers) clears, Esc leaves without changing.
 /// Shows the live modifiers while keys are held and flags combinations that cannot be used as global hotkeys.
+/// While focused, keys are read through <see cref="KeyComboRecorder"/> (a low-level hook) so global hotkeys — including
+/// PrintScreen held by Shotwise or another app — are recorded instead of firing.
 /// </summary>
 public sealed class HotkeyBox : Border
 {
     private readonly TextBlock _text = new() { VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(12, 0, 4, 0), FontSize = 13, FontWeight = FontWeights.SemiBold };
     private readonly Button _clear;
+    private readonly KeyComboRecorder _recorder;
     private Hotkey? _value;
     private string _live = "";
 
@@ -47,11 +50,26 @@ public sealed class HotkeyBox : Border
         Grid.SetColumn(_clear, 1);
         grid.Children.Add(_clear);
         Child = grid;
-        GotKeyboardFocus += (_, _) => { _live = ""; Refresh(); SetResourceReference(BorderBrushProperty, "Shotwise.AccentBrush"); BorderThickness = new Thickness(2); };
-        LostKeyboardFocus += (_, _) => { _live = ""; Refresh(); SetResourceReference(BorderBrushProperty, "Shotwise.BorderStrongBrush"); BorderThickness = new Thickness(1); };
+
+        _recorder = new KeyComboRecorder(Dispatcher);
+        _recorder.Captured += h => { _live = ""; Value = h; Raise(); };
+        _recorder.ModifiersChanged += m => { _live = m == CoreModifiers.None ? "" : new Hotkey(VirtualKey.None, m).ToDisplayStringSafe(); Refresh(); };
+        _recorder.ClearRequested += () => { Value = null; Raise(); };
+        _recorder.CancelRequested += () => Keyboard.ClearFocus();
+
+        GotKeyboardFocus += (_, _) => { _live = ""; _recorder.Start(); Refresh(); SetResourceReference(BorderBrushProperty, "Shotwise.AccentBrush"); BorderThickness = new Thickness(2); };
+        LostKeyboardFocus += (_, _) => { _live = ""; _recorder.Stop(); Refresh(); SetResourceReference(BorderBrushProperty, "Shotwise.BorderStrongBrush"); BorderThickness = new Thickness(1); };
+        Unloaded += (_, _) => _recorder.Stop();
         MouseLeftButtonDown += (_, _) => Focus();
+        // Fallback when the hook could not be installed. PrintScreen never arrives as KeyDown in WPF, so accept it on KeyUp.
         PreviewKeyDown += OnKeyDown;
-        PreviewKeyUp += (_, _) => { _live = ""; Refresh(); };
+        PreviewKeyUp += (_, e) =>
+        {
+            if (_recorder.IsActive) { e.Handled = e.Key != Key.Tab; return; }
+            var key = e.Key == Key.System ? e.SystemKey : e.Key;
+            if (key == Key.Snapshot) { e.Handled = true; _live = ""; Value = new Hotkey(VirtualKey.PrintScreen, (CoreModifiers)(int)Keyboard.Modifiers); Raise(); return; }
+            _live = ""; Refresh();
+        };
         Refresh();
     }
 
@@ -81,6 +99,7 @@ public sealed class HotkeyBox : Border
 
     private void OnKeyDown(object sender, KeyEventArgs e)
     {
+        if (_recorder.IsActive) { if (e.Key != Key.Tab) e.Handled = true; return; }   // the hook already handled it
         e.Handled = true;
         var key = e.Key == Key.System ? e.SystemKey : e.Key;
         if (key == Key.ImeProcessed) key = e.ImeProcessedKey;
@@ -100,8 +119,7 @@ public sealed class HotkeyBox : Border
         }
         int vk = KeyInterop.VirtualKeyFromKey(key);
         if (vk == 0) return;
-        var hotkey = new Hotkey((VirtualKey)vk, mods);
-        Value = hotkey;
+        Value = new Hotkey((VirtualKey)vk, mods);
         Raise();
     }
 }
