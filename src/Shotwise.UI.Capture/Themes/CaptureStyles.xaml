@@ -229,4 +229,51 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <!--
+        Hotkey suggestion chip: a pill with key-cap styling (Surface1 face, strong border, 2 px bottom edge). Click applies the key.
+        Disabled = the key is held by another app (greyed; the caption says why). Tag="move" marks a "Move here" chip (accent edge).
+    -->
+    <Style x:Key="Capture.KeyChip" TargetType="ButtonBase">
+        <Setter Property="FontFamily" Value="{DynamicResource Shotwise.FontFamily}" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{DynamicResource Shotwise.TextPrimaryBrush}" />
+        <Setter Property="Background" Value="{DynamicResource Shotwise.Surface1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Shotwise.BorderStrongBrush}" />
+        <Setter Property="Padding" Value="10,3,10,3" />
+        <Setter Property="Margin" Value="0,0,6,6" />
+        <Setter Property="MinHeight" Value="26" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Shotwise.FocusVisual.Round}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ButtonBase">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}" CornerRadius="999" Padding="{TemplateBinding Padding}"
+                            BorderThickness="1,1,1,2" BorderBrush="{TemplateBinding BorderBrush}" SnapsToDevicePixels="True">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" RecognizesAccessKey="False" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Tag" Value="move">
+                            <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource Shotwise.AccentBrush}" />
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.AccentSubtleBrush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource Shotwise.AccentTextBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.Surface2Brush}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.Surface3Brush}" />
+                            <Setter TargetName="Bd" Property="BorderThickness" Value="1,2,1,1" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource Shotwise.Surface2Brush}" />
+                            <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource Shotwise.BorderSubtleBrush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource Shotwise.TextDisabledBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

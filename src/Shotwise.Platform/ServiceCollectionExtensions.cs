@@ -6,7 +6,13 @@ public static class ShotwisePlatformServiceCollectionExtensions
 {
     public static IServiceCollection AddShotwisePlatform(this IServiceCollection services)
     {
-        services.AddSingleton<IHotkeyService, HotkeyService>();
+        services.AddSingleton<HotkeyService>();
+        services.AddSingleton<IHotkeyService>(sp => sp.GetRequiredService<HotkeyService>());
+        services.AddSingleton<IHotkeyProbe>(sp => sp.GetRequiredService<HotkeyService>());
+        services.TryAddSingleton<IHotkeyEnvironment, WindowsHotkeyEnvironment>();
+        // Availability check + suggestions; the configured bindings come from the capture coordinator (UI.Capture), resolved lazily.
+        services.AddSingleton<IHotkeyAdvisor>(sp => new HotkeyAdvisor(sp.GetRequiredService<IHotkeyProbe>(), sp.GetService<IHotkeyEnvironment>(),
+            () => sp.GetService<IHotkeyBindingSource>()));
         services.AddSingleton<UriActivation>();
         services.AddSingleton<ISingleInstance, SingleInstance>();
         services.AddSingleton<IAutostartService, AutostartService>();

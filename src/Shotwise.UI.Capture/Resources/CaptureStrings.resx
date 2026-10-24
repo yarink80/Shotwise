@@ -555,4 +555,51 @@ Allow these actions for this preset? If you skip them, the capture is kept but n
   <data name="TB_Panoramic" xml:space="preserve"><value>Panorama</value></data>
   <data name="TB_GrabText" xml:space="preserve"><value>Grab Text</value></data>
   <data name="TB_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="HotkeyCheck_Check" xml:space="preserve"><value>Check</value></data>
+  <data name="HotkeyCheck_CheckTip" xml:space="preserve"><value>Ask Windows whether another app already uses this key</value></data>
+  <data name="HotkeyCheck_Available" xml:space="preserve"><value>Available</value></data>
+  <data name="HotkeyCheck_InUse" xml:space="preserve"><value>In use by another app</value></data>
+  <data name="HotkeyCheck_InUseLikely" xml:space="preserve"><value>In use by another app — likely: {0}</value></data>
+  <data name="HotkeyCheck_UsedByShotwise" xml:space="preserve"><value>Used by Shotwise for "{0}"</value></data>
+  <data name="HotkeyCheck_MoveHere" xml:space="preserve"><value>Move here</value></data>
+  <data name="HotkeyCheck_MoveHereTip" xml:space="preserve"><value>Remove {1} from "{0}" and use it here</value></data>
+  <data name="HotkeyCheck_MovePending" xml:space="preserve"><value>{0} moves here from "{1}" when you press OK.</value></data>
+  <data name="HotkeyCheck_Reserved" xml:space="preserve"><value>Reserved: {0}</value></data>
+  <data name="HotkeyCheck_Suggestions" xml:space="preserve"><value>Suggestions</value></data>
+  <data name="HotkeyCheck_NoSuggestions" xml:space="preserve"><value>No free suggestions right now — press a combination of your own.</value></data>
+  <data name="HotkeyCheck_ChipInUse" xml:space="preserve"><value>{0} — in use by {1}</value></data>
+  <data name="HotkeyCheck_ChipInUseUnknown" xml:space="preserve"><value>{0} — in use by another app</value></data>
+  <data name="HotkeyCheck_ChipMove" xml:space="preserve"><value>Move {0} to {1}</value></data>
+  <data name="HotkeyCheck_ChipTip" xml:space="preserve"><value>Use {0}</value></data>
+  <data name="HotkeyCheck_FreeTip" xml:space="preserve"><value>How to free it: turn off the {0} shortcut in {1} (or quit it), then press Check.</value></data>
+  <data name="HotkeyCheck_FreeTipUnknown" xml:space="preserve"><value>How to free it: close or reconfigure the app that uses {0}, then press Check.</value></data>
+  <data name="HotkeyCheck_FreeTipSnipping" xml:space="preserve"><value>How to free it: Windows Settings → Accessibility → Keyboard → turn off "Use the Print screen key to open screen capture".</value></data>
+  <data name="HotkeyCheck_FreeTipPrintScreen" xml:space="preserve"><value>Also check Windows Settings → Accessibility → Keyboard → Print screen key.</value></data>
+  <data name="HotkeyCheck_OpenWindowsSettings" xml:space="preserve"><value>Open Windows settings</value></data>
+  <data name="HotkeyCheck_WarnWontWork" xml:space="preserve"><value>{0} won't work until it is freed. Press OK again to save it anyway.</value></data>
+  <data name="HotkeyCheck_UseSuggested" xml:space="preserve"><value>Use suggested: {0}</value></data>
+  <data name="HotkeyCheck_CheckAll" xml:space="preserve"><value>Check all for conflicts</value></data>
+  <data name="HotkeyCheck_CheckAllTip" xml:space="preserve"><value>Ask Windows again whether each hotkey is free, show which app probably holds the busy ones and suggest free keys</value></data>
+  <data name="HotkeyCheck_CheckAllResult" xml:space="preserve"><value>Checked {0} hotkeys — {1} need attention.</value></data>
+  <data name="HotkeyCheck_CheckAllClear" xml:space="preserve"><value>Checked {0} hotkeys — all free.</value></data>
+  <data name="HotkeyCheck_FallbackLikely" xml:space="preserve"><value>{0} is held by another app (likely: {2}), so Shotwise uses {1}.</value></data>
+  <data name="HotkeyCheck_InUseDetailLikely" xml:space="preserve"><value>{0} is held by another app — likely: {1}.</value></data>
+  <data name="Hotkey_State_Reserved" xml:space="preserve"><value>Reserved</value></data>
+  <data name="HotkeyReserved_PlainKey" xml:space="preserve"><value>a key you type with — add Ctrl, Alt or Shift</value></data>
+  <data name="HotkeyReserved_TypingKey" xml:space="preserve"><value>used for typing or selecting text</value></data>
+  <data name="HotkeyReserved_LockScreen" xml:space="preserve"><value>Windows uses it to lock the PC</value></data>
+  <data name="HotkeyReserved_SecureAttention" xml:space="preserve"><value>reserved by Windows (security screen)</value></data>
+  <data name="HotkeyReserved_TaskManager" xml:space="preserve"><value>Windows uses it to open Task Manager</value></data>
+  <data name="HotkeyReserved_SystemEscape" xml:space="preserve"><value>Windows uses Esc combinations (Start menu, window switching)</value></data>
+  <data name="HotkeyReserved_AppSwitcher" xml:space="preserve"><value>Windows and apps use it to switch windows or tabs</value></data>
+  <data name="HotkeyReserved_CloseWindow" xml:space="preserve"><value>Windows uses it to close the active window</value></data>
+  <data name="HotkeyReserved_WindowsSnip" xml:space="preserve"><value>Windows uses it to open its screen snip</value></data>
+  <data name="HotkeyReserved_WindowsScreenshot" xml:space="preserve"><value>Windows uses it to save a screenshot to Pictures</value></data>
+  <data name="HotkeyReserved_ActiveWindowScreenshot" xml:space="preserve"><value>Windows uses it to copy the active window</value></data>
+  <data name="HotkeyReserved_GameBarScreenshot" xml:space="preserve"><value>the Xbox Game Bar uses it for screenshots</value></data>
+  <data name="HotkeyReserved_WindowsShortcut" xml:space="preserve"><value>Windows uses most Win+ shortcuts</value></data>
+  <data name="HotkeyReserved_Debugger" xml:space="preserve"><value>F12 combinations are reserved by Windows for the debugger</value></data>
+  <data name="HotkeyReserved_AppShortcut" xml:space="preserve"><value>almost every app uses it (copy, paste, save…)</value></data>
+  <data name="HotkeyReserved_MenuAccessKey" xml:space="preserve"><value>apps use Alt+ keys for menus and navigation</value></data>
+  <data name="HotkeyReserved_SystemKey" xml:space="preserve"><value>apps and Windows use it</value></data>
 </root>

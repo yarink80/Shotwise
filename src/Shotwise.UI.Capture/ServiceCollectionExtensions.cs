@@ -26,6 +26,8 @@ public static class ShotwiseUiCaptureServiceCollectionExtensions
         services.TryAddSingleton<ICaptureCoordinator>(sp => sp.GetRequiredService<CaptureCoordinator>());
         // Effective hotkey registrations (fallbacks, problems) for the tray, editor menus and the shortcut sheet (POLISH-1).
         services.TryAddSingleton<Shotwise.Core.Platform.IHotkeyStatusSource>(sp => sp.GetRequiredService<CaptureCoordinator>());
+        // Configured hotkeys for the availability check / suggestions (IHotkeyAdvisor, registered by the platform layer).
+        services.TryAddSingleton<Shotwise.Core.Platform.IHotkeyBindingSource>(sp => sp.GetRequiredService<CaptureCoordinator>());
         // Preferences pages contributed to the shared Preferences window (CONTRACT A6/A21). Built-in "General" is order 0.
         services.AddSingleton<Shotwise.UI.Common.Preferences.IPreferencesPage>(sp => new Shotwise.UI.Capture.Preferences.CapturePreferencesPageContribution(Shotwise.UI.Capture.Preferences.CapturePreferencePages.GeneralId, 50, sp));
         services.AddSingleton<Shotwise.UI.Common.Preferences.IPreferencesPage>(sp => new Shotwise.UI.Capture.Preferences.CapturePreferencesPageContribution(Shotwise.UI.Capture.Preferences.CapturePreferencePages.CaptureId, 100, sp));

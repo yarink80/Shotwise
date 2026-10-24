@@ -440,6 +440,22 @@ public interface IOAuthHelper { Task<OAuthTokens> AuthorizeAsync(OAuthClientConf
 ```csharp
 public interface IHotkeyService { HotkeyRegistrationResult Register(string id, Hotkey key, Action callback, bool allowOverride); void Unregister(string id); void UnregisterAll(); IReadOnlyDictionary<string, Hotkey> Registered { get; } bool IsPrintScreenTakenBySnipping(); }
 public enum HotkeyRegistrationResult { Ok, Duplicate, Unsupported, InUseBySystemOrOtherApp }
+// Availability + suggestions (0.9.3). HotkeyService also implements IHotkeyProbe: RegisterHotKey + immediate UnregisterHotKey on its
+// message-only window (hotkey thread). HotkeyAdvisor (Core) = probe + IHotkeyEnvironment (running processes, HKCU values, for the
+// "likely owner" table KnownHotkeyOwners) + IHotkeyBindingSource (configured bindings; implemented by CaptureCoordinator).
+public interface IHotkeyProbe { HotkeyProbeResult Probe(Hotkey key); IReadOnlyDictionary<string, Hotkey> Registered { get; } }   // Free | HeldByShotwise | HeldByOtherApp | Invalid
+public interface IHotkeyAdvisor
+{
+    HotkeyAvailability CheckAvailability(Hotkey key, string? forBindingId = null);   // + overload with staged (unsaved) bindings
+    IReadOnlyList<HotkeySuggestion> Suggest(string bindingIdOrPresetKind, int max = 6); // + Suggest(HotkeyPurpose, forBindingId, max, staged)
+    void Invalidate();                                                                // probe results are cached 2 s
+}
+public sealed record HotkeyAvailability(Hotkey Key, HotkeyAvailabilityStatus Status)  // Available | UsedByShotwise | InUseByOtherApp | Reserved | Unsupported
+{ string? ShotwiseBindingId; string? ShotwiseBindingName; IReadOnlyList<string> LikelyOwners; HotkeyReservation Reservation; string? Reason; }
+// Order: reserved/unsupported (HotkeyRules) → registered by this process (same binding, incl. capture + its fallback = Available) →
+// probe (failure = InUseByOtherApp + likely owners) → configured for another binding = UsedByShotwise. Suggestions: ranked per
+// HotkeyPurpose (HotkeySuggestionCatalog; All-in-One = PrintScreen first, shown even when unavailable), filtered to Available.
+// HotkeyBindings: get/set settings hotkeys by id, Collect(settings, presets), Move/ReleaseAsync ("Move here").
 public interface ISingleInstance { bool IsFirstInstance { get; } event EventHandler<string[]>? ArgumentsReceived; Task<bool> ForwardToFirstInstanceAsync(string[] args); }
 public interface IAutostartService { bool IsEnabled { get; } void SetEnabled(bool enabled); }
 public interface IShellRegistration { void RegisterFileAssociations(); void RegisterUriScheme(); bool IsShellExtensionRegistered { get; } }

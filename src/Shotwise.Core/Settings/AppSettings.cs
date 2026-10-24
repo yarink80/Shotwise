@@ -149,21 +149,32 @@ public sealed class CaptureSettings
     public string RecordingTempFolder { get; set; } = "";
 }
 
-/// <summary>Capture Preferences → Hotkeys (per-preset hotkeys live on presets).</summary>
+/// <summary>
+/// Capture Preferences → Hotkeys (per-preset hotkeys live on presets). Configured keys are written even when null ("None"): the shared
+/// options skip nulls, which would bring a cleared hotkey back as its default on the next start.
+/// </summary>
 public sealed class HotkeySettings
 {
+    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
     public Hotkey? GlobalCapture { get; set; } = new Hotkey(VirtualKey.PrintScreen, ModifierKeys.None);
+    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
     public Hotkey? ShowHideApp { get; set; }
+    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
     public Hotkey? RepeatLastCapture { get; set; } = new Hotkey(VirtualKey.F11, ModifierKeys.Control | ModifierKeys.Shift);
+    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
     public Hotkey? VideoStartPauseResume { get; set; } = new Hotkey(VirtualKey.F9, ModifierKeys.Control | ModifierKeys.Shift);
+    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
     public Hotkey? VideoStop { get; set; } = new Hotkey(VirtualKey.F10, ModifierKeys.Control | ModifierKeys.Shift);
     /// <summary>Ctrl+Shift+F8 (F12 combinations are reserved by Windows for the debugger and cannot be registered).</summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
     public Hotkey? ScreenDrawToggle { get; set; } = new Hotkey(VirtualKey.F8, ModifierKeys.Control | ModifierKeys.Shift);
+    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
     public Hotkey? WebcamFullscreenToggle { get; set; } = new Hotkey(VirtualKey.F, ModifierKeys.Control | ModifierKeys.Shift);
     /// <summary>
     /// Used for the global capture when <see cref="GlobalCapture"/> is held by Windows or another app (POLISH-1): Shift+PrintScreen.
     /// The preferred key is retried on every start; null = no fallback.
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
     public Hotkey? GlobalCaptureFallback { get; set; } = new Hotkey(VirtualKey.PrintScreen, ModifierKeys.Shift);
     /// <summary>Runtime state: the key the global capture was last registered with (preferred or fallback); null = not registered.</summary>
     public Hotkey? EffectiveGlobalCapture { get; set; }

@@ -4,6 +4,8 @@ namespace Shotwise.Core.Platform;
 public static class HotkeyIds
 {
     public const string GlobalCapture = "capture.global";
+    /// <summary>The configured fallback of <see cref="GlobalCapture"/> (registered under the <see cref="GlobalCapture"/> id when used).</summary>
+    public const string GlobalCaptureFallback = "capture.global.fallback";
     public const string Repeat = "capture.repeat";
     public const string ShowHide = "capture.showhide";
     public const string VideoPauseResume = "capture.video.pause";
@@ -13,6 +15,21 @@ public static class HotkeyIds
     public const string PresetPrefix = "capture.preset.";
 
     public static string Preset(string presetId) => PresetPrefix + presetId;
+
+    /// <summary>The preset id of a <see cref="Preset"/> registration id, or null for a settings hotkey.</summary>
+    public static string? PresetIdOf(string? id) => id is not null && id.StartsWith(PresetPrefix, StringComparison.Ordinal) ? id[PresetPrefix.Length..] : null;
+
+    /// <summary>
+    /// True when two ids name the same binding. The global capture and its fallback count as one: the fallback key is registered
+    /// under <see cref="GlobalCapture"/> while it is in use.
+    /// </summary>
+    public static bool SameBinding(string? a, string? b)
+    {
+        if (a is null || b is null) return false;
+        if (string.Equals(a, b, StringComparison.Ordinal)) return true;
+        static bool Capture(string x) => x is GlobalCapture or GlobalCaptureFallback;
+        return Capture(a) && Capture(b);
+    }
 }
 
 /// <summary>What happened to one configured global hotkey in the last registration pass.</summary>

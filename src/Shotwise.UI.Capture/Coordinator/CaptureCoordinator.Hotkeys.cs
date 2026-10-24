@@ -12,8 +12,36 @@ namespace Shotwise.UI.Capture.Coordinator;
 /// <summary>A hotkey that could not be registered (shown in preferences and as a notification).</summary>
 public sealed record HotkeyProblem(string Label, Hotkey Key, HotkeyRegistrationResult Result);
 
-public sealed partial class CaptureCoordinator : IHotkeyStatusSource
+public sealed partial class CaptureCoordinator : IHotkeyStatusSource, IHotkeyBindingSource
 {
+    /// <summary>Display name of a settings hotkey id (shared by the preferences page, the preset dialog and the advisor).</summary>
+    public static string BindingLabel(string id) => id switch
+    {
+        HotkeyIds.GlobalCapture => CS.Get("Hotkey_Capture"),
+        HotkeyIds.GlobalCaptureFallback => CS.Get("Hotkey_CaptureFallback"),
+        HotkeyIds.Repeat => CS.Get("Hotkey_Repeat"),
+        HotkeyIds.ShowHide => CS.Get("Hotkey_ShowHide"),
+        HotkeyIds.VideoPauseResume => CS.Get("Hotkey_VideoPause"),
+        HotkeyIds.VideoStop => CS.Get("Hotkey_VideoStop"),
+        HotkeyIds.ScreenDraw => CS.Get("Hotkey_Draw"),
+        HotkeyIds.WebcamFullscreen => CS.Get("Hotkey_Webcam"),
+        _ => id,
+    };
+
+    /// <summary>The configured (saved) hotkeys: settings hotkeys, then presets (for <see cref="IHotkeyAdvisor"/>).</summary>
+    public IReadOnlyList<HotkeyBinding> Bindings => HotkeyBindings.Collect(_settings.Current.Hotkeys, _presets.All, BindingLabel);
+
+    /// <summary>
+    /// "Move here": clears <paramref name="key"/> from <paramref name="fromId"/> (settings or preset hotkey) so <paramref name="toId"/> can
+    /// take it, then saves <paramref name="toId"/>'s new key when it is a settings hotkey. Preset targets are saved by the caller.
+    /// </summary>
+    public async Task MoveHotkeyAsync(Hotkey key, string fromId, string toId)
+    {
+        await HotkeyBindings.ReleaseAsync(_settings, _presets, fromId, key);
+        if (HotkeyBindings.IsSettingsBinding(toId)) _settings.Update(s => HotkeyBindings.Set(s.Hotkeys, toId, key));
+        Opt<IHotkeyAdvisor>()?.Invalidate();
+    }
+
     private readonly HashSet<string> _registeredIds = new();
     private IReadOnlyList<HotkeyProblem> _problems = Array.Empty<HotkeyProblem>();
     private IReadOnlyList<HotkeyStatus> _statuses = Array.Empty<HotkeyStatus>();

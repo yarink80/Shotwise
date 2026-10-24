@@ -22,13 +22,16 @@ namespace Shotwise.UI.Capture.Preferences;
 /// </summary>
 public sealed class CaptureHotkeysPage : UserControl
 {
-    private const string FallbackRowId = HotkeyIds.GlobalCapture + ".fallback";
+    private const string FallbackRowId = HotkeyIds.GlobalCaptureFallback;
 
     private readonly AppSettings _s;
     private readonly Action _changed;
     private readonly IServiceProvider? _sp;
     private readonly Action<Func<Task>>? _registerCommit;
     private readonly IHotkeyStatusSource? _status;
+    private readonly IHotkeyAdvisor? _advisor;
+    private readonly TextBlock _checkResult = Ui.Label("", 12, wrap: true, brush: "Shotwise.TextSecondaryBrush");
+    private bool _checkedAll;
     private readonly List<Row> _rows = new();
     private bool _commitRegistered;
     private Row? _recording;
@@ -52,26 +55,47 @@ public sealed class CaptureHotkeysPage : UserControl
         public TextBlock Detail { get; } = Ui.Label("", 11.5, wrap: true);
         public Button Clear { get; set; } = null!;
         public string Live { get; set; } = "";
+        public HotkeyPurpose Purpose { get; init; }
+        /// <summary>Result of the last availability check of the row's key (null = not checked).</summary>
+        public HotkeyAvailability? Availability { get; set; }
+        /// <summary>"Use suggested: X" + suggestion chips, shown when the key is unavailable.</summary>
+        public WrapPanel Advice { get; } = new() { Margin = new Thickness(6, 2, 6, 6) };
     }
 
     public CaptureHotkeysPage(AppSettings s, IServiceProvider? sp, Action changed, Action<Func<Task>>? registerCommit = null)
     {
         _s = s; _sp = sp; _changed = changed; _registerCommit = registerCommit;
         _status = sp?.GetService<IHotkeyStatusSource>();
+        _advisor = sp?.GetService<IHotkeyAdvisor>();
         var h = s.Hotkeys;
         var defaults = HotkeySettings.Defaults();
         var b = new PrefsBuilder(changed);
 
         b.Section(CS.Get("Prefs_HotkeysGlobal"), "Icon.Keyboard.Regular");
         b.Note(CS.Get("Prefs_HotkeysIntro"));
-        AddRow(b, new Row { Id = HotkeyIds.GlobalCapture, Label = CS.Get("Hotkey_Capture"), Hint = CS.Get("Hotkey_GlobalHint"), Get = () => h.GlobalCapture, Set = v => h.GlobalCapture = v, Default = () => defaults.GlobalCapture });
-        AddRow(b, new Row { Id = FallbackRowId, Label = CS.Get("Hotkey_CaptureFallback"), Hint = CS.Get("Hotkey_CaptureFallbackHint"), Get = () => h.GlobalCaptureFallback, Set = v => h.GlobalCaptureFallback = v, Default = () => defaults.GlobalCaptureFallback });
-        AddRow(b, new Row { Id = HotkeyIds.Repeat, Label = CS.Get("Hotkey_Repeat"), Get = () => h.RepeatLastCapture, Set = v => h.RepeatLastCapture = v, Default = () => defaults.RepeatLastCapture });
-        AddRow(b, new Row { Id = HotkeyIds.ShowHide, Label = CS.Get("Hotkey_ShowHide"), Get = () => h.ShowHideApp, Set = v => h.ShowHideApp = v, Default = () => defaults.ShowHideApp });
-        AddRow(b, new Row { Id = HotkeyIds.VideoPauseResume, Label = CS.Get("Hotkey_VideoPause"), Get = () => h.VideoStartPauseResume, Set = v => h.VideoStartPauseResume = v, Default = () => defaults.VideoStartPauseResume });
-        AddRow(b, new Row { Id = HotkeyIds.VideoStop, Label = CS.Get("Hotkey_VideoStop"), Get = () => h.VideoStop, Set = v => h.VideoStop = v, Default = () => defaults.VideoStop });
-        AddRow(b, new Row { Id = HotkeyIds.ScreenDraw, Label = CS.Get("Hotkey_Draw"), Hint = CS.Get("Hotkey_RecordingHint"), Get = () => h.ScreenDrawToggle, Set = v => h.ScreenDrawToggle = v, Default = () => defaults.ScreenDrawToggle });
-        AddRow(b, new Row { Id = HotkeyIds.WebcamFullscreen, Label = CS.Get("Hotkey_Webcam"), Hint = CS.Get("Hotkey_RecordingHint"), Get = () => h.WebcamFullscreenToggle, Set = v => h.WebcamFullscreenToggle = v, Default = () => defaults.WebcamFullscreenToggle });
+        if (_advisor is not null)
+        {
+            var checkAll = Ui.TextButton(CS.Get("HotkeyCheck_CheckAll"), CheckAll, "Icon.Search.Regular");
+            checkAll.ToolTip = CS.Get("HotkeyCheck_CheckAllTip");
+            var bar = new DockPanel { Margin = new Thickness(6, 4, 6, 6), LastChildFill = true };
+            DockPanel.SetDock(checkAll, Dock.Left);
+            bar.Children.Add(checkAll);
+            _checkResult.Margin = new Thickness(12, 0, 0, 0);
+            _checkResult.VerticalAlignment = VerticalAlignment.Center;
+            bar.Children.Add(_checkResult);
+            b.Add(bar);
+        }
+        Row Setting(string id, string? hint = null)
+            => new() { Id = id, Label = CaptureCoordinator.BindingLabel(id), Hint = hint, Get = () => HotkeyBindings.Get(h, id), Set = v => HotkeyBindings.Set(h, id, v),
+                       Default = () => HotkeyBindings.Get(defaults, id), Purpose = HotkeyRules.ParsePurpose(id) };
+        AddRow(b, Setting(HotkeyIds.GlobalCapture, CS.Get("Hotkey_GlobalHint")));
+        AddRow(b, Setting(FallbackRowId, CS.Get("Hotkey_CaptureFallbackHint")));
+        AddRow(b, Setting(HotkeyIds.Repeat));
+        AddRow(b, Setting(HotkeyIds.ShowHide));
+        AddRow(b, Setting(HotkeyIds.VideoPauseResume));
+        AddRow(b, Setting(HotkeyIds.VideoStop));
+        AddRow(b, Setting(HotkeyIds.ScreenDraw, CS.Get("Hotkey_RecordingHint")));
+        AddRow(b, Setting(HotkeyIds.WebcamFullscreen, CS.Get("Hotkey_RecordingHint")));
 
         var repo = sp?.GetService<IPresetRepository>();
         if (repo is not null)
@@ -86,6 +110,7 @@ public sealed class CaptureHotkeysPage : UserControl
                     Id = HotkeyIds.Preset(id), PresetId = id, Label = p.Name, Hint = CS.Get("Hotkey_PresetHint"),
                     Get = () => pending, Set = v => pending = v,
                     Default = p.IsBuiltIn ? () => PresetDefaults.DefaultHotkey(id) : null,
+                    Purpose = HotkeyRules.PurposeOf(p),
                 });
             }
         }
@@ -101,10 +126,106 @@ public sealed class CaptureHotkeysPage : UserControl
         Content = b.Wrap();
         if (_status is not null) _status.Changed += OnStatusChanged;
         Unloaded += (_, _) => { EndRecording(); if (_status is not null) _status.Changed -= OnStatusChanged; };
-        Loaded += (_, _) => { if (_status is not null) { _status.Changed -= OnStatusChanged; _status.Changed += OnStatusChanged; } RefreshAll(); };
+        Loaded += (_, _) => { if (_status is not null) { _status.Changed -= OnStatusChanged; _status.Changed += OnStatusChanged; } CheckRows(all: _checkedAll); RefreshAll(); };
     }
 
-    private void OnStatusChanged(object? sender, EventArgs e) => Dispatcher.BeginInvoke(new Action(RefreshAll));
+    private void OnStatusChanged(object? sender, EventArgs e) => Dispatcher.BeginInvoke(new Action(() => { if (_recording is null) CheckRows(all: _checkedAll); RefreshAll(); }));
+
+    // ------------------------------------------------------------------ availability (advisor)
+
+    /// <summary>The rows as bindings (staged values), so checks see unsaved edits.</summary>
+    private IReadOnlyList<HotkeyBinding> Staged() => _rows.Select(r => new HotkeyBinding(r.Id, r.Label, r.Get(), r.Purpose)).ToList();
+
+    /// <summary>"Check all for conflicts": asks Windows again for every row and shows owners + suggestions for the busy ones.</summary>
+    private void CheckAll()
+    {
+        if (_advisor is null) return;
+        EndRecording();
+        _advisor.Invalidate();
+        _checkedAll = true;
+        CheckRows(all: true);
+        int total = _rows.Count(r => r.Get() is not null);
+        int problems = _rows.Count(r => r.Get() is not null && NeedsAttention(r));
+        _checkResult.Text = problems == 0 ? CS.Format("HotkeyCheck_CheckAllClear", total) : CS.Format("HotkeyCheck_CheckAllResult", total, problems);
+        _checkResult.SetResourceReference(TextBlock.ForegroundProperty, problems == 0 ? "Shotwise.SuccessTextBrush" : "Shotwise.WarningTextBrush");
+        RefreshAll();
+    }
+
+    /// <summary>Checks every row (<paramref name="all"/>) or only the rows whose last registration failed / fell back.</summary>
+    private void CheckRows(bool all)
+    {
+        if (_advisor is null) return;
+        var staged = Staged();
+        foreach (var r in _rows)
+        {
+            var st = _status?.Find(r.Id)?.State;
+            bool problem = st is HotkeyState.InUse or HotkeyState.Fallback;
+            if (all || problem || r.Availability is not null) CheckRow(r, staged);
+        }
+    }
+
+    private void CheckRow(Row row, IReadOnlyList<HotkeyBinding>? staged = null)
+    {
+        row.Availability = null;
+        if (_advisor is null || row.Get() is not { } key) return;
+        try { row.Availability = _advisor.CheckAvailability(key, row.Id, staged ?? Staged()); }
+        catch (Exception ex) { _sp?.GetService<ILogger<CaptureHotkeysPage>>()?.LogDebug(ex, "Hotkey availability check failed"); }
+    }
+
+    /// <summary>True when the row's key does not work (or only through the fallback).</summary>
+    private bool NeedsAttention(Row row)
+    {
+        var st = _status?.Find(row.Id);
+        if (st is not null && st.Configured == row.Get() && st.State is HotkeyState.InUse or HotkeyState.Fallback or HotkeyState.Duplicate or HotkeyState.Unsupported) return true;
+        return row.Availability is { IsAvailable: false };
+    }
+
+    private void RefreshAdvice(Row row)
+    {
+        row.Advice.Children.Clear();
+        row.Advice.Visibility = Visibility.Collapsed;
+        if (_advisor is null || row.Get() is null || !ReferenceEquals(_recording, null) || !NeedsAttention(row)) return;
+        IReadOnlyList<HotkeySuggestion> list;
+        try { list = _advisor.Suggest(row.Purpose, row.Id, 6, Staged()); }
+        catch (Exception) { return; }
+        var first = list.FirstOrDefault(s => s.IsAvailable);
+        if (first is not null)
+        {
+            var use = Ui.TextButton(CS.Format("HotkeyCheck_UseSuggested", first.Key.ToDisplayString()), () => Assign(row, first.Key), "Icon.Lightbulb.Regular", ghost: true);
+            use.MinHeight = 26; use.Padding = new Thickness(8, 0, 10, 0); use.Margin = new Thickness(0, 0, 8, 6);
+            row.Advice.Children.Add(use);
+        }
+        foreach (var s in list.Where(s => !ReferenceEquals(s, first)).Take(5))
+            row.Advice.Children.Add(HotkeyAdviceUi.Chip(s, row.Label, sel => ApplySuggestion(row, sel)));
+        if (HotkeyAdviceUi.FreeTip(row.Availability ?? new HotkeyAvailability(row.Get()!.Value, HotkeyAvailabilityStatus.Available)) is { } tip)
+        {
+            var t = Ui.Label(tip, 11.5, wrap: true, brush: "Shotwise.TextTertiaryBrush");
+            t.Width = 520;
+            t.Margin = new Thickness(0, 0, 0, 4);
+            row.Advice.Children.Add(t);
+        }
+        row.Advice.Visibility = row.Advice.Children.Count > 0 ? Visibility.Visible : Visibility.Collapsed;
+    }
+
+    private void ApplySuggestion(Row row, HotkeySuggestion s)
+    {
+        if (s.CanMoveHere) { MoveHere(row, s.Key, s.Availability.ShotwiseBindingId!); return; }
+        if (s.IsAvailable) Assign(row, s.Key);
+    }
+
+    /// <summary>"Move here": clears the key from the other row (staged) and assigns it to <paramref name="row"/>.</summary>
+    private void MoveHere(Row row, Hotkey key, string fromId)
+    {
+        var from = _rows.FirstOrDefault(r => !ReferenceEquals(r, row) && HotkeyIds.SameBinding(r.Id, fromId) && r.Get() == key);
+        if (from is not null)
+        {
+            from.Set(null);
+            if (from.PresetId is not null) PresetChanged(); else _changed();
+            from.Availability = null;
+            Refresh(from);
+        }
+        Assign(row, key);
+    }
 
     // ------------------------------------------------------------------ row layout
 
@@ -156,6 +277,8 @@ public sealed class CaptureHotkeysPage : UserControl
         row.Detail.Margin = new Thickness(6, 0, 6, 4);
         row.Detail.Visibility = Visibility.Collapsed;
         b.Add(row.Detail);
+        row.Advice.Visibility = Visibility.Collapsed;
+        b.Add(row.Advice);
         _rows.Add(row);
         Refresh(row);
     }
@@ -248,9 +371,10 @@ public sealed class CaptureHotkeysPage : UserControl
             if (unsupported) { ShowError(row, CS.Get("Hotkey_Unsupported")); return; }
             if (clash is not null) { ShowError(row, CS.Format("PresetEdit_HotkeyUsed", clash)); return; }
         }
-        if (row.Get() == key) { Refresh(row); return; }
+        if (row.Get() == key) { CheckRow(row); Refresh(row); return; }
         row.Set(key);
         if (row.PresetId is not null) PresetChanged(); else _changed();
+        CheckRow(row);
         Refresh(row);
     }
 
@@ -275,6 +399,8 @@ public sealed class CaptureHotkeysPage : UserControl
         }
         _changed();
         PresetChanged();
+        foreach (var r in _rows) r.Availability = null;
+        CheckRows(all: _checkedAll);
         RefreshAll();
     }
 
@@ -334,6 +460,7 @@ public sealed class CaptureHotkeysPage : UserControl
             nameof(HotkeyState.Duplicate) => (CS.Get("Hotkey_State_Duplicate"), "Shotwise.DangerSubtleBrush", "Shotwise.DangerTextBrush"),
             nameof(HotkeyState.Unsupported) => (CS.Get("Hotkey_State_Unsupported"), "Shotwise.DangerSubtleBrush", "Shotwise.DangerTextBrush"),
             nameof(HotkeyState.RecordingOnly) => (CS.Get("Hotkey_State_RecordingOnly"), "Shotwise.Surface2Brush", "Shotwise.TextSecondaryBrush"),
+            "reserved" => (CS.Get("Hotkey_State_Reserved"), "Shotwise.DangerSubtleBrush", "Shotwise.DangerTextBrush"),
             "standby" => (CS.Get("Hotkey_State_Standby"), "Shotwise.Surface2Brush", "Shotwise.TextSecondaryBrush"),
             _ => (CS.Get("Hotkey_State_Off"), "Shotwise.Surface2Brush", "Shotwise.TextSecondaryBrush"),
         };
@@ -346,10 +473,39 @@ public sealed class CaptureHotkeysPage : UserControl
         row.Detail.Text = detail ?? "";
         row.Detail.Visibility = detail is null ? Visibility.Collapsed : Visibility.Visible;
         if (detail is not null) row.Detail.SetResourceReference(TextBlock.ForegroundProperty, detailBrush);
+        RefreshAdvice(row);
     }
 
-    /// <summary>Pill state key + optional explanation line for a row (pending edits win over the last registration result).</summary>
+    /// <summary>
+    /// Pill state key + optional explanation line for a row: the last registration result, refined by the last availability check
+    /// (likely owner of a busy key, reserved combinations, keys a recording-only / pending row could not get).
+    /// </summary>
     private (string? State, string? Detail, string DetailBrush) StateOf(Row row)
+    {
+        var (state, detail, brush) = RegistrationStateOf(row);
+        var value = row.Get();
+        if (value is not { } key || row.Availability is not { } a || a.Key != key) return (state, detail, brush);
+        var keyText = key.ToDisplayString();
+        string owners = HotkeyAdviceUi.Owners(a.LikelyOwners);
+        switch (a.Status)
+        {
+            case HotkeyAvailabilityStatus.InUseByOtherApp:
+                if (state == nameof(HotkeyState.Fallback))
+                    return (state, a.LikelyOwners.Count > 0 ? CS.Format("HotkeyCheck_FallbackLikely", keyText, _status?.Find(row.Id)?.Effective?.ToDisplayString() ?? "", owners) : detail, brush);
+                return (nameof(HotkeyState.InUse), a.LikelyOwners.Count > 0 ? CS.Format("HotkeyCheck_InUseDetailLikely", keyText, owners) : CS.Format("Hotkey_InUseDetail", keyText), "Shotwise.DangerTextBrush");
+            case HotkeyAvailabilityStatus.Reserved:
+                var reason = CS.Format("HotkeyCheck_Reserved", HotkeyAdviceUi.ReservedText(a.Reservation));
+                // Windows accepted it: keep "Active", but say why it is a poor choice
+                return state == nameof(HotkeyState.Active) ? (state, reason, "Shotwise.WarningTextBrush") : ("reserved", reason, "Shotwise.DangerTextBrush");
+            case HotkeyAvailabilityStatus.UsedByShotwise when state != nameof(HotkeyState.Active):
+                return (nameof(HotkeyState.Duplicate), CS.Format("HotkeyCheck_UsedByShotwise", a.ShotwiseBindingName ?? ""), "Shotwise.DangerTextBrush");
+            default:
+                return (state, detail, brush);
+        }
+    }
+
+    /// <summary>Pill state from the last registration pass (pending edits win over it).</summary>
+    private (string? State, string? Detail, string DetailBrush) RegistrationStateOf(Row row)
     {
         var value = row.Get();
         if (value != row.Original) return ("pending", null, "");

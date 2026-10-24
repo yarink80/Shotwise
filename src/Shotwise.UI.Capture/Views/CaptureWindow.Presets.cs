@@ -320,7 +320,7 @@ public sealed partial class CaptureWindow
     private async Task EditPresetAsync(CapturePreset p, bool focusHotkey)
     {
         var current = _repo.Find(p.Id) ?? p;
-        if (await PresetEditWindow.EditAsync(_m, current, _repo.Groups, _settings.Current.Hotkeys, focusHotkey, this)) RefreshAll();
+        if (await PresetEditWindow.EditAsync(_m, current, _repo.Groups, _settings.Current.Hotkeys, focusHotkey, this, _sp)) RefreshAll();
     }
 
     private async Task SaveAsNewAsync()

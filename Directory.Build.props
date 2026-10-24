@@ -20,7 +20,7 @@
     <Company>Shotwise contributors</Company>
     <Copyright>Copyright (c) Shotwise contributors</Copyright>
     <!-- Release version (tools/package.ps1 -Version passes the same value to the installer). -->
-    <Version>0.9.2</Version>
+    <Version>0.9.3</Version>
     <NeutralLanguage>en-US</NeutralLanguage>
     <SatelliteResourceLanguages>en;de;es;fr;ja;pt-BR</SatelliteResourceLanguages>
 

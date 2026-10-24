@@ -6,7 +6,7 @@ using Microsoft.Win32;
 using Shotwise.Core.Platform;
 namespace Shotwise.Platform;
 /// <summary>Owns a message-only HWND. Callbacks use the supplied context, or the thread pool.</summary>
-public sealed class HotkeyService : IHotkeyService, IDisposable
+public sealed class HotkeyService : IHotkeyService, IHotkeyProbe, IDisposable
 {
     private readonly ConcurrentQueue<Action> _commands = new();
     private readonly Dictionary<string, Entry> _entries = new(StringComparer.Ordinal);
@@ -55,12 +55,26 @@ public sealed class HotkeyService : IHotkeyService, IDisposable
                 return HotkeyRegistrationResult.Ok;
             }
             var nativeId = ++_next;
-            if (nativeId > 0xBFFF) { _next = 0; return HotkeyRegistrationResult.Unsupported; }
+            if (nativeId >= ProbeId) { _next = 0; return HotkeyRegistrationResult.Unsupported; }
             if (!RegisterHotKey(_window, nativeId, (uint)key.Modifiers | 0x4000, (uint)key.Key)) return HotkeyRegistrationResult.InUseBySystemOrOtherApp;
             if (old is not null) Remove(id);
             _entries[id] = new(nativeId, key, callback); return HotkeyRegistrationResult.Ok;
         });
     }
+    /// <summary>Native id of availability probes; registrations count up from 1 and wrap before it.</summary>
+    private const int ProbeId = 0xBFFF;
+    /// <summary>
+    /// Non-destructive availability test on the hotkey thread: RegisterHotKey on this service's message-only window, then UnregisterHotKey
+    /// at once. Keys this service already registered report <see cref="HotkeyProbeResult.HeldByShotwise"/> (Windows would refuse them too).
+    /// </summary>
+    public HotkeyProbeResult Probe(Hotkey key) => Send(() =>
+    {
+        if (!key.IsValidGlobalHotkey || !Enum.IsDefined(key.Key) || ((int)key.Modifiers & ~15) != 0 || key.Key == VirtualKey.F12) return HotkeyProbeResult.Invalid;
+        if (_entries.Values.Any(e => e.Key == key)) return HotkeyProbeResult.HeldByShotwise;
+        if (!RegisterHotKey(_window, ProbeId, (uint)key.Modifiers | 0x4000, (uint)key.Key)) return HotkeyProbeResult.HeldByOtherApp;
+        UnregisterHotKey(_window, ProbeId);
+        return HotkeyProbeResult.Free;
+    });
     private void Remove(string id) { if (_entries.Remove(id, out var entry)) UnregisterHotKey(_window, entry.NativeId); }
     public void Unregister(string id) => Send(() => { Remove(id); return true; });
     public void UnregisterAll() => Send(() => { foreach (var id in _entries.Keys.ToArray()) Remove(id); return true; });
